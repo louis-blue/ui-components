@@ -30,6 +30,7 @@ const LDialogContainer = styled("div", {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    marginLeft: 20,
   };
 });
 
@@ -59,7 +60,7 @@ interface Props {
 }
 
 const CCDialog: React.FC<Props> = (props: Props) => {
-  const { children, open, onClose }: Props = props;
+  const { children, open, onClose, width, height }: Props = props;
   const fieldRef: RefObject<HTMLDivElement> = useRef(null);
   useEffect(() => {
     const listener: EventListenerOrEventListenerObject = (e: any) => {
@@ -79,7 +80,9 @@ const CCDialog: React.FC<Props> = (props: Props) => {
     <>
       {Boolean(open) && (
         <LDialogContainer ref={fieldRef}>
-          <LDialogContent>{children}</LDialogContent>
+          <LDialogContent width={width} height={height}>
+            {children}
+          </LDialogContent>
         </LDialogContainer>
       )}
     </>
