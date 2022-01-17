@@ -16,7 +16,7 @@ import styled from "@emotion/styled";
 // `;
 
 const LDialogContainer = styled("div", {
-  label: "LDialogContainer",
+  label: "LDialogContainer"
 })(({ theme }) => {
   return {
     position: "fixed",
@@ -29,17 +29,16 @@ const LDialogContainer = styled("div", {
     backgroundColor: "rgba(0, 0, 0, 0.5)",
     display: "flex",
     justifyContent: "center",
-    alignItems: "center",
-    marginLeft: 20,
+    alignItems: "center"
   };
 });
 
 const LDialogContent = styled("div", {
   label: "LDialogContent",
-  shouldForwardProp: (propName) => {
+  shouldForwardProp: propName => {
     console.log(propName);
     return true;
-  },
+  }
 })<{ width?: number; height?: number }>(({ theme, width, height }) => {
   return {
     backgroundColor: "white",
@@ -47,7 +46,7 @@ const LDialogContent = styled("div", {
     width: width || "none",
     height: height || "none",
     boxShadow:
-      "0 2px 1px -1px rgba(0, 0, 0, 0.20), 0 1px 1px 0px rgba(0, 0, 0, 0.14), 0 1px 3px 0px rgba(0, 0, 0, 0.12)",
+      "0 2px 1px -1px rgba(0, 0, 0, 0.20), 0 1px 1px 0px rgba(0, 0, 0, 0.14), 0 1px 3px 0px rgba(0, 0, 0, 0.12)"
   };
 });
 
@@ -55,7 +54,7 @@ interface Props {
   open: Boolean;
   onClose: Function;
   width: number;
-  height: number;
+  height?: number;
   children: React.ReactNode;
 }
 
