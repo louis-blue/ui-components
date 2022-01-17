@@ -1,35 +1,28 @@
 import React from "react";
 import PropTypes from "prop-types";
-
-export enum TEETH_GRAPH_SYSTEM {
-  FDI = "TEETH_GRAPH_SYSTEM_FDI",
-  UNIVERSAL = "TEETH_GRAPH_SYSTEM_UNIVERSAL",
-}
-
-type CCTeethGraphSystem = TEETH_GRAPH_SYSTEM.FDI | TEETH_GRAPH_SYSTEM.UNIVERSAL;
-
-export interface CCTeethGraphProps {
-  width?: number;
-  height?: number;
-  foreground?: string;
-  background?: string;
-  numbers?: Array<number>;
-  missings?: Array<number>;
-  mode?: TEETH_GRAPH_SYSTEM;
-}
+import CCFDITeethGraph from "./components/CCFDITeethGraph";
+import { CCUniversalTeethGraph } from "./components";
+import { CCTeethGraphProps, TEETH_GRAPH_SYSTEM } from "./types";
 
 const CCTeethGraph: React.FC<CCTeethGraphProps> = (
   props: CCTeethGraphProps
 ) => {
-  return <div>{"test"}</div>;
+  const { mode, ...others }: CCTeethGraphProps = props;
+  if (mode === TEETH_GRAPH_SYSTEM.FDI) {
+    return <CCFDITeethGraph {...others} />;
+  } else {
+    return <CCUniversalTeethGraph {...others} />;
+  }
 };
 
 CCTeethGraph.defaultProps = {
-  foreground: "rgba(255, 255, 255, 1)",
+  foreground: "rgba(0, 0, 0, 1)",
   background: "rgba(0, 0, 0, 0)",
   numbers: [],
   missings: [],
   mode: TEETH_GRAPH_SYSTEM.FDI,
+  width: 160,
+  height: 40
 };
 
 CCTeethGraph.propTypes = {
@@ -43,7 +36,7 @@ CCTeethGraph.propTypes = {
   background: PropTypes.string,
   /** 선택된 치식 */
   numbers: PropTypes.array,
-  missings: PropTypes.array,
+  missings: PropTypes.array
 };
 
 export default CCTeethGraph;

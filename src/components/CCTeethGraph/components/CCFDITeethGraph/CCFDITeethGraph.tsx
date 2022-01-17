@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from "react";
-import { CCTeethGraphProps, TEETH_GRAPH_SYSTEM } from "../../CCTeethGraph";
 import { drawFDICanvas } from "../../Utils";
+import { CCTeethGraphProps } from "../../types";
 
 const CCFDITeethGraph: React.FC<CCTeethGraphProps> = (
   props: CCTeethGraphProps
 ) => {
   const {
-    width,
-    height,
+    width = 160,
+    height = 80,
     foreground,
     background,
     numbers,
@@ -32,8 +32,7 @@ CCFDITeethGraph.defaultProps = {
   foreground: "rgba(255, 255, 255, 1)",
   background: "rgba(0, 0, 0, 0)",
   numbers: [],
-  missings: [],
-  mode: TEETH_GRAPH_SYSTEM.FDI
+  missings: []
 };
 
 export default CCFDITeethGraph;
