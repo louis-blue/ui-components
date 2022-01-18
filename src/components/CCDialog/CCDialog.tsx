@@ -36,7 +36,7 @@ const LDialogContainer = styled("div", {
 const LDialogContent = styled("div", {
   label: "LDialogContent",
   shouldForwardProp: propName => {
-    console.log(propName);
+    // console.log(propName);
     return true;
   }
 })<{ width?: number; height?: number }>(({ theme, width, height }) => {
