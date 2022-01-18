@@ -49,7 +49,7 @@ function getTeethString(
         return;
       }
       const list = getTeethFromLinear(array, indices);
-      console.log(list);
+      // console.log(list);
 
       if (t.length === 0) {
         t += "#";
