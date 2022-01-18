@@ -36,7 +36,7 @@ const CCUniversalTeethGraph: React.FC<CCTeethGraphProps> = props => {
     () => getTeethString(numbers, mode),
     [numbers, mode]
   );
-  console.log();
+  // console.log();
   return (
     <LUniversalTeethGraphContainer width={width} background={background}>
       <LUniversalTeethGraphTypo foreground={foreground}>
