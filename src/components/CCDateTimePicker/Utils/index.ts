@@ -1,54 +1,117 @@
-import moment from "moment";
+import moment from "moment/moment";
 
-function _wrapObject(input: Date): moment.Moment {
-  return moment(input);
+interface DateObjectInterface {
+  toDate(): Date;
+
+  startOf(unitOfTime: moment.unitOfTime.StartOf): DateObject;
+
+  endOf(unitOfTime: moment.unitOfTime.StartOf): DateObject;
+
+  format(format: string): string;
+
+  diff(
+    target: DateObject,
+    unitOfTime: moment.unitOfTime.Diff | undefined
+  ): number;
+
+  setYear(year: number): DateObject;
+
+  setMonth(month: number): DateObject;
+
+  add(unit: string, amount: number): DateObject;
+
+  subtract(unit: string, amount: number): DateObject;
 }
 
-function startOf(
-  input: Date,
-  unitOfTime: moment.unitOfTime.StartOf
-): moment.Moment {
-  return _wrapObject(input).clone().startOf(unitOfTime);
+class DateObject implements DateObjectInterface {
+  private readonly _date: Date = new Date();
+
+  constructor(date: Date | undefined | null) {
+    if (Boolean(date)) {
+      this._date = date as Date;
+    }
+  }
+
+  public static get monthFormat(): string[] {
+    return moment.localeData().months();
+  }
+
+  public get date() {
+    return this._wrapObject.date();
+  }
+
+  public get month() {
+    return this._wrapObject.month();
+  }
+
+  public get year() {
+    return this._wrapObject.year();
+  }
+
+  public get weekOfMonth() {
+    const firstDayOfMonth = this.startOf("month");
+    const firstDayOfWeek = this.startOf("week");
+    const offset = firstDayOfMonth.diff(firstDayOfWeek, "days");
+
+    return Math.ceil((this.date + offset) / 7);
+  }
+
+  private get _wrapObject(): moment.Moment {
+    return moment(this._date);
+  }
+
+  public toDate(): Date {
+    return this._date;
+  }
+
+  public startOf(unitOfTime: moment.unitOfTime.StartOf): DateObject {
+    return new DateObject(this._wrapObject.startOf(unitOfTime).toDate());
+  }
+
+  public endOf(unitOfTime: moment.unitOfTime.StartOf): DateObject {
+    return new DateObject(this._wrapObject.endOf(unitOfTime).toDate());
+  }
+
+  public format(format: string): string {
+    return this._wrapObject.format(format);
+  }
+
+  public diff(
+    target: DateObject,
+    unitOfTime: moment.unitOfTime.Diff | undefined
+  ): number {
+    return this._wrapObject.diff(moment(target.toDate()), unitOfTime);
+  }
+
+  public setYear(year: number): DateObject {
+    return new DateObject(this._wrapObject.year(year as number).toDate());
+  }
+
+  public setMonth(month: number): DateObject {
+    return new DateObject(this._wrapObject.month(month as number).toDate());
+  }
+
+  public add(unit: string, amount: number): DateObject {
+    return new DateObject(
+      this._wrapObject
+        .add(
+          amount as moment.DurationInputArg1,
+          unit as moment.DurationInputArg2
+        )
+        .toDate()
+    );
+  }
+
+  public subtract(unit: string, amount: number): DateObject {
+    return new DateObject(
+      this._wrapObject
+        .subtract(
+          amount as moment.DurationInputArg1,
+          unit as moment.DurationInputArg2
+        )
+        .toDate()
+    );
+  }
 }
 
-function endOf(
-  input: Date,
-  unitOfTime: moment.unitOfTime.StartOf
-): moment.Moment {
-  return _wrapObject(input).clone().endOf(unitOfTime);
-}
-
-function diff(
-  a: moment.Moment,
-  b: moment.Moment,
-  unitOfTime: moment.unitOfTime.Diff | undefined
-): number {
-  return a.diff(b, unitOfTime);
-}
-
-function getDate(input: Date) {
-  return _wrapObject(input).clone().date();
-}
-
-function weekOfMonth(input = new Date()) {
-  const firstDayOfMonth = startOf(input, "month");
-  const firstDayOfWeek = startOf(input, "week");
-  const offset = diff(firstDayOfMonth, firstDayOfWeek, "days");
-
-  return Math.ceil((getDate(input) + offset) / 7);
-}
-
-function format(input: Date | null, format: string): string {
-  if (input) return _wrapObject(input).format(format);
-  else return "";
-}
-
-const DatePickerUtils = {
-  weekOfMonth,
-  startOf,
-  endOf,
-  diff,
-  format
-};
-
-export default DatePickerUtils;
+export default DateObject;

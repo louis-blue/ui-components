@@ -1,3 +1,5 @@
+import React from "react";
+
 export enum PICKER_FEATURES {
   DATE = "PICKER_FEATURES_DATE",
   TIME = "PICKER_FEATURES_TIME"
@@ -13,17 +15,34 @@ export type CCDateTimePickerWeekValue = {
   end: Date;
 };
 
-export interface CCDateTimePickerProps {
-  open: boolean;
-  onClose?: () => void;
-  onChange?: (date: Date) => void;
-  value: Date | null | CCDateTimePickerWeekValue;
+export interface CCDateTimePickerRawProps {
   features?: Array<PICKER_FEATURES>;
   view?: CALENDAR_VIEW;
 }
 
-export interface CCDateTimePickerHeaderProps {
+export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
+  open: boolean;
+  onClose?: () => void;
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | null | CCDateTimePickerWeekValue;
-  features?: Array<PICKER_FEATURES>;
-  view?: CALENDAR_VIEW;
+}
+
+export interface CCDatePickerProps extends CCDateTimePickerRawProps {
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+  value: Date | null | CCDateTimePickerWeekValue;
+}
+
+export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
+  value: Date | null | CCDateTimePickerWeekValue;
+}
+
+export interface CCDatePickerHeaderProps extends CCDateTimePickerRawProps {
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+  value: Date | null | CCDateTimePickerWeekValue;
+}
+
+export interface CCDatePickerCalendarProps extends CCDateTimePickerRawProps {
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+  value: Date | null | CCDateTimePickerWeekValue;
+  component?: React.ReactElement;
 }

@@ -3,15 +3,24 @@ import React from "react";
 import { CCDialog } from "../../components";
 import { CALENDAR_VIEW, CCDateTimePickerProps, PICKER_FEATURES } from "./types";
 import styled from "@emotion/styled";
-import { CCDateTimePickerHeader } from "./components";
+import { CCDatePicker, CCDateTimePickerHeader } from "./components";
 
-const LDatePickerHeader = styled("div", {
-  label: "LDialogContainer"
+const DIALOG_WIDTH = 310;
+const LDateTimePickerHeader = styled("div", {
+  label: "LDateTimePickerHeader"
 })(({ theme }) => {
   return {
     padding: 0,
     overflow: "hidden",
     backgroundColor: "#0277BD"
+  };
+});
+const LDateTimePickerContent = styled("div", {
+  label: "LDateTimePickerContent"
+})(({ theme }) => {
+  return {
+    padding: 0,
+    backgroundColor: "#fff"
   };
 });
 
@@ -32,14 +41,14 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
       onClose={() => {
         onClose && onClose();
       }}
-      width={300}
+      width={DIALOG_WIDTH}
     >
-      <LDatePickerHeader>
+      <LDateTimePickerHeader>
         <CCDateTimePickerHeader value={value} features={features} view={view} />
-      </LDatePickerHeader>
-      {/*<div className={classes.dialogTitle}>*/}
-      {/*    <CCDatePickerHeader type={"date"} value={value} />*/}
-      {/*</div>*/}
+      </LDateTimePickerHeader>
+      <LDateTimePickerContent>
+        <CCDatePicker value={value} onChange={onChange} view={view} />
+      </LDateTimePickerContent>
       {/*<div className={classes.dialogContent}>*/}
       {/*    <CCCalendarPicker />*/}
       {/*</div>*/}

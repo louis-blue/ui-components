@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useMemo } from "react";
 import {
   CALENDAR_VIEW,
   CCDateTimePickerHeaderProps,
+  CCDateTimePickerWeekValue,
   PICKER_FEATURES
 } from "../../types";
 import styled from "@emotion/styled";
-import DatePickerUtils from "../../Utils";
+import DateObject from "../../Utils";
 
 const LDateTimePickerHeaderContainer = styled("div", {
   label: "LDateTimePickerHeaderContainer"
 })(({ theme }) => {
   return {
+    width: "100%",
     backgroundColor: "#0277BD",
     paddingTop: 4,
     paddingBottom: 4
@@ -25,29 +27,28 @@ const LDateTimePickerHeaderTypo = styled("div", {
   };
 });
 
-function getHeaderTextDay(
-  value: Date,
-  features: Array<PICKER_FEATURES>
+function _getTextFromDate<T>(
+  value: T | null,
+  features: Array<PICKER_FEATURES>,
+  view: CALENDAR_VIEW,
+  format: string
 ): string {
-  if (!Boolean(features?.length > 0)) {
-    return "";
+  if (view === CALENDAR_VIEW.DAY) {
+    return new DateObject(value as Date | null).format(format);
   }
-  if (
-    features.includes(PICKER_FEATURES.DATE) &&
-    features.includes(PICKER_FEATURES.TIME)
-  ) {
-    return DatePickerUtils.format(value, "LLLL");
-  } else if (features.includes(PICKER_FEATURES.DATE)) {
-    return DatePickerUtils.format(value, "LL");
-  } else if (features.includes(PICKER_FEATURES.TIME)) {
-    return DatePickerUtils.format(value, "LT");
+  if (view === CALENDAR_VIEW.WEEK) {
+    let _week: number = new DateObject(
+      (value as CCDateTimePickerWeekValue | null)?.begin as Date | null
+    ).weekOfMonth;
+    return _week > 0 ? String(_week) : "";
   }
   return "";
 }
 
 function getHeaderText<T>(
   value: T | null,
-  features: Array<PICKER_FEATURES>
+  features: Array<PICKER_FEATURES>,
+  view: CALENDAR_VIEW
 ): string {
   if (!Boolean(features?.length > 0)) {
     return "";
@@ -56,35 +57,30 @@ function getHeaderText<T>(
     features.includes(PICKER_FEATURES.DATE) &&
     features.includes(PICKER_FEATURES.TIME)
   ) {
-    return DatePickerUtils.format(value, "LLLL");
+    return _getTextFromDate(value, features, view, "LLLL");
   } else if (features.includes(PICKER_FEATURES.DATE)) {
-    return DatePickerUtils.format(value, "LL");
+    return _getTextFromDate(value, features, view, "LL");
   } else if (features.includes(PICKER_FEATURES.TIME)) {
-    return DatePickerUtils.format(value, "LT");
+    return _getTextFromDate(value, features, view, "LT");
   }
   return "";
 }
 
 const CCDateTimePickerHeader: React.FC<CCDateTimePickerHeaderProps> = props => {
   const {
-    value = props?.view === CALENDAR_VIEW.DAY
-      ? new Date()
-      : { begin: new Date(), end: new Date() },
+    value,
     features = [PICKER_FEATURES.DATE],
     view = CALENDAR_VIEW.DAY
   }: CCDateTimePickerHeaderProps = props;
-  // const headerText = useMemo(() => {
-  //     if (view === CALENDAR_VIEW.DAY) {
-  //         return getHeaderText<Date>(value, features);
-  //     } else {
-  //         return getHeaderText<CCDateTimePickerWeekValue>(value, features);
-  //     }
-  // }, [features, view, value]);
+  const headerText = useMemo(() => {
+    return getHeaderText(value, features, view);
+  }, [features, view, value]);
 
   return (
     <LDateTimePickerHeaderContainer>
-      <LDateTimePickerHeaderTypo>{value}</LDateTimePickerHeaderTypo>
+      <LDateTimePickerHeaderTypo>{headerText}</LDateTimePickerHeaderTypo>
     </LDateTimePickerHeaderContainer>
   );
 };
+
 export default CCDateTimePickerHeader;
