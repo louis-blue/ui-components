@@ -6,6 +6,7 @@ import {
   CCDateTimePickerWeekValue,
   PICKER_FEATURES
 } from "../components/CCDateTimePicker/types";
+import DateObject from "../components/CCDateTimePicker/Utils";
 
 export const DateTimePicker: ComponentStory<typeof CCDateTimePicker> = ({
   ...options
@@ -43,8 +44,8 @@ export const DatePickerWeekMode = DateTimePicker.bind({});
 DatePickerWeekMode.args = {
   view: CALENDAR_VIEW.WEEK,
   value: {
-    begin: new Date(),
-    end: new Date()
+    begin: new DateObject(new Date()).startOf("week").toDate(),
+    end: new DateObject(new Date()).endOf("week").toDate()
   }
 };
 

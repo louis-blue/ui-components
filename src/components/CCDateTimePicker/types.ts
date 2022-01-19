@@ -24,25 +24,33 @@ export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
   open: boolean;
   onClose?: () => void;
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | null | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
 }
 
 export interface CCDatePickerProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | null | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
 }
 
 export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
-  value: Date | null | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
 }
 
 export interface CCDatePickerHeaderProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | null | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
 }
 
 export interface CCDatePickerCalendarProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | null | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
+  component?: React.ReactElement;
+}
+
+export interface CCDatePickerCalendarSeriesProps
+  extends CCDateTimePickerRawProps {
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+  date: Date | CCDateTimePickerWeekValue;
+  value: Date | CCDateTimePickerWeekValue;
   component?: React.ReactElement;
 }

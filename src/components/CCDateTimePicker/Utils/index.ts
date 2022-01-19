@@ -1,4 +1,7 @@
-import moment from "moment/moment";
+import moment, { unitOfTime } from "moment/moment";
+import "moment/locale/ar";
+import "moment/locale/vi";
+import "moment/locale/ru";
 
 interface DateObjectInterface {
   toDate(): Date;
@@ -57,7 +60,15 @@ class DateObject implements DateObjectInterface {
   }
 
   private get _wrapObject(): moment.Moment {
-    return moment(this._date);
+    return localStorage.getItem("lang")
+      ? moment(this._date).locale(localStorage.getItem("lang") as string)
+      : moment(this._date);
+  }
+
+  private static _makeWrapObject(date: Date): moment.Moment {
+    return localStorage.getItem("lang")
+      ? moment(date).locale(localStorage.getItem("lang") as string)
+      : moment(date);
   }
 
   public toDate(): Date {
@@ -91,6 +102,10 @@ class DateObject implements DateObjectInterface {
     return new DateObject(this._wrapObject.month(month as number).toDate());
   }
 
+  public setDate(date: number): DateObject {
+    return new DateObject(this._wrapObject.date(date as number).toDate());
+  }
+
   public add(unit: string, amount: number): DateObject {
     return new DateObject(
       this._wrapObject
@@ -110,6 +125,51 @@ class DateObject implements DateObjectInterface {
           unit as moment.DurationInputArg2
         )
         .toDate()
+    );
+  }
+
+  public isSameOrBefore(
+    input: DateObject,
+    granularity?: moment.unitOfTime.StartOf
+  ): boolean {
+    return this._wrapObject.isSameOrBefore(
+      DateObject._makeWrapObject(input.toDate()),
+      granularity
+    );
+  }
+
+  public isSame(
+    input: DateObject,
+    granularity?: moment.unitOfTime.StartOf | Array<moment.unitOfTime.StartOf>
+  ): boolean {
+    if (typeof granularity === "string") {
+      return this._wrapObject.isSame(
+        DateObject._makeWrapObject(input.toDate()),
+        granularity
+      );
+    }
+    if (Array.isArray(granularity)) {
+      return granularity.every(_granularity => {
+        return this._wrapObject.isSame(
+          DateObject._makeWrapObject(input.toDate()),
+          _granularity
+        );
+      });
+    }
+    return false;
+  }
+
+  public isBetween(
+    start: DateObject,
+    end: DateObject,
+    granularity?: unitOfTime.StartOf,
+    inclusivity?: "()" | "[)" | "(]" | "[]"
+  ): boolean {
+    return this._wrapObject.isBetween(
+      DateObject._makeWrapObject(start.toDate()),
+      DateObject._makeWrapObject(end.toDate()),
+      granularity,
+      inclusivity
     );
   }
 }

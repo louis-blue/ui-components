@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { CCDialog } from "../../components";
 import { CALENDAR_VIEW, CCDateTimePickerProps, PICKER_FEATURES } from "./types";
@@ -49,18 +48,8 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
       <LDateTimePickerContent>
         <CCDatePicker value={value} onChange={onChange} view={view} />
       </LDateTimePickerContent>
-      {/*<div className={classes.dialogContent}>*/}
-      {/*    <CCCalendarPicker />*/}
-      {/*</div>*/}
     </CCDialog>
   );
-};
-
-CCDateTimePicker.propTypes = {
-  open: PropTypes.bool.isRequired,
-  onClose: PropTypes.func,
-  value: PropTypes.oneOfType([PropTypes.instanceOf(Date)]),
-  onChange: PropTypes.func
 };
 
 export default CCDateTimePicker;
