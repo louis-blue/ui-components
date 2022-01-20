@@ -37,10 +37,11 @@ function _getTextFromDate<T>(
     return new DateObject(value as Date | null).format(format);
   }
   if (view === CALENDAR_VIEW.WEEK) {
-    let _week: number = new DateObject(
+    return `${new DateObject(
       (value as CCDateTimePickerWeekValue | null)?.begin as Date | null
-    ).weekOfMonth;
-    return _week > 0 ? String(_week) : "";
+    ).format(format)} ~ ${new DateObject(
+      (value as CCDateTimePickerWeekValue | null)?.end as Date | null
+    ).format(format)}`;
   }
   return "";
 }
@@ -75,7 +76,7 @@ const CCDateTimePickerHeader: React.FC<CCDateTimePickerHeaderProps> = props => {
   const headerText = useMemo(() => {
     return getHeaderText(value, features, view);
   }, [features, view, value]);
-
+  console.log("begin", (value as CCDateTimePickerWeekValue).begin);
   return (
     <LDateTimePickerHeaderContainer>
       <LDateTimePickerHeaderTypo>{headerText}</LDateTimePickerHeaderTypo>

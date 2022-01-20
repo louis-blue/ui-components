@@ -30,6 +30,7 @@ export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
 export interface CCDatePickerProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | CCDateTimePickerWeekValue;
+  view: CALENDAR_VIEW;
 }
 
 export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
@@ -38,6 +39,8 @@ export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
 
 export interface CCDatePickerHeaderProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+  onClickYear?: () => void;
+  onClickMonth?: () => void;
   value: Date | CCDateTimePickerWeekValue;
 }
 
@@ -53,4 +56,15 @@ export interface CCDatePickerCalendarSeriesProps
   date: Date | CCDateTimePickerWeekValue;
   value: Date | CCDateTimePickerWeekValue;
   component?: React.ReactElement;
+}
+
+export interface CCCCDatePickerYearPickerProps extends CCDatePickerHeaderProps {
+  open: boolean;
+  view: CALENDAR_VIEW;
+}
+
+export interface CCCCDatePickerMonthPickerProps
+  extends CCDatePickerHeaderProps {
+  open: boolean;
+  view: CALENDAR_VIEW;
 }

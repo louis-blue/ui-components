@@ -11,7 +11,6 @@ const LDatePickerWeekHeaderItem = styled("div", {
     display: "inline-flex",
     justifyContent: "center",
     alignItems: "center",
-    width: DateItemSize,
     height: DateItemSize
   };
 });
@@ -21,9 +20,8 @@ const LDatePickerWeekHeaderItemContainer = styled("div", {
 })(({ theme }) => {
   return {
     width: "100%",
-    display: "inline-flex",
-    justifyContent: "space-around",
-    alignItems: "center"
+    display: "grid",
+    gridTemplateColumns: "repeat(7, 1fr)"
   };
 });
 

@@ -3,8 +3,8 @@ import {
   CALENDAR_VIEW,
   CCDatePickerCalendarSeriesProps,
   CCDateTimePickerWeekValue
-} from "../../../../../../../../../../types";
-import DateObject from "../../../../../../../../../../Utils";
+} from "../../../../../../../../types";
+import DateObject from "../../../../../../../../Utils";
 import styled from "@emotion/styled";
 
 const LDayItem = styled("div", {
@@ -76,17 +76,29 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
     view
   }: CCDatePickerCalendarSeriesProps = props;
   const isCurrentMonth: boolean = useMemo(() => {
-    console.log(value);
-    return new DateObject(value as Date).isSame(new DateObject(date as Date), [
-      "month"
-    ]);
+    if (view === CALENDAR_VIEW.WEEK) {
+      return new DateObject(
+        (value as CCDateTimePickerWeekValue).begin as Date
+      ).isSame(new DateObject(date as Date), ["month"]);
+    } else {
+      return new DateObject(value as Date).isSame(
+        new DateObject(date as Date),
+        ["month"]
+      );
+    }
   }, [date, value]);
   const isCurrent: boolean = useMemo(() => {
-    return new DateObject(value as Date).isSame(new DateObject(date as Date), [
-      "month",
-      "year",
-      "day"
-    ]);
+    if (view === CALENDAR_VIEW.WEEK) {
+      return new DateObject(value as Date).isSame(
+        new DateObject(date as Date),
+        ["month", "year", "week"]
+      );
+    } else {
+      return new DateObject(value as Date).isSame(
+        new DateObject(date as Date),
+        ["month", "year", "day"]
+      );
+    }
   }, [date, value]);
   const isIn = useCallback(
     (

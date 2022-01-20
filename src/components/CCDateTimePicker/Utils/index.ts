@@ -30,12 +30,22 @@ class DateObject implements DateObjectInterface {
   private readonly _date: Date = new Date();
 
   constructor(date: Date | undefined | null) {
+    if (typeof localStorage.getItem("lang") === "string") {
+      moment.locale(localStorage.getItem("lang") as string);
+    } else {
+      moment.locale("en");
+    }
     if (Boolean(date)) {
       this._date = date as Date;
     }
   }
 
   public static get monthFormat(): string[] {
+    if (typeof localStorage.getItem("lang") === "string") {
+      moment.locale(localStorage.getItem("lang") as string);
+    } else {
+      moment.locale("en");
+    }
     return moment.localeData().months();
   }
 
@@ -54,15 +64,16 @@ class DateObject implements DateObjectInterface {
   public get weekOfMonth() {
     const firstDayOfMonth = this.startOf("month");
     const firstDayOfWeek = this.startOf("week");
-    const offset = firstDayOfMonth.diff(firstDayOfWeek, "days");
+    const offset = firstDayOfWeek.diff(firstDayOfMonth, "days");
+    console.log("offset", offset, (this.date + offset) / 7);
 
-    return Math.ceil((this.date + offset) / 7);
+    return Math.floor((this.date + offset) / 7);
   }
 
   private get _wrapObject(): moment.Moment {
     return localStorage.getItem("lang")
       ? moment(this._date).locale(localStorage.getItem("lang") as string)
-      : moment(this._date);
+      : moment(this._date).locale("en");
   }
 
   private static _makeWrapObject(date: Date): moment.Moment {
