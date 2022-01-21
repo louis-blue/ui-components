@@ -37,6 +37,9 @@ const LDialogContent = styled("div", {
   label: "LDialogContent",
   shouldForwardProp: propName => {
     // console.log(propName);
+    if (propName === "width" || propName === "height") {
+      return false;
+    }
     return true;
   }
 })<{ width?: number; height?: number }>(({ theme, width, height }) => {
@@ -53,7 +56,7 @@ const LDialogContent = styled("div", {
 interface Props {
   open: Boolean;
   onClose: Function;
-  width: number;
+  width?: number;
   height?: number;
   children: React.ReactNode;
 }

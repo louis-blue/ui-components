@@ -61,6 +61,18 @@ class DateObject implements DateObjectInterface {
     return this._wrapObject.year();
   }
 
+  public get hour() {
+    return this._wrapObject.hour();
+  }
+
+  public get minute() {
+    return this._wrapObject.minute();
+  }
+
+  public get second() {
+    return this._wrapObject.second();
+  }
+
   public get weekOfMonth() {
     const firstDayOfMonth = this.startOf("month");
     const firstDayOfWeek = this.startOf("week");
@@ -115,6 +127,18 @@ class DateObject implements DateObjectInterface {
 
   public setDate(date: number): DateObject {
     return new DateObject(this._wrapObject.date(date as number).toDate());
+  }
+
+  public setHour(hour: number): DateObject {
+    return new DateObject(this._wrapObject.hour(hour as number).toDate());
+  }
+
+  public setMinute(minute: number): DateObject {
+    return new DateObject(this._wrapObject.minute(minute as number).toDate());
+  }
+
+  public setSecond(second: number): DateObject {
+    return new DateObject(this._wrapObject.second(second as number).toDate());
   }
 
   public add(unit: string, amount: number): DateObject {

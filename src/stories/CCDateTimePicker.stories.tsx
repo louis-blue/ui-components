@@ -49,6 +49,13 @@ DatePickerWeekMode.args = {
   }
 };
 
+export const DateTimePickerMode = DateTimePicker.bind({});
+DateTimePickerMode.args = {
+  view: CALENDAR_VIEW.DAY,
+  value: new Date(),
+  features: [PICKER_FEATURES.DATE, PICKER_FEATURES.TIME]
+};
+
 export default {
   title: "Example/DateTimePicker",
   component: CCDateTimePicker,

@@ -68,3 +68,9 @@ export interface CCCCDatePickerMonthPickerProps
   open: boolean;
   view: CALENDAR_VIEW;
 }
+
+export interface CCTimePickerProps extends CCDateTimePickerRawProps {
+  onChange?: (date: Date) => void;
+  value: Date;
+  view: CALENDAR_VIEW;
+}
