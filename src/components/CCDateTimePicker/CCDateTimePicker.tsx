@@ -44,7 +44,7 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
     onClose,
     value: propsValue,
     onChange,
-
+    disabledMeridiem = false,
     features = [PICKER_FEATURES.DATE],
     view = CALENDAR_VIEW.DAY,
     ...others
@@ -80,6 +80,7 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
         />
         {view === CALENDAR_VIEW.DAY && (
           <CCTimePicker
+            disabledMeridiem={disabledMeridiem}
             value={value as Date}
             onChange={e => {
               setValue(e);

@@ -25,6 +25,7 @@ export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
   onClose?: () => void;
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | CCDateTimePickerWeekValue;
+  disabledMeridiem?: boolean;
 }
 
 export interface CCDatePickerProps extends CCDateTimePickerRawProps {
@@ -73,4 +74,5 @@ export interface CCTimePickerProps extends CCDateTimePickerRawProps {
   onChange?: (date: Date) => void;
   value: Date;
   view: CALENDAR_VIEW;
+  disabledMeridiem: boolean;
 }

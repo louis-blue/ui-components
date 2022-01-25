@@ -19,10 +19,20 @@ const LTimePickerContainer = styled("div", {
 const CCTimePicker: React.FC<CCTimePickerProps> = (
   props: CCTimePickerProps
 ) => {
-  const { value, onChange, view }: CCTimePickerProps = props;
+  const {
+    value,
+    onChange,
+    view,
+    disabledMeridiem = true
+  }: CCTimePickerProps = props;
   return (
     <LTimePickerContainer>
-      <CCTimePickerHourPicker value={value} onChange={onChange} view={view} />
+      <CCTimePickerHourPicker
+        value={value}
+        onChange={onChange}
+        view={view}
+        disabledMeridiem={disabledMeridiem}
+      />
     </LTimePickerContainer>
   );
 };

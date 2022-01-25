@@ -1,7 +1,8 @@
 import moment, { unitOfTime } from "moment/moment";
-import "moment/locale/ar";
+
 import "moment/locale/vi";
 import "moment/locale/ru";
+import "moment/locale/ar";
 
 interface DateObjectInterface {
   toDate(): Date;
