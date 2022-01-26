@@ -35,7 +35,7 @@ const CCDatePickerCalendarHeader: React.FC = () => {
           <LDatePickerWeekHeaderItem
             key={"CCDatePickerCalendarWeekHeaderItem" + index}
           >
-            {startOfWeek.add("day", index).format("dd")}
+            {startOfWeek.add("day", index).format("dd").toUpperCase()}
           </LDatePickerWeekHeaderItem>
         );
       })}

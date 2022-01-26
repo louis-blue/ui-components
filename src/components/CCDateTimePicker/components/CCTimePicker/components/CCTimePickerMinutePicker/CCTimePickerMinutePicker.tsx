@@ -1,15 +1,13 @@
 import { CCTimePickerProps } from "../../../../types";
 import React, { MutableRefObject, useLayoutEffect, useRef } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import DateObject from "../../../../Utils";
 import styled from "@emotion/styled";
+import Slider from "react-slick";
 import { debounce, throttle } from "lodash";
 import normalizeWheel from "normalize-wheel";
+import DateObject from "../../../../Utils";
 
 const width = 80;
-const LHourContainer = styled(`div`)`
+const LMinuteContainer = styled(`div`)`
   display: flex;
   width: ${width}px;
   position: relative;
@@ -66,46 +64,25 @@ function pad(n: number | string, width: number): string {
       ) + n;
 }
 
-const InputMenuHourItems = function (
+const InputMenuMinuteItems = function (
   count: number,
   value: Date,
-  disableMeridiem: boolean = true
+  step: number
 ): Array<React.ReactElement> {
-  const loop: Array<number> = Array(count).fill(0);
+  const loop: Array<number> = Array(count / step).fill(0);
   return loop.map((item, index) => {
-    if (disableMeridiem) {
-      return (
-        <div key={"MenuHourItem" + index}>
-          {pad(new DateObject(null).setHour(index).hour, 2)}
-        </div>
-      );
-    } else {
-      if (index > 12) {
-        return (
-          <div key={"MenuHourItem" + index}>
-            {pad(new DateObject(null).setHour(index - 12).format("H"), 2)}
-          </div>
-        );
-      } else {
-        return (
-          <div key={"MenuHourItem" + index}>
-            {pad(
-              new DateObject(null).setHour(index).hour % 12 === 0
-                ? new DateObject(null).setHour(12).format("H")
-                : new DateObject(null).setHour(index).format("H"),
-              2
-            )}
-          </div>
-        );
-      }
-    }
+    return (
+      <div key={"MenuHourItem" + index}>
+        {pad(new DateObject(null).setMinute(index * step).format("m"), 2)}
+      </div>
+    );
   });
 };
 
-const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
+const CCTimePickerMinutePicker: React.FC<CCTimePickerProps> = (
   props: CCTimePickerProps
 ) => {
-  const { value, disabledMeridiem, onChange }: CCTimePickerProps = props;
+  const { value, onChange, step = 1 }: CCTimePickerProps = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
   const innerSlider: MutableRefObject<any> = useRef();
   useLayoutEffect(() => {
@@ -113,7 +90,7 @@ const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
       "mousewheel",
       throttle((e: any) => {
         const normalized = normalizeWheel(e);
-        if (e.target.closest(".slider1") && normalized?.pixelY) {
+        if (e.target.closest(".minutes") && normalized?.pixelY) {
           if (slider.current) {
             if (normalized?.pixelY > 0) {
               slider.current?.slickNext();
@@ -130,16 +107,18 @@ const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
     if (slider.current) {
       if (
         (slider?.current as any)?.innerSlider?.state?.currentSlide !==
-        new DateObject(value).hour
+        Math.round(new DateObject(value).minute / step)
       ) {
         // innerSlider 자체가 JSX로 존재하고 타입이 없음, 해당 컴포넌트를 참조하지 않고는 현재 슬라이드를 알수가 없음
-        slider.current?.slickGoTo(new DateObject(value).hour);
+        slider.current?.slickGoTo(
+          Math.round(new DateObject(value).minute / step)
+        );
       }
     }
-  }, [value]);
+  }, [value, step]);
 
   return (
-    <LHourContainer>
+    <LMinuteContainer>
       <LSlider
         ref={ref => (slider.current = ref)}
         centerMode={true}
@@ -153,17 +132,34 @@ const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
         arrows={false}
         adaptiveHeight={false}
         afterChange={debounce(e => {
-          onChange &&
-            onChange(new DateObject(value as Date).setHour(e).toDate());
+          const _time = e * step;
+          if (new DateObject(value as Date).minute > _time) {
+            onChange &&
+              onChange(
+                new DateObject(value as Date)
+                  .add("minute", _time - new DateObject(value as Date).minute)
+                  .toDate()
+              );
+          } else {
+            onChange &&
+              onChange(
+                new DateObject(value as Date)
+                  .subtract(
+                    "minute",
+                    new DateObject(value as Date).minute - _time
+                  )
+                  .toDate()
+              );
+          }
         }, 240)}
-        className={"slider1"}
+        className={"minutes"}
       >
-        {InputMenuHourItems(24, value, disabledMeridiem)}
+        {InputMenuMinuteItems(60, value, step)}
       </LSlider>
       <LMaskItem>
-        <span>hours</span>
+        <span>minutes</span>
       </LMaskItem>
-    </LHourContainer>
+    </LMinuteContainer>
   );
 };
-export default CCTimePickerHourPicker;
+export default CCTimePickerMinutePicker;

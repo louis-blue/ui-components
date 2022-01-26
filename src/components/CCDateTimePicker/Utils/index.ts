@@ -84,9 +84,7 @@ class DateObject implements DateObjectInterface {
   }
 
   private get _wrapObject(): moment.Moment {
-    return localStorage.getItem("lang")
-      ? moment(this._date).locale(localStorage.getItem("lang") as string)
-      : moment(this._date).locale("en");
+    return moment(this._date);
   }
 
   private static _makeWrapObject(date: Date): moment.Moment {

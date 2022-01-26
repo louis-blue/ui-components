@@ -1,7 +1,7 @@
 import { CCTimePickerProps } from "../../types";
 import React from "react";
 import styled from "@emotion/styled";
-import { CCTimePickerHourPicker } from "./components";
+import { CCTimePickerHourPicker, CCTimePickerMinutePicker } from "./components";
 
 const LTimePickerContainer = styled("div", {
   label: "LDatePickerContainer"
@@ -12,7 +12,10 @@ const LTimePickerContainer = styled("div", {
     boxSizing: "border-box",
     padding: 8,
     backgroundColor: "#fff",
-    height: 316
+    height: 316,
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)",
+    gridColumnGap: 8
   };
 });
 
@@ -23,7 +26,8 @@ const CCTimePicker: React.FC<CCTimePickerProps> = (
     value,
     onChange,
     view,
-    disabledMeridiem = true
+    disabledMeridiem = true,
+    step
   }: CCTimePickerProps = props;
   return (
     <LTimePickerContainer>
@@ -32,6 +36,14 @@ const CCTimePicker: React.FC<CCTimePickerProps> = (
         onChange={onChange}
         view={view}
         disabledMeridiem={disabledMeridiem}
+        step={step}
+      />
+      <CCTimePickerMinutePicker
+        value={value}
+        onChange={onChange}
+        view={view}
+        disabledMeridiem={disabledMeridiem}
+        step={step}
       />
     </LTimePickerContainer>
   );

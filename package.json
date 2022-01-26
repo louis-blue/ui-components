@@ -12,6 +12,7 @@
     "@types/node": "^16.7.13",
     "@types/react": "^17.0.20",
     "@types/react-dom": "^17.0.9",
+    "@types/slick-carousel": "^1.6.37",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "normalize-wheel": "^1.0.1",
