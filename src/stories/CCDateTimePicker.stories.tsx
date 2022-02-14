@@ -40,6 +40,13 @@ DatePickerDayMode.args = {
   value: new Date()
 };
 
+export const TimePicker = DateTimePicker.bind({});
+TimePicker.args = {
+  view: CALENDAR_VIEW.DAY,
+  value: new Date(),
+  features: [PICKER_FEATURES.TIME]
+};
+
 export const DatePickerWeekMode = DateTimePicker.bind({});
 DatePickerWeekMode.args = {
   view: CALENDAR_VIEW.WEEK,
@@ -125,7 +132,7 @@ export default {
       defaultValue: [PICKER_FEATURES.DATE],
       table: {
         type: {
-          summary: "Array<PICKER_FEATURES>",
+          summary: [PICKER_FEATURES.DATE],
           detail: JSON.stringify([PICKER_FEATURES.DATE, PICKER_FEATURES.TIME])
         },
         defaultValue: {

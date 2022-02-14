@@ -16,8 +16,8 @@ export type CCDateTimePickerWeekValue = {
 };
 
 export interface CCDateTimePickerRawProps {
-  features?: Array<PICKER_FEATURES>;
-  view?: CALENDAR_VIEW;
+  features: Array<PICKER_FEATURES>;
+  view: CALENDAR_VIEW;
 }
 
 export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
@@ -29,7 +29,7 @@ export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
   step?: 1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30;
 }
 
-export interface CCDatePickerProps extends CCDateTimePickerRawProps {
+export interface CCDatePickerProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | CCDateTimePickerWeekValue;
   view: CALENDAR_VIEW;
@@ -39,25 +39,27 @@ export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
   value: Date | CCDateTimePickerWeekValue;
 }
 
-export interface CCDatePickerHeaderProps extends CCDateTimePickerRawProps {
+export interface CCDatePickerHeaderProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   onClickYear?: () => void;
   onClickMonth?: () => void;
   value: Date | CCDateTimePickerWeekValue;
+  view: CALENDAR_VIEW;
 }
 
-export interface CCDatePickerCalendarProps extends CCDateTimePickerRawProps {
+export interface CCDatePickerCalendarProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | CCDateTimePickerWeekValue;
   component?: React.ReactElement;
+  view: CALENDAR_VIEW;
 }
 
-export interface CCDatePickerCalendarSeriesProps
-  extends CCDateTimePickerRawProps {
+export interface CCDatePickerCalendarSeriesProps {
   onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   date: Date | CCDateTimePickerWeekValue;
   value: Date | CCDateTimePickerWeekValue;
   component?: React.ReactElement;
+  view: CALENDAR_VIEW;
 }
 
 export interface CCCCDatePickerYearPickerProps extends CCDatePickerHeaderProps {
@@ -71,10 +73,15 @@ export interface CCCCDatePickerMonthPickerProps
   view: CALENDAR_VIEW;
 }
 
-export interface CCTimePickerProps extends CCDateTimePickerRawProps {
+export interface CCTimePickerProps {
   onChange?: (date: Date) => void;
   value: Date;
-  view: CALENDAR_VIEW;
   disabledMeridiem: boolean;
   step?: 1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30;
+}
+
+export interface CCTMeridiemPickerProps {
+  onChange?: (date: Date) => void;
+  value: Date;
+  disabledMeridiem: boolean;
 }

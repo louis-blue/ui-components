@@ -72,7 +72,7 @@ const InputMenuMinuteItems = function (
   const loop: Array<number> = Array(count / step).fill(0);
   return loop.map((item, index) => {
     return (
-      <div key={"MenuHourItem" + index}>
+      <div key={"MenuMinuteItem" + index}>
         {pad(new DateObject(null).setMinute(index * step).format("m"), 2)}
       </div>
     );

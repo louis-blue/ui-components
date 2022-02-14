@@ -22,7 +22,10 @@ const LDateTimePickerContent = styled("div", {
   padding: 0;
   background-color: #fff;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: ${props =>
+    props.features?.length > 0
+      ? `repeat(${props.features.length},1fr)`
+      : `1fr`};
   width: 100%;
 `;
 
@@ -44,12 +47,13 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
     onClose,
     value: propsValue,
     onChange,
-    disabledMeridiem = false,
-    features = [PICKER_FEATURES.DATE],
-    view = CALENDAR_VIEW.DAY,
-    step = 1,
+    disabledMeridiem,
+    features,
+    view,
+    step,
     ...others
   }: CCDateTimePickerProps = props;
+  console.log("props", props);
   const [value, setValue] = useState(propsValue);
   useEffect(() => {
     setValue(propsValue);
@@ -72,24 +76,26 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
         <CCDateTimePickerHeader value={value} features={features} view={view} />
       </LDateTimePickerHeader>
       <LDateTimePickerContent features={features}>
-        <CCDatePicker
-          value={value}
-          onChange={e => {
-            setValue(e);
-          }}
-          view={view}
-        />
-        {view === CALENDAR_VIEW.DAY && (
-          <CCTimePicker
-            disabledMeridiem={disabledMeridiem}
-            step={step}
-            value={value as Date}
+        {features?.includes(PICKER_FEATURES.DATE) && (
+          <CCDatePicker
+            value={value}
             onChange={e => {
               setValue(e);
             }}
             view={view}
           />
         )}
+        {view === CALENDAR_VIEW.DAY &&
+          features?.includes(PICKER_FEATURES.TIME) && (
+            <CCTimePicker
+              disabledMeridiem={Boolean(disabledMeridiem)}
+              step={step}
+              value={value as Date}
+              onChange={e => {
+                setValue(e);
+              }}
+            />
+          )}
       </LDateTimePickerContent>
       <LDateTimePickerAction features={features}>
         <button
@@ -109,6 +115,12 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
       </LDateTimePickerAction>
     </CCDialog>
   );
+};
+CCDateTimePicker.defaultProps = {
+  disabledMeridiem: false,
+  view: CALENDAR_VIEW.DAY,
+  step: 1,
+  open: false
 };
 
 export default CCDateTimePicker;

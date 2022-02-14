@@ -50,6 +50,15 @@ class DateObject implements DateObjectInterface {
     return moment.localeData().months();
   }
 
+  public static get meridiemFormat(): string[] {
+    if (typeof localStorage.getItem("lang") === "string") {
+      moment.locale(localStorage.getItem("lang") as string);
+    } else {
+      moment.locale("en");
+    }
+    return [moment().hour(0).format("A"), moment().hour(12).format("A")];
+  }
+
   public get date() {
     return this._wrapObject.date();
   }
