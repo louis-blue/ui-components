@@ -60,7 +60,7 @@ function pad(n: number | string, width: number): string {
   return String(n).length >= width
     ? String(n)
     : new Array(width - String(n).length + 1).join(
-        new DateObject(null).setHour(0).format("H")
+        new DateObject().setHour(0).format("H")
       ) + n;
 }
 
@@ -73,7 +73,7 @@ const InputMenuMinuteItems = function (
   return loop.map((item, index) => {
     return (
       <div key={"MenuHourItem" + index}>
-        {pad(new DateObject(null).setMinute(index * step).format("m"), 2)}
+        {pad(new DateObject().setMinute(index * step).format("m"), 2)}
       </div>
     );
   });

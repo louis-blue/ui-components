@@ -62,7 +62,7 @@ function pad(n: number | string, width: number): string {
   return String(n).length >= width
     ? String(n)
     : new Array(width - String(n).length + 1).join(
-        new DateObject(null).setHour(0).format("H")
+        new DateObject().setHour(0).format("H")
       ) + n;
 }
 
@@ -76,23 +76,23 @@ const InputMenuHourItems = function (
     if (disableMeridiem) {
       return (
         <div key={"MenuHourItem" + index}>
-          {pad(new DateObject(null).setHour(index).hour, 2)}
+          {pad(new DateObject().setHour(index).hour, 2)}
         </div>
       );
     } else {
       if (index > 12) {
         return (
           <div key={"MenuHourItem" + index}>
-            {pad(new DateObject(null).setHour(index - 12).format("H"), 2)}
+            {pad(new DateObject().setHour(index - 12).format("H"), 2)}
           </div>
         );
       } else {
         return (
           <div key={"MenuHourItem" + index}>
             {pad(
-              new DateObject(null).setHour(index).hour % 12 === 0
-                ? new DateObject(null).setHour(12).format("H")
-                : new DateObject(null).setHour(index).format("H"),
+              new DateObject().setHour(index).hour % 12 === 0
+                ? new DateObject().setHour(12).format("H")
+                : new DateObject().setHour(index).format("H"),
               2
             )}
           </div>

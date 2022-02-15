@@ -19,7 +19,6 @@ const CCDatePickerCalendarContents: React.FC<CCDatePickerCalendarProps> = (
   const { value, onChange, component, view }: CCDatePickerCalendarProps = props;
   const range: Array<Date> = useMemo(() => {
     let res: Array<Date> = [];
-    console.log(new DateObject(value as Date).startOf("month").startOf("week"));
     let _start: DateObject =
       view === CALENDAR_VIEW.DAY
         ? new DateObject(value as Date).startOf("month").startOf("week")

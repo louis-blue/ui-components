@@ -76,7 +76,6 @@ const CCDateTimePickerHeader: React.FC<CCDateTimePickerHeaderProps> = props => {
   const headerText = useMemo(() => {
     return getHeaderText(value, features, view);
   }, [features, view, value]);
-  console.log("begin", (value as CCDateTimePickerWeekValue).begin);
   return (
     <LDateTimePickerHeaderContainer>
       <LDateTimePickerHeaderTypo>{headerText}</LDateTimePickerHeaderTypo>

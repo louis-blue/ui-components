@@ -86,7 +86,7 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
         ["month"]
       );
     }
-  }, [date, value]);
+  }, [date, value, view]);
   const isCurrent: boolean = useMemo(() => {
     if (view === CALENDAR_VIEW.WEEK) {
       return new DateObject(value as Date).isSame(
@@ -99,7 +99,7 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
         ["month", "year", "day"]
       );
     }
-  }, [date, value]);
+  }, [date, value, view]);
   const isIn = useCallback(
     (
       inclusivity: "()" | "[)" | "(]" | "[]",
@@ -145,30 +145,36 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
       isLeftSide={isLeftSide}
       isRightSide={isRightSide}
       onClick={() => {
-        switch (view) {
-          case CALENDAR_VIEW.DAY:
-            onChange &&
-              onChange(
-                new DateObject(value as Date)
-                  .setYear(new DateObject(date as Date).year)
-                  .setMonth(new DateObject(date as Date).month)
-                  .setDate(new DateObject(date as Date).date)
-                  .toDate()
-              );
-            break;
-          case CALENDAR_VIEW.WEEK:
-            let _day = new DateObject(value as Date)
-              .setYear(new DateObject(date as Date).year)
-              .setMonth(new DateObject(date as Date).month)
-              .setDate(new DateObject(date as Date).date);
-            onChange &&
-              onChange({
-                begin: _day.startOf("week").toDate(),
-                end: _day.endOf("week").toDate()
-              });
-            break;
-          default:
-            break;
+        try {
+          switch (view) {
+            case CALENDAR_VIEW.DAY:
+              onChange &&
+                onChange(
+                  new DateObject(value as Date)
+                    .setYear(new DateObject(date as Date).year)
+                    .setMonth(new DateObject(date as Date).month)
+                    .setDate(new DateObject(date as Date).date)
+                    .toDate()
+                );
+              break;
+            case CALENDAR_VIEW.WEEK:
+              let _day = new DateObject(
+                (value as CCDateTimePickerWeekValue).begin
+              )
+                .setYear(new DateObject(date as Date).year)
+                .setMonth(new DateObject(date as Date).month)
+                .setDate(new DateObject(date as Date).date);
+              onChange &&
+                onChange({
+                  begin: _day.startOf("week").toDate(),
+                  end: _day.endOf("week").toDate()
+                });
+              break;
+            default:
+              break;
+          }
+        } catch (err) {
+          console.error(err);
         }
       }}
     >

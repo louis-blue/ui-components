@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
   CALENDAR_VIEW,
-  CCCCDatePickerYearPickerProps,
+  CCDatePickerYearPickerProps,
   CCDateTimePickerWeekValue
 } from "../../../../types";
 import styled from "@emotion/styled";
@@ -55,18 +55,23 @@ const LYearPickerItem = styled("div")`
   align-items: center;
 `;
 
-const CCDatePickerYearPicker: React.FC<CCCCDatePickerYearPickerProps> = (
-  props: CCCCDatePickerYearPickerProps
+const CCDatePickerYearPicker: React.FC<CCDatePickerYearPickerProps> = (
+  props: CCDatePickerYearPickerProps
 ) => {
-  const { value, open, view, onChange }: CCCCDatePickerYearPickerProps = props;
-  console.log(props);
+  const { value, open, view, onChange }: CCDatePickerYearPickerProps = props;
   const [page, setPage] = useState(0);
   const yearList: Array<number> = useMemo(() => {
     let _res: Array<number> = [];
-    let _year = new DateObject(value as Date).year;
-    let _normalizeYear = new DateObject(value as Date).setYear(
-      _year - (_year % 10)
-    );
+    let _year = new DateObject(
+      view === CALENDAR_VIEW.WEEK
+        ? ((value as CCDateTimePickerWeekValue).begin as Date)
+        : (value as Date)
+    ).year;
+    let _normalizeYear = new DateObject(
+      view === CALENDAR_VIEW.WEEK
+        ? ((value as CCDateTimePickerWeekValue).begin as Date)
+        : (value as Date)
+    ).setYear(_year - (_year % 10));
     for (let i = 0; i < 10; i++) {
       _res.push(_normalizeYear.add("year", i + page).year);
     }
@@ -140,7 +145,9 @@ const CCDatePickerYearPicker: React.FC<CCCCDatePickerYearPickerProps> = (
                 }
               }}
             >
-              <LYearPickerItem>{year}</LYearPickerItem>
+              <LYearPickerItem>
+                {new DateObject().setYear(year).format("YYYY")}
+              </LYearPickerItem>
             </LYearPickerItemContainer>
           );
         })}

@@ -20,15 +20,21 @@ export const DateTimePicker: ComponentStory<typeof CCDateTimePicker> = ({
     view
   } = options;
   const [value, setValue] = useState(storyValue);
+  // console.log("stroies", storyValue, value);
+  // console.log(options);
   return (
     <CCDateTimePicker
       open={open}
       onClose={onClose}
       onChange={e => {
-        // console.log(e);
-        setValue(e);
+        if (e) {
+          onChange && onChange(e);
+          console.log("stories.onChange", e);
+        }
+
+        // setValue(e);
       }}
-      value={value}
+      value={storyValue}
       features={features}
       view={view}
     />

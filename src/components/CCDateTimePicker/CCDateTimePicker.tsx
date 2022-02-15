@@ -5,8 +5,6 @@ import styled from "@emotion/styled";
 import { CCDatePicker, CCDateTimePickerHeader } from "./components";
 import CCTimePicker from "./components/CCTimePicker";
 
-const DIALOG_WIDTH = 310;
-
 const LDateTimePickerHeader = styled("div", {
   label: "LDateTimePickerHeader"
 })<{ features: Array<PICKER_FEATURES> }>`
@@ -53,7 +51,6 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
     step,
     ...others
   }: CCDateTimePickerProps = props;
-  console.log("props", props);
   const [value, setValue] = useState(propsValue);
   useEffect(() => {
     setValue(propsValue);
@@ -64,7 +61,6 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
     },
     [onChange]
   );
-
   return (
     <CCDialog
       open={open}
@@ -76,7 +72,7 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
         <CCDateTimePickerHeader value={value} features={features} view={view} />
       </LDateTimePickerHeader>
       <LDateTimePickerContent features={features}>
-        {features?.includes(PICKER_FEATURES.DATE) && (
+        {features.includes(PICKER_FEATURES.DATE) && (
           <CCDatePicker
             value={value}
             onChange={e => {
@@ -85,17 +81,16 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
             view={view}
           />
         )}
-        {view === CALENDAR_VIEW.DAY &&
-          features?.includes(PICKER_FEATURES.TIME) && (
-            <CCTimePicker
-              disabledMeridiem={Boolean(disabledMeridiem)}
-              step={step}
-              value={value as Date}
-              onChange={e => {
-                setValue(e);
-              }}
-            />
-          )}
+        {view === CALENDAR_VIEW.DAY && features.includes(PICKER_FEATURES.TIME) && (
+          <CCTimePicker
+            disabledMeridiem={Boolean(disabledMeridiem)}
+            step={step}
+            value={value as Date}
+            onChange={e => {
+              setValue(e);
+            }}
+          />
+        )}
       </LDateTimePickerContent>
       <LDateTimePickerAction features={features}>
         <button

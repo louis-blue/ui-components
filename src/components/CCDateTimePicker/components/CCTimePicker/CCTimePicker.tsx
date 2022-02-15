@@ -8,7 +8,6 @@ const LTimePickerContainer = styled("div", {
   label: "LDatePickerContainer"
 })<{ width?: number | string; disabledMeridiem?: boolean }>(
   ({ theme, width = 310, disabledMeridiem = false }) => {
-    console.log("disabledMeridiem", disabledMeridiem);
     return {
       position: "relative",
       width: width,

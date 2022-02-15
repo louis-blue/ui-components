@@ -74,7 +74,6 @@ const CCDatePicker: React.FC<CCDatePickerProps> = (
         value={value}
         open={yearPicker}
         onChange={e => {
-          console.log(e);
           setYearPicker(false);
           onChange && onChange(e);
         }}
@@ -84,7 +83,6 @@ const CCDatePicker: React.FC<CCDatePickerProps> = (
         value={value}
         view={view}
         onChange={e => {
-          console.log(e);
           setMonthPicker(false);
           onChange && onChange(e);
         }}

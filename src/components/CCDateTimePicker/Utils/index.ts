@@ -1,21 +1,38 @@
-import moment, { unitOfTime } from "moment/moment";
+import dayjs from "dayjs";
+import "./Locales/ru";
+import "./Locales/en";
+import "./Locales/ar";
+import "./Locales/vi";
 
-import "moment/locale/vi";
-import "moment/locale/ru";
-import "moment/locale/ar";
+import { ManipulateType, OpUnitType, QUnitType } from "dayjs/esm";
+import isSameOrBefore from "dayjs/plugin/isSameOrBefore";
+import isBetween from "dayjs/plugin/isBetween";
+import localeData from "dayjs/plugin/localeData";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+import preParsePostFormat from "dayjs/plugin/preParsePostFormat";
+import advancedFormat from "dayjs/plugin/advancedFormat";
+import pluralGetSet from "dayjs/plugin/pluralGetSet";
+
+dayjs.extend(isSameOrBefore);
+dayjs.extend(isBetween);
+dayjs.extend(localeData);
+dayjs.extend(localizedFormat);
+dayjs.extend(preParsePostFormat);
+dayjs.extend(advancedFormat);
+dayjs.extend(pluralGetSet);
 
 interface DateObjectInterface {
   toDate(): Date;
 
-  startOf(unitOfTime: moment.unitOfTime.StartOf): DateObject;
+  startOf(unitOfTime: OpUnitType): DateObject;
 
-  endOf(unitOfTime: moment.unitOfTime.StartOf): DateObject;
+  endOf(unitOfTime: OpUnitType): DateObject;
 
   format(format: string): string;
 
   diff(
     target: DateObject,
-    unitOfTime: moment.unitOfTime.Diff | undefined
+    unitOfTime: QUnitType | OpUnitType | undefined
   ): number;
 
   setYear(year: number): DateObject;
@@ -30,11 +47,11 @@ interface DateObjectInterface {
 class DateObject implements DateObjectInterface {
   private readonly _date: Date = new Date();
 
-  constructor(date: Date | undefined | null) {
+  constructor(date?: Date | null) {
     if (typeof localStorage.getItem("lang") === "string") {
-      moment.locale(localStorage.getItem("lang") as string);
+      dayjs.locale(localStorage.getItem("lang") as string);
     } else {
-      moment.locale("en");
+      dayjs.locale("en");
     }
     if (Boolean(date)) {
       this._date = date as Date;
@@ -43,20 +60,20 @@ class DateObject implements DateObjectInterface {
 
   public static get monthFormat(): string[] {
     if (typeof localStorage.getItem("lang") === "string") {
-      moment.locale(localStorage.getItem("lang") as string);
+      dayjs.locale(localStorage.getItem("lang") as string);
     } else {
-      moment.locale("en");
+      dayjs.locale("en");
     }
-    return moment.localeData().months();
+    return dayjs.monthsShort();
   }
 
   public static get meridiemFormat(): string[] {
     if (typeof localStorage.getItem("lang") === "string") {
-      moment.locale(localStorage.getItem("lang") as string);
+      dayjs.locale(localStorage.getItem("lang") as string);
     } else {
-      moment.locale("en");
+      dayjs.locale("en");
     }
-    return [moment().hour(0).format("A"), moment().hour(12).format("A")];
+    return [dayjs().hour(0).format("A"), dayjs().hour(12).format("A")];
   }
 
   public get date() {
@@ -87,30 +104,29 @@ class DateObject implements DateObjectInterface {
     const firstDayOfMonth = this.startOf("month");
     const firstDayOfWeek = this.startOf("week");
     const offset = firstDayOfWeek.diff(firstDayOfMonth, "days");
-    console.log("offset", offset, (this.date + offset) / 7);
 
     return Math.floor((this.date + offset) / 7);
   }
 
-  private get _wrapObject(): moment.Moment {
-    return moment(this._date);
+  private get _wrapObject(): dayjs.Dayjs {
+    return dayjs(this._date);
   }
 
-  private static _makeWrapObject(date: Date): moment.Moment {
+  private static _makeWrapObject(date: Date): dayjs.Dayjs {
     return localStorage.getItem("lang")
-      ? moment(date).locale(localStorage.getItem("lang") as string)
-      : moment(date);
+      ? dayjs(date).locale(localStorage.getItem("lang") as string)
+      : dayjs(date);
   }
 
   public toDate(): Date {
     return this._date;
   }
 
-  public startOf(unitOfTime: moment.unitOfTime.StartOf): DateObject {
+  public startOf(unitOfTime: OpUnitType): DateObject {
     return new DateObject(this._wrapObject.startOf(unitOfTime).toDate());
   }
 
-  public endOf(unitOfTime: moment.unitOfTime.StartOf): DateObject {
+  public endOf(unitOfTime: OpUnitType): DateObject {
     return new DateObject(this._wrapObject.endOf(unitOfTime).toDate());
   }
 
@@ -120,9 +136,9 @@ class DateObject implements DateObjectInterface {
 
   public diff(
     target: DateObject,
-    unitOfTime: moment.unitOfTime.Diff | undefined
+    unitOfTime: QUnitType | OpUnitType | undefined
   ): number {
-    return this._wrapObject.diff(moment(target.toDate()), unitOfTime);
+    return this._wrapObject.diff(dayjs(target.toDate()), unitOfTime);
   }
 
   public setYear(year: number): DateObject {
@@ -151,30 +167,17 @@ class DateObject implements DateObjectInterface {
 
   public add(unit: string, amount: number): DateObject {
     return new DateObject(
-      this._wrapObject
-        .add(
-          amount as moment.DurationInputArg1,
-          unit as moment.DurationInputArg2
-        )
-        .toDate()
+      this._wrapObject.add(amount, unit as ManipulateType).toDate()
     );
   }
 
   public subtract(unit: string, amount: number): DateObject {
     return new DateObject(
-      this._wrapObject
-        .subtract(
-          amount as moment.DurationInputArg1,
-          unit as moment.DurationInputArg2
-        )
-        .toDate()
+      this._wrapObject.subtract(amount, unit as ManipulateType).toDate()
     );
   }
 
-  public isSameOrBefore(
-    input: DateObject,
-    granularity?: moment.unitOfTime.StartOf
-  ): boolean {
+  public isSameOrBefore(input: DateObject, granularity?: OpUnitType): boolean {
     return this._wrapObject.isSameOrBefore(
       DateObject._makeWrapObject(input.toDate()),
       granularity
@@ -183,7 +186,7 @@ class DateObject implements DateObjectInterface {
 
   public isSame(
     input: DateObject,
-    granularity?: moment.unitOfTime.StartOf | Array<moment.unitOfTime.StartOf>
+    granularity?: OpUnitType | Array<OpUnitType>
   ): boolean {
     if (typeof granularity === "string") {
       return this._wrapObject.isSame(
@@ -205,7 +208,7 @@ class DateObject implements DateObjectInterface {
   public isBetween(
     start: DateObject,
     end: DateObject,
-    granularity?: unitOfTime.StartOf,
+    granularity?: OpUnitType,
     inclusivity?: "()" | "[)" | "(]" | "[]"
   ): boolean {
     return this._wrapObject.isBetween(

@@ -62,7 +62,7 @@ export interface CCDatePickerCalendarSeriesProps {
   view: CALENDAR_VIEW;
 }
 
-export interface CCCCDatePickerYearPickerProps extends CCDatePickerHeaderProps {
+export interface CCDatePickerYearPickerProps extends CCDatePickerHeaderProps {
   open: boolean;
   view: CALENDAR_VIEW;
 }

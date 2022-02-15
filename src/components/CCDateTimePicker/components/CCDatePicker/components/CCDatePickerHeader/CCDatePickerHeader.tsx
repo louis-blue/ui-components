@@ -91,10 +91,10 @@ const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = (
           }}
         >
           {view === CALENDAR_VIEW.DAY
-            ? new DateObject(value as Date).year
-            : (new DateObject(
+            ? new DateObject(value as Date).format("YYYY")
+            : new DateObject(
                 (value as CCDateTimePickerWeekValue).begin as Date
-              ).year as number)}
+              ).format("YYYY")}
         </LPicker>
         <LPickerChevron
           onClick={() => {
