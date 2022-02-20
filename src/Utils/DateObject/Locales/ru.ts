@@ -3,8 +3,9 @@ import "dayjs/locale/ru";
 import updateLocale from "dayjs/plugin/updateLocale";
 
 dayjs.extend(updateLocale);
-dayjs.updateLocale("ru", {
-  longDateFormat: {
+
+export const config = {
+  format: {
     LT: "H:mm",
     LTS: "H:mm:ss",
     L: "DD.MM.YYYY",
@@ -15,4 +16,6 @@ dayjs.updateLocale("ru", {
     LLLL: "dddd, D MMMM YYYY г., H:mm",
     CALD: "DD.MM [(]ddd[)]"
   }
-});
+};
+dayjs.updateLocale("ru", config);
+export default config;

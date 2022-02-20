@@ -3,8 +3,8 @@ import "dayjs/locale/vi";
 import updateLocale from "dayjs/plugin/updateLocale";
 
 dayjs.extend(updateLocale);
-dayjs.updateLocale("vi", {
-  formats: {
+export const config = {
+  format: {
     LT: "HH:mm",
     LTS: "HH:mm:ss",
     L: "DD/MM/YYYY",
@@ -31,4 +31,6 @@ dayjs.updateLocale("vi", {
     llll: "ddd, D MMM YYYY HH:mm",
     CALD: "DD/MM [(]ddd[)]"
   }
-});
+};
+dayjs.updateLocale("vi", config);
+export default config;

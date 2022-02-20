@@ -23,7 +23,7 @@
     "jsxImportSource": "@emotion/react",
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "sourceMap": true
+    "sourceMap": true,
   },
   "include": [
     "src"

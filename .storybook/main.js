@@ -40,7 +40,8 @@ module.exports = {
       ...config.resolve,
       alias: {
         ...config.resolve.alias,
-        "@emotion/core": toPath("node_modules/@emotion/react")
+        "@emotion/core": toPath("node_modules/@emotion/react"),
+        dayjs: toPath("node_modules/dayjs")
       }
     }
   })

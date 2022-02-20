@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
-import "./Locales/ru";
-import "./Locales/en";
-import "./Locales/ar";
-import "./Locales/vi";
+import * as ru from "./Locales/ru";
+import * as en from "./Locales/en";
+import * as ar from "./Locales/ar";
+import * as vi from "./Locales/vi";
 
 import { ManipulateType, OpUnitType, QUnitType } from "dayjs/esm";
 import isSameOrBefore from "dayjs/plugin/isSameOrBefore";
@@ -46,6 +46,16 @@ interface DateObjectInterface {
 
 class DateObject implements DateObjectInterface {
   private readonly _date: Date = new Date();
+  private readonly _formatter: {
+    [key: string]: {
+      config: { format: { [key: string]: any }; [key: string]: any };
+    };
+  } = {
+    en,
+    ru,
+    ar,
+    vi
+  };
 
   constructor(date?: Date | null) {
     if (typeof localStorage.getItem("lang") === "string") {
@@ -131,7 +141,17 @@ class DateObject implements DateObjectInterface {
   }
 
   public format(format: string): string {
-    return this._wrapObject.format(format);
+    let _format = format;
+    if (
+      Boolean(this._formatter[dayjs.locale()]) &&
+      Boolean(
+        this._formatter[dayjs.locale()]?.config?.format?.hasOwnProperty(format)
+      )
+    ) {
+      _format = this._formatter[dayjs.locale()].config.format[format];
+    }
+
+    return this._wrapObject.format(_format);
   }
 
   public diff(

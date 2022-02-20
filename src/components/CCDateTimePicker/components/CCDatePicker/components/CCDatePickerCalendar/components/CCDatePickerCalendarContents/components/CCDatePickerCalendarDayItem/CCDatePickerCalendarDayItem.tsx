@@ -4,7 +4,7 @@ import {
   CCDatePickerCalendarSeriesProps,
   CCDateTimePickerWeekValue
 } from "../../../../../../../../types";
-import DateObject from "../../../../../../../../Utils";
+import { DateObject } from "../../../../../../../../../../Utils";
 import styled from "@emotion/styled";
 
 const LDayItem = styled("div", {

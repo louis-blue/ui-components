@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Slider from "react-slick";
 import { debounce, throttle } from "lodash";
 import normalizeWheel from "normalize-wheel";
-import DateObject from "../../../../Utils";
+import { DateObject } from "../../../../../../Utils";
 
 const width = 80;
 const LMinuteContainer = styled(`div`)`

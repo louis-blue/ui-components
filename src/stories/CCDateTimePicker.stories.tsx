@@ -6,7 +6,7 @@ import {
   CCDateTimePickerWeekValue,
   PICKER_FEATURES
 } from "../components/CCDateTimePicker/types";
-import DateObject from "../components/CCDateTimePicker/Utils";
+import { DateObject } from "../Utils";
 
 export const DateTimePicker: ComponentStory<typeof CCDateTimePicker> = ({
   ...options
@@ -22,6 +22,7 @@ export const DateTimePicker: ComponentStory<typeof CCDateTimePicker> = ({
   const [value, setValue] = useState(storyValue);
   // console.log("stroies", storyValue, value);
   // console.log(options);
+
   return (
     <CCDateTimePicker
       open={open}

@@ -3,7 +3,7 @@ import React, { MutableRefObject, useLayoutEffect, useRef } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import DateObject from "../../../../Utils";
+import { DateObject } from "../../../../../../Utils";
 import styled from "@emotion/styled";
 import { debounce, throttle } from "lodash";
 import normalizeWheel from "normalize-wheel";

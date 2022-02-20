@@ -1,20 +1,6 @@
 import React, { RefObject, useEffect, useRef } from "react";
 import styled from "@emotion/styled";
 
-// const LDialogContainer = styled.div`
-//   position: fixed;
-//   transition: opacity ease-in-out 0.2s;
-//   z-index: 1300;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// `;
-
 const LDialogContainer = styled("div", {
   label: "LDialogContainer"
 })(({ theme }) => {

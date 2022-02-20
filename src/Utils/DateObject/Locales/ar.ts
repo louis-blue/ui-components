@@ -3,9 +3,8 @@ import "dayjs/locale/ar";
 import updateLocale from "dayjs/plugin/updateLocale";
 
 dayjs.extend(updateLocale);
-
-dayjs.updateLocale("ar", {
-  formats: {
+export const config = {
+  format: {
     LT: "h:mm A",
     LTS: "h:mm:ss A",
     L: "D/‏M/‏YYYY",
@@ -27,4 +26,6 @@ dayjs.updateLocale("ar", {
       return "م";
     }
   }
-});
+};
+dayjs.updateLocale("ar", config);
+export default config;
