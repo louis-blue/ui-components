@@ -1,0 +1,6200 @@
+[
+  {
+    "hospitalId": "vatech",
+    "id": "004d0d4b-6045-443a-83b1-03e7928e28e1",
+    "dateBegin": 1635218400,
+    "dateEnd": 1635219000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "00f29e22-b23c-4157-a59c-5759c3362be4",
+    "dateBegin": 1639376400,
+    "dateEnd": 1639378200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "012b5f0c-e7a2-4de7-9bdf-bfc3b7da7edb",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0180f77b-ffff-48fb-ab99-40d4287602c6",
+    "dateBegin": 1630918800,
+    "dateEnd": 1630919400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "01e0917a-23d0-4397-a9d5-3e6ca75eee79",
+    "dateBegin": 1639546200,
+    "dateEnd": 1639548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "01e1f978-536e-489e-88ea-c2e49cba14fc",
+    "dateBegin": 1627287600,
+    "dateEnd": 1627290000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "01e1fef7-52bf-446e-be97-e970e62257f4",
+    "dateBegin": 1627349400,
+    "dateEnd": 1627351800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "01f18fa2-e81c-432d-93d8-eec1d8254063",
+    "dateBegin": 1631776200,
+    "dateEnd": 1631776800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0269ba06-0c5f-4644-9cd1-016bb15ee324",
+    "dateBegin": 1635480000,
+    "dateEnd": 1635480600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "02953399-b786-4e12-96dc-05bbee17751d",
+    "dateBegin": 1627452000,
+    "dateEnd": 1627452600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "02d8a28b-50fd-46eb-8a4c-413d0ac9a2b2",
+    "dateBegin": 1639354200,
+    "dateEnd": 1639356000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "03e3081a-acce-47d8-a17d-ff9a15a5b747",
+    "dateBegin": 1639443000,
+    "dateEnd": 1639444800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "04078ca0-f1da-4211-981d-746a29d33559",
+    "dateBegin": 1627288800,
+    "dateEnd": 1627289400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "046b6b86-b730-4148-81d0-cda3b3ba3947",
+    "dateBegin": 1630399200,
+    "dateEnd": 1630400400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "047e4cfa-d445-4c63-a74e-621206677594",
+    "dateBegin": 1630288800,
+    "dateEnd": 1630289400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0492a435-177d-4f4c-9d21-8510e87266e6",
+    "dateBegin": 1638838200,
+    "dateEnd": 1638840000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "04f78161-933a-48bd-a1b2-ee6b283954e6",
+    "dateBegin": 1642629600,
+    "dateEnd": 1642631400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "054e2615-c8aa-4280-85e2-9a77a908a143",
+    "dateBegin": 1636507800,
+    "dateEnd": 1636509600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "05efed5f-6930-4111-8988-2594367c513c",
+    "dateBegin": 1635149400,
+    "dateEnd": 1635150000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "062b9fcb-21e5-4954-a780-7e096ed91277",
+    "dateBegin": 1630584000,
+    "dateEnd": 1630584600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0641145e-3575-4fb8-9ad3-bb45cd002d52",
+    "dateBegin": 1639031400,
+    "dateEnd": 1639033200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0645d772-dfd6-40c5-9b31-4992b4283bf7",
+    "dateBegin": 1635830400,
+    "dateEnd": 1635832200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0680ea32-6151-425d-a818-d84f93f489b7",
+    "dateBegin": 1639536000,
+    "dateEnd": 1639535400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "06acab5b-3a09-4adc-b04a-9ac810ea6107",
+    "dateBegin": 1627605000,
+    "dateEnd": 1627606800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "06dcd3f2-55a9-4fa7-b0f2-5d3d1b432ad1",
+    "dateBegin": 1635381000,
+    "dateEnd": 1635381600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0789a9c0-b0d8-45ba-87ba-8b432dc64b4f",
+    "dateBegin": 1634712000,
+    "dateEnd": 1634712600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "07d03e8f-a769-4bef-ba6c-69b15a0e4dbd",
+    "dateBegin": 1627527000,
+    "dateEnd": 1627527600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "07e97b06-d150-440c-86f0-cf6b7d5c2900",
+    "dateBegin": 1630455000,
+    "dateEnd": 1630455600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "07f5e952-f59d-40dd-9af5-bb10b080094e",
+    "dateBegin": 1639112402,
+    "dateEnd": 1639114202
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "084145d5-18d4-47a2-acda-00f096052cad",
+    "dateBegin": 1635244806,
+    "dateEnd": 1635245406
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0861d474-1292-4cfd-bbcf-2e8808395c31",
+    "dateBegin": 1635748200,
+    "dateEnd": 1635748800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "088b215a-2cbd-4f90-869e-8dee40c392ad",
+    "dateBegin": 1637718000,
+    "dateEnd": 1637719800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "089d3c1f-b523-4552-bc9b-cd7f92e35cdd",
+    "dateBegin": 1635208800,
+    "dateEnd": 1635209400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "08dcc87c-0f8d-4b08-84e0-ca7e5b5b74f8",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "08e0d6bb-e046-4c00-b888-0d6f4b431096",
+    "dateBegin": 1631163600,
+    "dateEnd": 1631164800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "08f92793-833b-4c3a-a54a-53ae552a8261",
+    "dateBegin": 1638929400,
+    "dateEnd": 1638931200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "09759d9c-8b36-4056-965c-0416972e3b42",
+    "dateBegin": 1630304400,
+    "dateEnd": 1630308000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0978e5e5-b903-4caa-974f-834ff87f789c",
+    "dateBegin": 1639983600,
+    "dateEnd": 1639985400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "09cb3bde-3b91-4185-ba21-328366a1cdc1",
+    "dateBegin": 1634533800,
+    "dateEnd": 1634534400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "09db9860-3e5b-40e6-ad68-ef582e0516de",
+    "dateBegin": 1635316800,
+    "dateEnd": 1635319200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "09f6019d-fa26-4ace-8879-68d45b17d17f",
+    "dateBegin": 1644361800,
+    "dateEnd": 1644363600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0a281491-d1f8-40b2-9f91-79d06997281e",
+    "dateBegin": 1629422400,
+    "dateEnd": 1629423000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0a366112-9f77-4790-8569-bedeef47366f",
+    "dateBegin": 1638930600,
+    "dateEnd": 1638932400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0a6bce6f-bbf9-4f91-9cc3-848131e4012b",
+    "dateBegin": 1626851400,
+    "dateEnd": 1626852000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0aa4e041-90bd-40bd-b96b-7b088ee7c414",
+    "dateBegin": 1639537200,
+    "dateEnd": 1639537800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0aaac826-0087-49af-a8ce-60716452767a",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0b6dc27a-d096-4052-a57f-222ff6c425a2",
+    "dateBegin": 1637887800,
+    "dateEnd": 1637889600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0c5e2742-a2b4-4ef4-be15-aa5f21306ea8",
+    "dateBegin": 1639454400,
+    "dateEnd": 1639456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0c634f61-5d49-4fda-aa5f-addf20a98b72",
+    "dateBegin": 1635296400,
+    "dateEnd": 1635298200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0c791f5c-8223-4525-95ee-99b101a6cf9a",
+    "dateBegin": 1635414000,
+    "dateEnd": 1635414600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0c796199-69cd-4570-9093-2c3c2a3a6833",
+    "dateBegin": 1629333000,
+    "dateEnd": 1629334800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0c923ad0-4a0e-4603-9a51-717fad2608a4",
+    "dateBegin": 1630033800,
+    "dateEnd": 1630034400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0cdc906f-c6e1-4c88-88e6-a572a02e2a6e",
+    "dateBegin": 1627558200,
+    "dateEnd": 1627560000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0d3849ac-051e-4a46-9aeb-850443257193",
+    "dateBegin": 1631079000,
+    "dateEnd": 1631080800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0d472449-8607-4be8-9f06-c3e6ffb34aca",
+    "dateBegin": 1630549800,
+    "dateEnd": 1630550400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0d6bfeca-0f69-428f-9d4d-2cd75d3332b4",
+    "dateBegin": 1635471000,
+    "dateEnd": 1635471600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0d913ea2-eeda-4760-9419-2e1e59b8f9ce",
+    "dateBegin": 1641934800,
+    "dateEnd": 1641936600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0d91cc48-e970-4d87-a690-93f82970261e",
+    "dateBegin": 1639544400,
+    "dateEnd": 1639546200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0e3b3d88-a435-4fad-85a7-c4cd38532a7a",
+    "dateBegin": 1634715600,
+    "dateEnd": 1634717400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0e653d79-f544-4e40-86f4-298af02e098d",
+    "dateBegin": 1643681400,
+    "dateEnd": 1643683200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0ea982fb-44cb-4291-b753-061ffc2da908",
+    "dateBegin": 1629419400,
+    "dateEnd": 1629421200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0eab5d33-5dab-426f-8bfd-b25565ab04f4",
+    "dateBegin": 1630998000,
+    "dateEnd": 1630999800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0ef81d0d-42b3-48de-9593-084b9b8d9925",
+    "dateBegin": 1630999200,
+    "dateEnd": 1631000400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0f2ab819-6a69-42e5-b035-a4724e07687a",
+    "dateBegin": 1630313400,
+    "dateEnd": 1630314000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0fa35524-ded0-415c-a3e7-603d882b2f79",
+    "dateBegin": 1627634400,
+    "dateEnd": 1627635600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0fcd9f75-2c7d-4d83-935c-dd03ddce4f2c",
+    "dateBegin": 1637110200,
+    "dateEnd": 1637112000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "0fd51e41-07bf-4b3d-b379-d205e6c014d4",
+    "dateBegin": 1636425600,
+    "dateEnd": 1636427400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1006e2ef-e32b-4ea3-b867-80abf8bc0cc0",
+    "dateBegin": 1635730200,
+    "dateEnd": 1635732000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1030f0cd-0e5b-4139-92fb-54c291c49360",
+    "dateBegin": 1627529400,
+    "dateEnd": 1627530000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1035ff5d-5b21-4724-8fd9-0897a674ca91",
+    "dateBegin": 1638754800,
+    "dateEnd": 1638756600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "10c73129-8b9f-4970-a980-bca0f835058c",
+    "dateBegin": 1634689200,
+    "dateEnd": 1634689800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "10dc1dff-8635-4047-a0f1-3746cc20ed98",
+    "dateBegin": 1639530600,
+    "dateEnd": 1639532400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "10eeec2d-385f-421e-bcda-4a30ec3e5623",
+    "dateBegin": 1630584000,
+    "dateEnd": 1630584600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "110b4bbf-4beb-4a0f-a0e0-190e6749a496",
+    "dateBegin": 1629160200,
+    "dateEnd": 1629162000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1131da9c-3142-4a70-8678-b61495add71b",
+    "dateBegin": 1642111800,
+    "dateEnd": 1642113600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "115c64b0-c33f-498d-8d0f-e69bca252212",
+    "dateBegin": 1627617600,
+    "dateEnd": 1627619400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "116cf2b5-7300-40b8-8cc5-488fd2e62267",
+    "dateBegin": 1627484400,
+    "dateEnd": 1627485000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "11ef86f6-abbc-46d2-bbd1-746476cd54ae",
+    "dateBegin": 1627367400,
+    "dateEnd": 1627368000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12235323-3ea2-423e-970e-fcb8b7217659",
+    "dateBegin": 1639987200,
+    "dateEnd": 1639989000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12323d2f-f8e8-49c7-bdd2-208617dd7d22",
+    "dateBegin": 1639534200,
+    "dateEnd": 1639536000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "123e9c0f-d4c1-407a-b1ba-b59245a4dbd6",
+    "dateBegin": 1627432800,
+    "dateEnd": 1627435200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12901b6a-5643-40c9-9a0c-9e63ce44c497",
+    "dateBegin": 1635241800,
+    "dateEnd": 1635242400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12a9fae1-8db7-4cc6-a47d-d9140c5ff45f",
+    "dateBegin": 1641947400,
+    "dateEnd": 1641949200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12b009ef-74a9-4f55-9b45-3cf710943b06",
+    "dateBegin": 1631161200,
+    "dateEnd": 1631162400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "12b888ad-c43b-4fe0-a57c-6492ea339435",
+    "dateBegin": 1639985400,
+    "dateEnd": 1639987200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "131d9619-af60-45a3-8e09-5744ecdfce80",
+    "dateBegin": 1642803000,
+    "dateEnd": 1642804800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "132e9fd4-c381-445b-97d6-6d6a29298ca3",
+    "dateBegin": 1630546200,
+    "dateEnd": 1630548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "13397d73-16f4-4525-b7b7-610b5cf72151",
+    "dateBegin": 1635228000,
+    "dateEnd": 1635228600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "13d0ded9-23e9-4069-8e6a-233b7ab325ad",
+    "dateBegin": 1636936200,
+    "dateEnd": 1636938000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "145bff84-9616-404e-851f-99cf40a80936",
+    "dateBegin": 1645230600,
+    "dateEnd": 1645232400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "14642fe2-3ea3-4986-8584-6e78aeab4e96",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "148785f3-69b2-40ff-8f03-cedc378493f4",
+    "dateBegin": 1639459800,
+    "dateEnd": 1639461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "14ab86c2-ca53-45fc-b1e4-90ad686df8b9",
+    "dateBegin": 1630921200,
+    "dateEnd": 1630922400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "14cfb04b-10cd-446a-a8fe-db41ad86f1d1",
+    "dateBegin": 1627016400,
+    "dateEnd": 1627017600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "15925086-2d33-4f75-abdc-9623ea21747f",
+    "dateBegin": 1644541200,
+    "dateEnd": 1644543000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "15ef9599-26c5-4f65-9511-afa16d1038bd",
+    "dateBegin": 1627539000,
+    "dateEnd": 1627539600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "16abd486-0b9d-4925-851e-1ab23892cb28",
+    "dateBegin": 1639494000,
+    "dateEnd": 1639494600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "16e4bfb9-53da-4e34-b6ff-5941391a63bf",
+    "dateBegin": 1630919400,
+    "dateEnd": 1630920000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1753ced2-58dc-45db-b973-48cae9f8337b",
+    "dateBegin": 1599276600,
+    "dateEnd": 1599277800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "17c5ccd5-868f-41a3-bc37-951c8ba01663",
+    "dateBegin": 1628814600,
+    "dateEnd": 1628816400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "181262f0-f510-40f7-bcaf-9d23fcd83d33",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639532400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1864ac0e-0f7d-4254-8efc-779e323f6777",
+    "dateBegin": 1632899400,
+    "dateEnd": 1632900000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1897999b-9018-446f-a702-8b4a7b276cd4",
+    "dateBegin": 1627719000,
+    "dateEnd": 1627719600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "18ec9c04-1b24-4156-b275-e3822cc1f217",
+    "dateBegin": 1631664600,
+    "dateEnd": 1631665800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "19ce8368-6e91-4bd1-85bd-98d04979d554",
+    "dateBegin": 1639618200,
+    "dateEnd": 1639620000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "19f6e01e-affe-4091-bb51-23650d1d2b66",
+    "dateBegin": 1635407436,
+    "dateEnd": 1635408036
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1a2ba834-62d3-4cf4-bda0-5699b1920a35",
+    "dateBegin": 1627348200,
+    "dateEnd": 1627348800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1a4f8c94-a42c-4e98-bace-1ea4127b2595",
+    "dateBegin": 1642802400,
+    "dateEnd": 1642804200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1a77b401-4241-48ff-85e1-60004bb5d7cb",
+    "dateBegin": 1641418800,
+    "dateEnd": 1641420600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1a7c9049-5f51-4938-9c4f-645b5eb560bb",
+    "dateBegin": 1634001600,
+    "dateEnd": 1634002200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1aa67373-6744-4995-8dab-3b0ecebec61f",
+    "dateBegin": 1639704600,
+    "dateEnd": 1639706400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ac75850-57f4-4c6d-ab5a-2efe37afb779",
+    "dateBegin": 1630411200,
+    "dateEnd": 1630411800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1b7b8d7a-38e5-4781-9916-132512ccac48",
+    "dateBegin": 1630476000,
+    "dateEnd": 1630477200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1b9a1c8e-f956-471a-a331-cac933021b10",
+    "dateBegin": 1627533000,
+    "dateEnd": 1627533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1baee1b9-f7a6-4c19-b00a-cbaaca7a1484",
+    "dateBegin": 1635467400,
+    "dateEnd": 1635468000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1bdabfce-2c6e-4093-abb4-d5e5ca2b3d8d",
+    "dateBegin": 1627727400,
+    "dateEnd": 1627729800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1bee3c7e-1b84-44be-a0a5-a9f95216672e",
+    "dateBegin": 1628123400,
+    "dateEnd": 1628126400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1c00189a-cc40-427d-b808-e092d26819ec",
+    "dateBegin": 1627450800,
+    "dateEnd": 1627453200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1c0340b2-15a3-4fda-9648-2c4fdd602630",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1c1d7531-761f-4dba-8817-2bdee57b7cfc",
+    "dateBegin": 1627470600,
+    "dateEnd": 1627470600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ce13977-7ebf-40ea-abb8-29aaee3e8914",
+    "dateBegin": 1639719039,
+    "dateEnd": 1639720839
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1d00b70e-67d2-4145-b45b-01b06004b360",
+    "dateBegin": 1627472400,
+    "dateEnd": 1627475400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1da3b34f-7881-421d-9484-720466995301",
+    "dateBegin": 1635217800,
+    "dateEnd": 1635218400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1e5babd7-e0c9-4940-9dd5-85a798562c78",
+    "dateBegin": 1641349800,
+    "dateEnd": 1641353400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1e5df37d-364e-412b-9949-d4c6e0a47b0b",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1e7a331e-7afd-42f3-8a1a-fd80ae83f486",
+    "dateBegin": 1642381200,
+    "dateEnd": 1642383000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ea9dbe5-85b5-43e4-bcdd-682d8bbb7449",
+    "dateBegin": 1636078200,
+    "dateEnd": 1636080000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ecdb665-ce2a-4e1d-9a31-dc7a320c57d6",
+    "dateBegin": 1642197600,
+    "dateEnd": 1642199400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1eec36f5-ff68-4930-99c4-f7477a2dba42",
+    "dateBegin": 1639546200,
+    "dateEnd": 1639548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1f18f976-c759-424e-b15a-c6738b5756e6",
+    "dateBegin": 1626846600,
+    "dateEnd": 1626847200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1f558280-434c-4931-83d9-55319a0da09e",
+    "dateBegin": 1644886800,
+    "dateEnd": 1644888600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1f66d2e7-2243-4e4e-86d7-26e9342339b6",
+    "dateBegin": 1627542600,
+    "dateEnd": 1627543200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1f8de769-6624-4fd2-bcd6-858ba35cb3cf",
+    "dateBegin": 1639617000,
+    "dateEnd": 1639618800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1fa421cf-a6a8-49ed-b2a6-6365380e018b",
+    "dateBegin": 1630401000,
+    "dateEnd": 1630401600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1fae0903-824b-4a3f-8fdd-f2df0477d18a",
+    "dateBegin": 1631804400,
+    "dateEnd": 1631805000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1fd89ab0-6035-4216-88a3-61b00f51931d",
+    "dateBegin": 1639793400,
+    "dateEnd": 1639794000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ff37dde-639f-4b5c-a2fc-fd0092adb479",
+    "dateBegin": 1635295200,
+    "dateEnd": 1635295800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "1ffd95da-5a51-406c-a64b-1b3755e9bc3c",
+    "dateBegin": 1641776400,
+    "dateEnd": 1641778200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "209571fe-8d63-417d-9fc0-a1c1a6ab2c7b",
+    "dateBegin": 1630584000,
+    "dateEnd": 1630584600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "20a7afa6-d54f-4509-ae65-318a95760aa4",
+    "dateBegin": 1639617000,
+    "dateEnd": 1639618800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "20ea0ed7-52ed-4405-ab9d-b41e49f78b89",
+    "dateBegin": 1635384000,
+    "dateEnd": 1635384600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "215387e3-c63f-4328-a9f8-d4fc4e7e1d81",
+    "dateBegin": 1635480000,
+    "dateEnd": 1635480600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "21593c79-32fb-46dd-bf5e-b115ed629523",
+    "dateBegin": 1639983000,
+    "dateEnd": 1639984800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "216958af-3545-4cbc-baa0-57c79a954d68",
+    "dateBegin": 1635317400,
+    "dateEnd": 1635318000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "217d9ced-1f64-41c5-9b93-9eb61d13252a",
+    "dateBegin": 1645135200,
+    "dateEnd": 1645137000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "21eab8d4-029b-4f3f-87e8-cee8fdff2e72",
+    "dateBegin": 1627533000,
+    "dateEnd": 1627533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "231747c4-b365-4ed9-af27-8c98f23c8273",
+    "dateBegin": 1635328800,
+    "dateEnd": 1635329400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "236d10ad-aa92-4706-b3af-19038673b128",
+    "dateBegin": 1630910400,
+    "dateEnd": 1630911000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "23ba9832-ba43-4102-9c7e-ecf228a65c9a",
+    "dateBegin": 1635234600,
+    "dateEnd": 1635235200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "23d5f857-5e7a-4b8d-92e0-7942db309235",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "23e95f3e-8683-4139-9af0-0389f48cc0f6",
+    "dateBegin": 1639444200,
+    "dateEnd": 1639446000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "24bafd09-cfad-407d-837d-7cfb83fdbd22",
+    "dateBegin": 1636511400,
+    "dateEnd": 1636513200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "24c4f155-ec29-40ce-bb4f-d3f6157d3806",
+    "dateBegin": 1635414600,
+    "dateEnd": 1635415200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "24ea2a94-7782-497e-bac7-7b4d93dd30f1",
+    "dateBegin": 1631154000,
+    "dateEnd": 1631154600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "25d040e1-d92a-42a6-95e7-0594d316a5ea",
+    "dateBegin": 1626682800,
+    "dateEnd": 1626683400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "26013a89-e8a9-4aba-b596-0b653c6fcd91",
+    "dateBegin": 1628469000,
+    "dateEnd": 1628472000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "261bb628-a997-47d2-b41d-9e6be47d79c2",
+    "dateBegin": 1639706400,
+    "dateEnd": 1639707000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "27234575-fe13-4a64-bae4-660307f4aa28",
+    "dateBegin": 1639628400,
+    "dateEnd": 1639630200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2725ca09-9850-4088-a673-413acf7f9ee6",
+    "dateBegin": 1627369800,
+    "dateEnd": 1627370400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2742a891-6949-4822-a6f8-e21f20cf3b57",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "27b74294-7e8c-4e6b-b20c-7385cbc348b7",
+    "dateBegin": 1635496800,
+    "dateEnd": 1635497400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "27fad02e-4d44-4fcd-9abd-98a24c5d53fc",
+    "dateBegin": 1639629600,
+    "dateEnd": 1639631400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "287758cf-1dea-4568-90d3-53fba4f5238e",
+    "dateBegin": 1628640600,
+    "dateEnd": 1628644200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2894bc38-d478-4392-89c7-9a76855661a1",
+    "dateBegin": 1636438800,
+    "dateEnd": 1636440600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2910ac50-f941-4b9c-aa37-43242494e754",
+    "dateBegin": 1635327000,
+    "dateEnd": 1635327600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "291234da-8f44-4e87-aa45-1b9ba17bd1ca",
+    "dateBegin": 1634521800,
+    "dateEnd": 1634522400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2a3dcfdc-e90e-40e7-a07a-06e64942d019",
+    "dateBegin": 1634863800,
+    "dateEnd": 1634865600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2a5584fa-52c6-41b9-af3c-f118e0eea39e",
+    "dateBegin": 1629850800,
+    "dateEnd": 1629855600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2a75f17f-4393-43e4-9df2-59047822bd4f",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2aa26052-b5d4-4db5-8392-b4fd3030cc17",
+    "dateBegin": 1641852000,
+    "dateEnd": 1641853800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2aca19d7-e450-4454-bdc6-08ea390077d2",
+    "dateBegin": 1630584000,
+    "dateEnd": 1630584600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b1bdb02-3593-4f64-bed4-0a63e0684aa8",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b2a335f-e678-4ee5-b881-947680a27172",
+    "dateBegin": 1630650600,
+    "dateEnd": 1630651200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b617be2-fdef-479b-84d4-41d58b67ee48",
+    "dateBegin": 1642025400,
+    "dateEnd": 1642027200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b6741e8-152c-4fe7-8a80-b6684e5edabe",
+    "dateBegin": 1635241817,
+    "dateEnd": 1635242417
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b6d01f2-3a59-43cf-9826-5a01d057b521",
+    "dateBegin": 1639366200,
+    "dateEnd": 1639367400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b7b9b56-fc30-4e1d-83bf-5b6bdca5495b",
+    "dateBegin": 1643407200,
+    "dateEnd": 1643409000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2b811745-c042-4150-9742-cd0c621ba743",
+    "dateBegin": 1627536600,
+    "dateEnd": 1627537200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2bb0712a-ac7d-4067-9481-877cc38836cd",
+    "dateBegin": 1638922800,
+    "dateEnd": 1638924600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2c1f01ab-a3c8-4337-a3a4-7ced061a9e90",
+    "dateBegin": 1638838200,
+    "dateEnd": 1638840000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2c221f6f-5d36-42f3-970b-a26b1f0262f2",
+    "dateBegin": 1627016400,
+    "dateEnd": 1627030800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2c64a176-538d-4714-a5b1-2a9d363f17e3",
+    "dateBegin": 1639022400,
+    "dateEnd": 1639024200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2d3f3c71-48d3-4c23-9bce-ed5bf500f1aa",
+    "dateBegin": 1639630200,
+    "dateEnd": 1639632000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2d914f54-f8b1-47c6-bc62-91ba6b590331",
+    "dateBegin": 1633002000,
+    "dateEnd": 1633002600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e1676e1-db71-439a-8c3f-19a1c6969c04",
+    "dateBegin": 1639805400,
+    "dateEnd": 1639807200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e2277fe-c543-4503-a227-32aa8afb34b8",
+    "dateBegin": 1635947400,
+    "dateEnd": 1635948000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e42fafc-f84d-4fd1-9d53-f8005f4087dd",
+    "dateBegin": 1641432600,
+    "dateEnd": 1641434400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e567d12-b7d6-43b5-8563-c663423718ec",
+    "dateBegin": 1630566600,
+    "dateEnd": 1630568400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e78a3ef-a329-4885-827f-53d971c8fa6a",
+    "dateBegin": 1627443000,
+    "dateEnd": 1627443600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2e78fbad-947a-43d5-a2ad-32d7744ce0ce",
+    "dateBegin": 1645052400,
+    "dateEnd": 1645054200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2ed1eb05-a7ee-4231-a2e7-ff60757cdc83",
+    "dateBegin": 1639452600,
+    "dateEnd": 1639454400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2ee2cc09-b1e0-4bc1-940d-34d2d2067c81",
+    "dateBegin": 1644973800,
+    "dateEnd": 1644974400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2f65834b-e566-4b19-96b6-1f0043ad5560",
+    "dateBegin": 1627538400,
+    "dateEnd": 1627539000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "2fb86459-f31e-4de8-a014-c9f2869e7bcf",
+    "dateBegin": 1635928800,
+    "dateEnd": 1635930600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "305e5acc-6df9-4362-a5e6-051deaee260d",
+    "dateBegin": 1639805400,
+    "dateEnd": 1639807200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "30661c45-1545-44bd-923e-3c86698840f3",
+    "dateBegin": 1639033200,
+    "dateEnd": 1639035000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "31a1883a-f487-44b3-acda-5e1efc6e082b",
+    "dateBegin": 1627458000,
+    "dateEnd": 1627458600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "31b07386-2a0d-490b-b89d-fcaf52e46764",
+    "dateBegin": 1630574400,
+    "dateEnd": 1630575000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "31b9927e-fc9f-44e1-b61b-08e48b48cce3",
+    "dateBegin": 1634604600,
+    "dateEnd": 1634605200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3338e61b-695a-45d5-869d-39c92001d252",
+    "dateBegin": 1639530000,
+    "dateEnd": 1639530600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "339401c5-f7f8-4d21-91ba-8a77e506fc03",
+    "dateBegin": 1639369800,
+    "dateEnd": 1639371600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "33eb935f-a942-4083-82d7-01c7ed4b35cc",
+    "dateBegin": 1635241800,
+    "dateEnd": 1635242400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "33f15b18-6ecf-4285-9b70-eb772c7dc19b",
+    "dateBegin": 1630380000,
+    "dateEnd": 1630381200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "341f869b-e973-4ff6-a3fd-8071f83c89c4",
+    "dateBegin": 1635322200,
+    "dateEnd": 1635322800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "344b25db-c21e-41ed-858b-7fe5d97b72a3",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "348ca5ac-b4bc-41ae-a8c9-17205b044ea1",
+    "dateBegin": 1631577600,
+    "dateEnd": 1631579400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "34a89d9a-7d35-4f92-8e5d-92e8e8b9ae9b",
+    "dateBegin": 1639022417,
+    "dateEnd": 1639024217
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "353ac693-9d05-463a-ae3e-3800a7a50f16",
+    "dateBegin": 1635120000,
+    "dateEnd": 1635120600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "35485666-982f-495e-a8dc-bbd6b3b4f7bb",
+    "dateBegin": 1627534200,
+    "dateEnd": 1627534800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "355f140d-2335-4ab7-92cd-e93d775b2467",
+    "dateBegin": 1634694600,
+    "dateEnd": 1634695800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3624605a-d6e0-441d-89a8-a2952c978134",
+    "dateBegin": 1635316200,
+    "dateEnd": 1635316800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "36300ccc-5975-4660-b6bb-1537558dd15e",
+    "dateBegin": 1636426200,
+    "dateEnd": 1636428000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "36440c3f-da37-4b51-af73-80c1d8d780ef",
+    "dateBegin": 1643937000,
+    "dateEnd": 1643938800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "36586848-3d21-4fc6-abec-3a4ce34bd659",
+    "dateBegin": 1639116600,
+    "dateEnd": 1639118400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "36eab5aa-bb1b-4cfa-a471-9ef9fffa5821",
+    "dateBegin": 1636598400,
+    "dateEnd": 1636600200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3737f790-e93e-4c30-83ba-fbfe94912075",
+    "dateBegin": 1635324000,
+    "dateEnd": 1635324600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "37a2e129-7e27-4694-babd-21bc753e7116",
+    "dateBegin": 1634717400,
+    "dateEnd": 1634718000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "37b3e50a-d89b-4a8e-b8b6-2596a21e8e77",
+    "dateBegin": 1628036400,
+    "dateEnd": 1628039400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "37b5580e-a7a7-4e63-9f94-8a4ec01bcc77",
+    "dateBegin": 1645053000,
+    "dateEnd": 1645054800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "38267d84-5613-4bcc-a733-3915ea470e89",
+    "dateBegin": 1641591000,
+    "dateEnd": 1641592800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "38cf9ae9-40b0-4942-b2bf-0a4a50afb3d5",
+    "dateBegin": 1642716000,
+    "dateEnd": 1642717800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "39613db6-3fef-4192-8bbf-b33dacbee9cb",
+    "dateBegin": 1635237000,
+    "dateEnd": 1635238200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "39b28ed8-554d-4f4d-85a8-56a95f0ce48e",
+    "dateBegin": 1637547000,
+    "dateEnd": 1637548800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "39bc660b-a98a-46f5-97d2-1ff3b7a5306a",
+    "dateBegin": 1631149200,
+    "dateEnd": 1631151000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "39e50c9b-761f-421b-b39b-6793a0766c26",
+    "dateBegin": 1634867400,
+    "dateEnd": 1634868600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3a40b467-ec82-4960-b062-ca669f288213",
+    "dateBegin": 1631092800,
+    "dateEnd": 1631094000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3a8bbab7-ceee-4a93-852f-7297b033a12a",
+    "dateBegin": 1635318000,
+    "dateEnd": 1635318600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3af837dd-74a2-47c0-90fc-71fc97cbf9cf",
+    "dateBegin": 1641256200,
+    "dateEnd": 1641258000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3b73bfb9-c809-46d4-bc68-95cf381f411c",
+    "dateBegin": 1644624000,
+    "dateEnd": 1644625800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3bb715a9-05de-41b8-b4be-0b2f086cf9bf",
+    "dateBegin": 1639640400,
+    "dateEnd": 1639642200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3bc951c9-4976-42ae-8834-9e0dee6271cc",
+    "dateBegin": 1629937800,
+    "dateEnd": 1629939600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3c1441b8-9e6f-494f-aea0-0e49609074f0",
+    "dateBegin": 1635907800,
+    "dateEnd": 1635909600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3cd3a377-a958-4df6-9b8b-8281490e4979",
+    "dateBegin": 1644274800,
+    "dateEnd": 1644276600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3d3e245f-510d-4e68-9891-6bf3d9d0f4eb",
+    "dateBegin": 1644460200,
+    "dateEnd": 1644462000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3e87e568-6003-4317-9891-634700de6029",
+    "dateBegin": 1639546200,
+    "dateEnd": 1639548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3eb45101-7e4e-431e-ae9b-9a253f3d0c90",
+    "dateBegin": 1635387600,
+    "dateEnd": 1635388200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3f06c600-a98c-492b-9fb9-4e28c43d7dac",
+    "dateBegin": 1637313000,
+    "dateEnd": 1637314800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3f4274cd-c734-4955-940b-a085f8287490",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3fb540b7-6792-4c73-afbe-44dfa1e76719",
+    "dateBegin": 1636940400,
+    "dateEnd": 1636942200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "3fce1164-22eb-47cc-b5f7-2ae29ceb9f22",
+    "dateBegin": 1635242456,
+    "dateEnd": 1635243056
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "400fdc63-9e9a-41e3-a32c-fa04d5754035",
+    "dateBegin": 1634777400,
+    "dateEnd": 1634779200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "40541ab7-2a97-4483-a279-7d0b787aa271",
+    "dateBegin": 1635242442,
+    "dateEnd": 1635243042
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "409ff2d7-4da5-453c-ba60-70a27c026ea0",
+    "dateBegin": 1638318000,
+    "dateEnd": 1638319800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "40beefd4-4519-47ff-ae8d-c0e82abff045",
+    "dateBegin": 1627612200,
+    "dateEnd": 1627614000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "41009c88-05c1-47ab-9165-3cbc150d6724",
+    "dateBegin": 1635242435,
+    "dateEnd": 1635243035
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4131b955-4fe1-48bf-b13d-1f56c3837e19",
+    "dateBegin": 1639449000,
+    "dateEnd": 1639450800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "42a7af72-ffae-45a9-954b-7bbecc786a62",
+    "dateBegin": 1644218400,
+    "dateEnd": 1644220200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "42fd5cb8-50f0-4c39-90f4-73e5db7db211",
+    "dateBegin": 1627484400,
+    "dateEnd": 1627485000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "43563889-ba52-44ae-8f1d-5519d38abfa2",
+    "dateBegin": 1639459200,
+    "dateEnd": 1639461000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "437edfb0-27e1-4432-a7a1-708fa0e30d2e",
+    "dateBegin": 1636080000,
+    "dateEnd": 1636081800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "43c8d754-8192-4108-a80d-f224b1d32eaa",
+    "dateBegin": 1635124800,
+    "dateEnd": 1635125400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "43d523e4-0bd8-4732-ab27-20492303cae8",
+    "dateBegin": 1636080000,
+    "dateEnd": 1636081800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "440e18e6-aa3b-4e9a-9231-e4ef8afb654d",
+    "dateBegin": 1638922800,
+    "dateEnd": 1638924600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "441a2600-7b0c-4e32-891f-fc71bdabe7d3",
+    "dateBegin": 1627551000,
+    "dateEnd": 1627551600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "443fb2f8-712f-498e-95ab-14822c2825c9",
+    "dateBegin": 1631352600,
+    "dateEnd": 1631353200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "450ecd82-1654-49c7-9c81-b7d4b136a50a",
+    "dateBegin": 1639373400,
+    "dateEnd": 1639375200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4522488b-0ee7-4107-bbba-6596e5ef69a4",
+    "dateBegin": 1639371600,
+    "dateEnd": 1639373400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "45399cf8-2991-443f-81ee-15374f5a3a57",
+    "dateBegin": 1627530600,
+    "dateEnd": 1627531200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "45635b4b-9cc8-47fb-bd15-2cc7be9ea8d6",
+    "dateBegin": 1632902400,
+    "dateEnd": 1632903000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "45ce2cf8-7e19-4e09-b143-2c00b746c115",
+    "dateBegin": 1627541400,
+    "dateEnd": 1627542600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "45d31883-b24a-4d39-a72d-b5b39db55a94",
+    "dateBegin": 1639720200,
+    "dateEnd": 1639722000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "460758bf-7020-437b-be80-97d47b224cef",
+    "dateBegin": 1630411200,
+    "dateEnd": 1630411800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "464162dd-74b5-45b4-8579-a43a99eddfa3",
+    "dateBegin": 1644967800,
+    "dateEnd": 1644969600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "46484a3c-d775-4a7a-b7e7-a7bbbb297cd7",
+    "dateBegin": 1635819600,
+    "dateEnd": 1635821400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "46595eac-e98a-494f-9225-8c4c05a0bd44",
+    "dateBegin": 1636426800,
+    "dateEnd": 1636428600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "46f2c7e0-e65c-4ed3-a529-f6e9adcc097f",
+    "dateBegin": 1634871000,
+    "dateEnd": 1634871600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47200352-54fe-486f-a744-456433ca1d01",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "476af01f-0488-4bb0-9538-f1b5a652f926",
+    "dateBegin": 1635313200,
+    "dateEnd": 1635313800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47a08046-c813-4513-b973-833d1fb020f2",
+    "dateBegin": 1639712443,
+    "dateEnd": 1639714243
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47b81f82-baaf-4bb9-9c54-0c26b478b68e",
+    "dateBegin": 1635242445,
+    "dateEnd": 1635243045
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47cc3144-c924-4035-a618-0459988678a6",
+    "dateBegin": 1641256800,
+    "dateEnd": 1641258600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47d05e94-f52f-497b-bbf3-cbd5e2821661",
+    "dateBegin": 1635320400,
+    "dateEnd": 1635321000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "47da6246-cbb6-4e7b-b7ac-f08f94d74efb",
+    "dateBegin": 1637286000,
+    "dateEnd": 1637287800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "48d7c49e-7398-42fa-b1a4-9c257f21a233",
+    "dateBegin": 1643238600,
+    "dateEnd": 1643240400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "49465d5f-e400-4a9a-8d98-bef0c615df23",
+    "dateBegin": 1637889600,
+    "dateEnd": 1637891400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "49691d0d-5519-45d9-9c7b-03f99ca378ef",
+    "dateBegin": 1627431600,
+    "dateEnd": 1627433400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4a150026-e60c-4811-a004-a64d7172566d",
+    "dateBegin": 1630980600,
+    "dateEnd": 1630981200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4a3730a4-0894-49a8-b2b4-5892ff24a42b",
+    "dateBegin": 1639703400,
+    "dateEnd": 1639705200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4a381d0d-c7c9-4cdc-ba83-70bf588cf9bd",
+    "dateBegin": 1639717842,
+    "dateEnd": 1639719642
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4a79cace-e0cc-4b7c-840b-5b348a8c9c9e",
+    "dateBegin": 1642543800,
+    "dateEnd": 1642545600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4abc98d0-e658-46cf-be25-9d36cca03464",
+    "dateBegin": 1630917600,
+    "dateEnd": 1630918200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4afa7504-b933-402b-8b89-7becdf15483e",
+    "dateBegin": 1643850000,
+    "dateEnd": 1643851800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4b3d0cbe-06aa-4845-b48c-948106b09764",
+    "dateBegin": 1642986000,
+    "dateEnd": 1642987800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4b8b738c-c092-4187-9477-e9a7f01b8d20",
+    "dateBegin": 1635210000,
+    "dateEnd": 1635210600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4b8e708b-bd44-4a6a-9565-6f788d2b6e8f",
+    "dateBegin": 1645063200,
+    "dateEnd": 1645065000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4bace6e5-3f34-42c2-9d2f-0bd032fc17c1",
+    "dateBegin": 1631804400,
+    "dateEnd": 1631805000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4c025dbd-b47b-4f12-bbbc-8772844e4f51",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4c0d1155-ebae-45d2-a6ea-59a20d0ce0a0",
+    "dateBegin": 1639451400,
+    "dateEnd": 1639453200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4c3e7e6d-c1bf-4bc3-992b-ef5ca7dea7e7",
+    "dateBegin": 1627527600,
+    "dateEnd": 1627528200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4c45b270-4c4d-488e-a997-bf503ad09b8a",
+    "dateBegin": 1639442400,
+    "dateEnd": 1639444200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4c516c37-84dc-484a-b9b8-7e0e2a2690c3",
+    "dateBegin": 1639017000,
+    "dateEnd": 1639018800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4d39d848-35e3-445e-90d5-2483d0c31270",
+    "dateBegin": 1630756800,
+    "dateEnd": 1630757400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4d4da498-3cb9-4e3a-b856-d912dfec70c4",
+    "dateBegin": 1636940400,
+    "dateEnd": 1636942200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4dfb76b2-f1fc-43b8-ab24-0f69f1019444",
+    "dateBegin": 1630375200,
+    "dateEnd": 1630377000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4e04d5e0-826c-41ad-81bc-350eee06f4aa",
+    "dateBegin": 1635410400,
+    "dateEnd": 1635573000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4e091bd9-c277-4801-bb2d-e54d5962a83b",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4ea4de30-b36d-443c-ba10-771bf3992f1b",
+    "dateBegin": 1635328800,
+    "dateEnd": 1635329400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4eda98a4-8242-4e35-8667-6f9a29376df0",
+    "dateBegin": 1639035600,
+    "dateEnd": 1639037400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4f4c4326-ba45-4db0-ae4b-c5d230799fca",
+    "dateBegin": 1635318000,
+    "dateEnd": 1635318600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "4ffa96f0-a12b-4be8-bb06-5856b93dc88d",
+    "dateBegin": 1627011000,
+    "dateEnd": 1627018200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "50902e0b-690d-4f5e-ae8c-a59ef5f7eb8c",
+    "dateBegin": 1627519800,
+    "dateEnd": 1627521600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "50a7163c-9d38-4a5e-b322-e7a1e0bb3eed",
+    "dateBegin": 1636426800,
+    "dateEnd": 1636428600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "50b7920d-d7e8-44a9-aea6-44a533e16a05",
+    "dateBegin": 1630400400,
+    "dateEnd": 1630401000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "50d7d4d5-16d2-4c1b-ab40-94b8cc72e43e",
+    "dateBegin": 1632816000,
+    "dateEnd": 1632817200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5116868e-d416-456d-9e41-a6f639be8938",
+    "dateBegin": 1636076400,
+    "dateEnd": 1636078200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5149b802-6965-4e67-b747-3afde1336108",
+    "dateBegin": 1639447800,
+    "dateEnd": 1639449600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5170cd1b-cf08-4466-886f-0dea60a99467",
+    "dateBegin": 1637033400,
+    "dateEnd": 1637035200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "537ddc14-457a-4a54-ae5f-f312c7a1d6c1",
+    "dateBegin": 1627009800,
+    "dateEnd": 1627010400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5413b622-0234-444a-bbff-9f22a49522ff",
+    "dateBegin": 1630396200,
+    "dateEnd": 1630398000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "54259b91-985f-4d55-bafe-dc38ba429ec8",
+    "dateBegin": 1627020000,
+    "dateEnd": 1627021800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5486193c-603c-4992-a2ae-e0695a78024e",
+    "dateBegin": 1638407400,
+    "dateEnd": 1638409200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "54de0267-f6cd-435a-a68f-735217a27b2d",
+    "dateBegin": 1639494000,
+    "dateEnd": 1639494600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "55740e05-ee41-45c3-b84b-24f7a9311cfb",
+    "dateBegin": 1635657600,
+    "dateEnd": 1635658200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5672cddd-f5d2-4e65-b5d7-c683268fc2bd",
+    "dateBegin": 1635495056,
+    "dateEnd": 1635495656
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "56bd1aa6-287e-4e42-afbc-1af75240a852",
+    "dateBegin": 1645135800,
+    "dateEnd": 1645137600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "56f6cd4d-ad30-445d-82f8-b1b7efa3df82",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5725015b-3207-44f8-9b97-038e773a463f",
+    "dateBegin": 1627953000,
+    "dateEnd": 1627954200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "57888299-d579-45cf-83e1-ddcf758b1b9b",
+    "dateBegin": 1632789600,
+    "dateEnd": 1632790200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "57a8d1da-cb11-482f-8812-ecc614f14025",
+    "dateBegin": 1639467600,
+    "dateEnd": 1639469400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "57f1f1a3-d376-44b3-94f6-183e5d330c0c",
+    "dateBegin": 1627000800,
+    "dateEnd": 1627001400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "587ba302-8b96-431a-9d53-ba17d0ce2bcf",
+    "dateBegin": 1637041200,
+    "dateEnd": 1637043000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "58b3f9ab-2952-4586-a428-e41b2efa4eed",
+    "dateBegin": 1634802000,
+    "dateEnd": 1634802600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "58e4d192-fa17-4114-b4c5-4e966ab70858",
+    "dateBegin": 1627455600,
+    "dateEnd": 1627456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "592fd844-37db-48fa-94b2-b3f835b88892",
+    "dateBegin": 1627014600,
+    "dateEnd": 1627016400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "59affc0e-e02c-4b1d-b375-7a386dce78c9",
+    "dateBegin": 1626940200,
+    "dateEnd": 1626940800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5a545e02-77c0-4f70-9f92-8160a07eb137",
+    "dateBegin": 1635660000,
+    "dateEnd": 1635660600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5a6ea916-f491-48f7-8732-a0a7118b354d",
+    "dateBegin": 1635989400,
+    "dateEnd": 1635991200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5a7410b0-73e6-4f25-aa97-e572a78f3bbe",
+    "dateBegin": 1644016200,
+    "dateEnd": 1644018000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ad1bdb5-83a3-46d2-8d25-cc22383071bf",
+    "dateBegin": 1627456800,
+    "dateEnd": 1627458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5af23148-51eb-4105-8bfa-2a303873791b",
+    "dateBegin": 1635491400,
+    "dateEnd": 1635492000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5b2cebe5-56cd-48fa-bafa-823318ade950",
+    "dateBegin": 1635328800,
+    "dateEnd": 1635329400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5b3677e6-41d7-4f87-ab68-324f8802b0d7",
+    "dateBegin": 1631804400,
+    "dateEnd": 1631805000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5c026570-5af8-4eae-a4f3-419e3894982c",
+    "dateBegin": 1630560000,
+    "dateEnd": 1630561800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5c380754-eaa7-4cf1-9b71-df1193c52c5a",
+    "dateBegin": 1638260400,
+    "dateEnd": 1638262200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5c41071d-e0db-4198-9d17-2b5d660686df",
+    "dateBegin": 1641432600,
+    "dateEnd": 1641434400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5c5914ae-d507-4a18-9986-d23abb384bfe",
+    "dateBegin": 1635316200,
+    "dateEnd": 1635316800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5d5b3fbb-41da-4e8c-a6e6-7ba3beef5fec",
+    "dateBegin": 1627015200,
+    "dateEnd": 1627016400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5e2aef7c-6a95-4ce8-a80f-a412675b50a0",
+    "dateBegin": 1635492600,
+    "dateEnd": 1635493200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5e615ecd-8e10-46a6-95c8-7ff675cb7d13",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5e6a4b76-a627-44d0-9235-46f096e8320b",
+    "dateBegin": 1641256200,
+    "dateEnd": 1641258000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ea1265a-52f9-413e-b8c5-4f3b751e9ba6",
+    "dateBegin": 1639718400,
+    "dateEnd": 1639720200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ea568ea-ebcf-4dac-8b13-77f2eb5e61e9",
+    "dateBegin": 1626836400,
+    "dateEnd": 1626838200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ea5fb66-f6ec-4946-a5dc-10eda64ad322",
+    "dateBegin": 1630566000,
+    "dateEnd": 1630566600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5f1e8976-aed4-4393-a950-49bf6caa7f0d",
+    "dateBegin": 1630387800,
+    "dateEnd": 1630388400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5f251fe3-1b98-450e-b007-03d0d4b9e500",
+    "dateBegin": 1631155200,
+    "dateEnd": 1631156400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5f44785e-dd43-4e61-b6a7-c2414d113278",
+    "dateBegin": 1643245200,
+    "dateEnd": 1643247000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ff20157-a5cc-4ad3-9939-b6d9ed3e0dcd",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "5ffde59b-f483-4ca8-81b3-1c792ecace55",
+    "dateBegin": 1629765000,
+    "dateEnd": 1629766800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6053d87c-d86c-45e4-bb74-3845c44ae0de",
+    "dateBegin": 1635819600,
+    "dateEnd": 1635821400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "60902fe1-36a7-438b-9afc-dae58066092e",
+    "dateBegin": 1639534200,
+    "dateEnd": 1639536000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "60d7c07e-bb77-413f-bebe-764daddfe684",
+    "dateBegin": 1627606800,
+    "dateEnd": 1627608600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "61295dc4-ae79-4514-b3c4-e1beaff8dc10",
+    "dateBegin": 1635241844,
+    "dateEnd": 1635242444
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6130f52f-d962-4bbc-8c7c-8c3091be11e7",
+    "dateBegin": 1639707600,
+    "dateEnd": 1639709400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6175b360-6dbf-4931-8a51-d36bbe82201f",
+    "dateBegin": 1635296400,
+    "dateEnd": 1635297000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "619993cf-d37f-4ebe-957c-702957cb75c7",
+    "dateBegin": 1634603400,
+    "dateEnd": 1634604000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "61a0e638-c7f3-4cd1-a496-3bb313a8fe8c",
+    "dateBegin": 1637717400,
+    "dateEnd": 1637719200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "61d578aa-dcc8-4576-ab2c-a111e874fe83",
+    "dateBegin": 1643162400,
+    "dateEnd": 1643164200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "61d5dc6e-575e-4dc3-beaf-a8dea1b5775d",
+    "dateBegin": 1635919800,
+    "dateEnd": 1635921600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "61f00198-711c-4627-a537-3ca2c7012663",
+    "dateBegin": 1639791000,
+    "dateEnd": 1639792800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6246dc96-68c6-4243-b5a1-a1a8cd26d416",
+    "dateBegin": 1639629000,
+    "dateEnd": 1639630800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6259deaa-83b6-423e-8535-c125a0abf7ca",
+    "dateBegin": 1634517600,
+    "dateEnd": 1634519400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "62ab4804-851d-429b-9efe-45daae1f22ef",
+    "dateBegin": 1632358800,
+    "dateEnd": 1632360000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "62f0c393-744c-42b7-88ca-b620cbfc9a68",
+    "dateBegin": 1639024200,
+    "dateEnd": 1639026000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6316b0f4-c280-4e12-a91c-a92dcc6a180d",
+    "dateBegin": 1627016400,
+    "dateEnd": 1627017600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "63dc1b9e-dbd7-4266-872f-0da82f2a1791",
+    "dateBegin": 1627552200,
+    "dateEnd": 1627554600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "644d6437-a7fb-492b-8d5a-28bd3c1b0eac",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64607de2-5654-432f-941e-5f5d0d36e456",
+    "dateBegin": 1630657800,
+    "dateEnd": 1630659000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6472b053-d9fe-4d69-905b-736206c4a878",
+    "dateBegin": 1639462800,
+    "dateEnd": 1639464600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64893e2e-8cb6-40a5-a903-e326155e1d00",
+    "dateBegin": 1627630800,
+    "dateEnd": 1627632600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64a2bc9c-54c0-4cd3-b1b3-7e2ea8bdedae",
+    "dateBegin": 1645059600,
+    "dateEnd": 1645061400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64c0b59e-215e-4cf0-8051-5b162ac5a1d9",
+    "dateBegin": 1640756400,
+    "dateEnd": 1640758200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64c32fec-a84f-46df-a76b-badb87f8cb1f",
+    "dateBegin": 1630567800,
+    "dateEnd": 1630568400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "64e0e09f-c0ce-4a17-989a-8393858ece3f",
+    "dateBegin": 1627432200,
+    "dateEnd": 1627433400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "65420198-277a-4ad1-b738-63d2549620bc",
+    "dateBegin": 1639462800,
+    "dateEnd": 1639464600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6547ece2-6fde-4eb1-8471-9713295ec6e5",
+    "dateBegin": 1627562400,
+    "dateEnd": 1627563000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "65575512-5a24-4e6f-81bc-f2fa84b803d0",
+    "dateBegin": 1642457400,
+    "dateEnd": 1642459200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "65a14fa6-2535-4428-8398-bd86f26faacb",
+    "dateBegin": 1635903600,
+    "dateEnd": 1635905400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6621dbb8-c54b-4112-88f7-e1d35e7f2b5b",
+    "dateBegin": 1637717400,
+    "dateEnd": 1637719200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "666ac40a-3d86-4bdc-8443-ad9067e14726",
+    "dateBegin": 1630399800,
+    "dateEnd": 1630400400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6693b088-08bd-4b2a-8a06-0ab0604b2b11",
+    "dateBegin": 1635241855,
+    "dateEnd": 1635241855
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "66b3dcb1-427e-48de-a235-43807440b24d",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "66d57c52-4d17-4c84-8a3f-d3745f3e1e84",
+    "dateBegin": 1627956000,
+    "dateEnd": 1627957200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "66dd2d5d-62e6-41fc-ad43-f9956bfb4081",
+    "dateBegin": 1639705200,
+    "dateEnd": 1639705800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "67088c4f-ada5-4200-874a-2c37b3f4b0a4",
+    "dateBegin": 1638234600,
+    "dateEnd": 1638236400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "672b3e83-9df2-46b0-8b90-159c80b8e77d",
+    "dateBegin": 1626853800,
+    "dateEnd": 1626856200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "67835ca4-22d7-46e4-a0fe-6a844af798c5",
+    "dateBegin": 1644879000,
+    "dateEnd": 1644880800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "67c4e343-38b3-4ea9-a075-fb52d9bccfec",
+    "dateBegin": 1626832200,
+    "dateEnd": 1626834000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "681185cc-fbe8-4b97-8930-75fd917b6e98",
+    "dateBegin": 1635322800,
+    "dateEnd": 1635324600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6827c29e-106f-4a05-98a3-91267cd2a916",
+    "dateBegin": 1639725005,
+    "dateEnd": 1639726805
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "68868e3d-e1b9-4909-b931-8576ee2013a1",
+    "dateBegin": 1627614600,
+    "dateEnd": 1627615200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "68968354-c99b-4670-9271-d5327550ade6",
+    "dateBegin": 1639097400,
+    "dateEnd": 1639099200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "68aeb540-2169-45ae-8a19-83ad293a2d63",
+    "dateBegin": 1627398000,
+    "dateEnd": 1627398600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "68b6c94a-64f3-4257-9e87-b0692751dae6",
+    "dateBegin": 1635213000,
+    "dateEnd": 1635214800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "68eebe53-9100-43ab-9265-9d4d013b3510",
+    "dateBegin": 1632444000,
+    "dateEnd": 1632445800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6921e4ed-d1e1-46c7-a4bd-b0a307dbd091",
+    "dateBegin": 1635120000,
+    "dateEnd": 1635120600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "69384d7b-83fb-4f0f-b714-8ff9aa6f1ffe",
+    "dateBegin": 1639719642,
+    "dateEnd": 1639721442
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "69caa986-20a1-4341-9293-e15e8751f03e",
+    "dateBegin": 1630654200,
+    "dateEnd": 1630656000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "69e7e655-6e4d-4db2-bb8e-26dffac4fb19",
+    "dateBegin": 1638318000,
+    "dateEnd": 1638319800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6adbf8ae-3249-4358-b38d-15428611f67a",
+    "dateBegin": 1634865000,
+    "dateEnd": 1634867400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6af8fbbd-16a6-416e-8cd1-0140b07beb21",
+    "dateBegin": 1627398000,
+    "dateEnd": 1627398600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6b29c6fb-c389-41c5-aa66-200d83a3f380",
+    "dateBegin": 1639544400,
+    "dateEnd": 1639546200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6b551979-da32-46cc-9520-d2de73b91770",
+    "dateBegin": 1639540800,
+    "dateEnd": 1639542600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6b88b833-f5ff-4694-9fde-3d53d06dc370",
+    "dateBegin": 1635384000,
+    "dateEnd": 1635384600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6b94f400-0b0e-4687-b5cd-52a5e0e8be43",
+    "dateBegin": 1630402200,
+    "dateEnd": 1630402800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6ba11986-a254-4c83-a6be-512ee7dcc03b",
+    "dateBegin": 1635304200,
+    "dateEnd": 1635304800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6bb72151-3b41-4af2-84d6-b7d1da5adeb8",
+    "dateBegin": 1635493200,
+    "dateEnd": 1635493800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6c0478a5-32eb-4766-968c-f5314e78bdf2",
+    "dateBegin": 1635468000,
+    "dateEnd": 1635468600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6c48a213-d12f-4e71-a0bb-4501f5c675d4",
+    "dateBegin": 1630225800,
+    "dateEnd": 1630227000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6c86eb72-52ef-4052-a88f-0fb8964b8adf",
+    "dateBegin": 1631838000,
+    "dateEnd": 1631839200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6cc4ba98-e332-47a8-b044-6cfd44b8f02e",
+    "dateBegin": 1639101000,
+    "dateEnd": 1639102800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6cff86d7-376e-4e36-b10d-784b28c9d848",
+    "dateBegin": 1635382800,
+    "dateEnd": 1635383400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6d580401-9568-4ede-be92-23dff6e87603",
+    "dateBegin": 1635487200,
+    "dateEnd": 1635487800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6d8882f1-8fa0-4bb1-9452-e98047d39f94",
+    "dateBegin": 1626837600,
+    "dateEnd": 1626839400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6e10a0ce-6fe9-46c1-867c-a39ddb82affb",
+    "dateBegin": 1639714202,
+    "dateEnd": 1639716002
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6e8cd756-217c-43f7-91ef-3584c5dbf9e0",
+    "dateBegin": 1639469400,
+    "dateEnd": 1639471200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6edb1636-a48f-408d-866a-eb58bb3fd377",
+    "dateBegin": 1630998000,
+    "dateEnd": 1630999800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6eef027e-c419-4463-af97-e891178e7254",
+    "dateBegin": 1639446000,
+    "dateEnd": 1639447800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6ef9de28-31a8-43a3-9e83-e29c2c291522",
+    "dateBegin": 1628209200,
+    "dateEnd": 1628212200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6f30cb29-9bbe-418c-bc84-e8cb66688606",
+    "dateBegin": 1641341400,
+    "dateEnd": 1641343200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6f4407af-c78d-43d1-ba9a-9501a5a6d3aa",
+    "dateBegin": 1645059600,
+    "dateEnd": 1645061400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6f7ad6fe-09bb-4d2a-9d25-146a48def7b7",
+    "dateBegin": 1630566600,
+    "dateEnd": 1630567800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "6f97aff4-f9bf-4122-aab9-a8901719aabf",
+    "dateBegin": 1639640400,
+    "dateEnd": 1639642200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "70caaf4e-746d-4346-a192-6d5c9050a6c7",
+    "dateBegin": 1636076400,
+    "dateEnd": 1636078200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "70d101b8-5e43-42e4-811d-27c7b2c6d048",
+    "dateBegin": 1382697600,
+    "dateEnd": 1382698200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "70e0e0f4-ac14-4ea8-8ce9-c2d2fa616570",
+    "dateBegin": 1630302000,
+    "dateEnd": 1630302600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7107ed54-ee1d-43da-9752-08ccc65281f9",
+    "dateBegin": 1627311600,
+    "dateEnd": 1627312200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7139aed4-4625-4341-958d-70740990fc5a",
+    "dateBegin": 1628728800,
+    "dateEnd": 1628731200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7139df02-90a9-48cb-8258-df696fdf7a27",
+    "dateBegin": 1635383400,
+    "dateEnd": 1635384600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7186f6be-63bb-4a42-80b8-38eb10e75b1c",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7187aca7-6d9e-48c0-87bb-540ea084a464",
+    "dateBegin": 1635211200,
+    "dateEnd": 1635211800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "71a825b2-d18b-4cd4-bfce-ad4459b4d232",
+    "dateBegin": 1635392400,
+    "dateEnd": 1635394200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "71b1aade-dc6b-450d-9a99-7cf4cf0d8df6",
+    "dateBegin": 1629276600,
+    "dateEnd": 1629278400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "71cbadba-4dc9-4925-9b8c-72192a40b277",
+    "dateBegin": 1639753200,
+    "dateEnd": 1639753800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "720c0e14-9fed-489f-8cc9-d94ba5e22071",
+    "dateBegin": 1637799000,
+    "dateEnd": 1637800800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "721e6ab8-6e6c-49d7-aa08-09f2c50752f4",
+    "dateBegin": 1636944000,
+    "dateEnd": 1636945800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7346acb2-ff0b-4dc7-baa3-9c6468231c92",
+    "dateBegin": 1639459800,
+    "dateEnd": 1639461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "734c7636-f377-4083-b740-00228198f9ee",
+    "dateBegin": 1638317400,
+    "dateEnd": 1638320400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "734fd6ce-048f-43c8-b770-33f8672fa6c6",
+    "dateBegin": 1641279600,
+    "dateEnd": 1641281400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "73944a0f-55e2-4ad6-919d-e77c99b79931",
+    "dateBegin": 1639459200,
+    "dateEnd": 1639461000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "73c8993f-a904-4c76-a3d2-8ccc13721d6a",
+    "dateBegin": 1639459802,
+    "dateEnd": 1639461602
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "73db1cf3-6ad5-44c6-8f2d-27ba7b5d68c3",
+    "dateBegin": 1639364400,
+    "dateEnd": 1639365600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "743c5ae6-3fd8-4d2d-8fbc-387a87d4e932",
+    "dateBegin": 1632789600,
+    "dateEnd": 1632790200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7449f120-2480-4866-8b66-8ee64ccaf3c9",
+    "dateBegin": 1637110200,
+    "dateEnd": 1637112000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "74792cb7-dab2-418b-90cc-ad766922b2fd",
+    "dateBegin": 1635124800,
+    "dateEnd": 1635125400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "74b81949-61b0-4168-8c2f-a9e57e7e476d",
+    "dateBegin": 1644375000,
+    "dateEnd": 1644376800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "75aecfd2-fe94-4196-84cd-ab6e612db31e",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "75d13bfe-6b7f-4d7f-a78b-bcb39036e9d9",
+    "dateBegin": 1631804400,
+    "dateEnd": 1631805000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "75f84f93-1fea-4892-8445-4949ef4ee233",
+    "dateBegin": 1644372600,
+    "dateEnd": 1644374400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "763287d0-e9b7-40e5-ac71-a9ddec21ce13",
+    "dateBegin": 1630911600,
+    "dateEnd": 1630912800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7632e20b-b128-4bfa-8b93-56f2f353bd09",
+    "dateBegin": 1631781600,
+    "dateEnd": 1631782800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7662ddef-e5cd-4e25-9cac-5dc056edb16e",
+    "dateBegin": 1644359400,
+    "dateEnd": 1644361200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "766bf854-06dd-49da-ab29-4895041c16da",
+    "dateBegin": 1636338600,
+    "dateEnd": 1636340400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "76806afb-c65d-4a20-966e-325feb8f6a9f",
+    "dateBegin": 1626678600,
+    "dateEnd": 1626679200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "778bb6f5-cecc-4369-9967-036142451f19",
+    "dateBegin": 1627015200,
+    "dateEnd": 1627016400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "77a33856-b57a-44b1-ac14-de815403fece",
+    "dateBegin": 1627729200,
+    "dateEnd": 1627730400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "77bd3a13-7cb0-4198-a525-facfaf20a695",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "78896c0e-37c5-44ec-b3f3-222cefc69409",
+    "dateBegin": 1637541000,
+    "dateEnd": 1637542800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "78e7ad83-5215-4e16-ad5c-56fe2fa70e4b",
+    "dateBegin": 1627525200,
+    "dateEnd": 1627525800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "78f85b1f-49b1-4c1a-884a-0f965ecd6644",
+    "dateBegin": 1635555600,
+    "dateEnd": 1635556200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "79507657-75f6-461b-9473-30a770154d26",
+    "dateBegin": 1630629000,
+    "dateEnd": 1630630800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "79672302-aca6-463d-8e44-6217d9c6b9b6",
+    "dateBegin": 1631072400,
+    "dateEnd": 1631073600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "799f9377-ea0d-4de1-a2ca-26bf1c232d07",
+    "dateBegin": 1627459800,
+    "dateEnd": 1627461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "79be8079-2317-4c41-9189-aa437230e12f",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "79dc6c09-08c4-4dc2-b150-b1508fb4a8c0",
+    "dateBegin": 1643320800,
+    "dateEnd": 1643322600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "79e05351-1877-47eb-80f6-f673cc4d3572",
+    "dateBegin": 1635125400,
+    "dateEnd": 1635126000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7a0b47e0-d063-434f-8852-c14bf71fb3a2",
+    "dateBegin": 1639722000,
+    "dateEnd": 1639723800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7a32ee97-971e-4831-b189-abb723c3d0de",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7a935614-3d38-4d57-8c67-efe537165645",
+    "dateBegin": 1631244600,
+    "dateEnd": 1631245800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7a96f0d8-5e7b-4ad0-8191-db28565ed827",
+    "dateBegin": 1639009800,
+    "dateEnd": 1639011600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7a9b4031-f7a7-4f57-99c4-7eeb7f3f3030",
+    "dateBegin": 1639116000,
+    "dateEnd": 1639117800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7ae04734-8eb6-4a78-b201-9f0d72f385fa",
+    "dateBegin": 1639902600,
+    "dateEnd": 1639904400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7ae707f3-d2ae-4b24-a91d-571da4fe4861",
+    "dateBegin": 1635384600,
+    "dateEnd": 1635385200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7b07e9e5-68fb-4cb8-a163-3cf0bf9a4b30",
+    "dateBegin": 1635383400,
+    "dateEnd": 1635384000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7bc484cf-02a7-4a15-b8a7-f92190b73dda",
+    "dateBegin": 1636074600,
+    "dateEnd": 1636076400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7bca8c73-83b6-4007-9edf-8e9b03d889ab",
+    "dateBegin": 1642122000,
+    "dateEnd": 1642123800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7be062fc-7908-44e9-8b3b-ca15e210d709",
+    "dateBegin": 1637888400,
+    "dateEnd": 1637890200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7c105159-5242-4384-9c3b-8883cef6f1d0",
+    "dateBegin": 1626934800,
+    "dateEnd": 1626935400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7cb9d01d-dba2-40b3-aeaf-b6531b575270",
+    "dateBegin": 1627959600,
+    "dateEnd": 1627961400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7cbe05ea-0848-4d59-85c2-6135ec4ef841",
+    "dateBegin": 1635908400,
+    "dateEnd": 1635909000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7d08ef92-9932-401b-a821-71577c89a558",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7d19a35e-3083-4603-b42f-4605fd7bc295",
+    "dateBegin": 1644454800,
+    "dateEnd": 1644456600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7d78b320-48a4-4392-9e91-c327947fd237",
+    "dateBegin": 1639374000,
+    "dateEnd": 1639375800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7dffaa5c-9cfb-4594-8369-a884aef090fe",
+    "dateBegin": 1630472400,
+    "dateEnd": 1630474200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7e3ebad1-f046-46a6-8ade-d12f888e315a",
+    "dateBegin": 1627528200,
+    "dateEnd": 1627528800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7e622b52-45b1-42eb-9262-01956e648c3a",
+    "dateBegin": 1639359000,
+    "dateEnd": 1639360800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7ea4f503-28ba-4437-bc93-d45993d61352",
+    "dateBegin": 1635328200,
+    "dateEnd": 1635328800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7eaca92b-fe69-4fef-b4d6-52b28bf17149",
+    "dateBegin": 1636599000,
+    "dateEnd": 1636600800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7ef06c2e-d58d-4ee4-8adf-17d92377084c",
+    "dateBegin": 1635469800,
+    "dateEnd": 1635470400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7f9f16ee-49f7-4e3d-89eb-766a63b09c0f",
+    "dateBegin": 1635241806,
+    "dateEnd": 1635242406
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "7fc03ef8-f5dc-4a41-b53e-e654ed1e08e8",
+    "dateBegin": 1635906600,
+    "dateEnd": 1635908400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "80135675-080e-485b-8b96-108d2b37764f",
+    "dateBegin": 1627522200,
+    "dateEnd": 1627524000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "80ae7952-ab06-40b7-80ca-be37c61b924b",
+    "dateBegin": 1638950400,
+    "dateEnd": 1638952200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "80f80d57-7ae0-4b59-b8cf-287c071827f3",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "81814857-0091-4e59-a458-22b3479f6c72",
+    "dateBegin": 1639618200,
+    "dateEnd": 1639620000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "82e22f01-0a38-4f96-a1ff-0af7ce07e1ca",
+    "dateBegin": 1639532400,
+    "dateEnd": 1639534200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "82e95245-fd5c-43d4-9c95-d213149afe99",
+    "dateBegin": 1627521000,
+    "dateEnd": 1627521600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "837e0e6a-bd53-4b5f-943e-27d4891bfcde",
+    "dateBegin": 1627612200,
+    "dateEnd": 1627612800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "83824582-9a68-474c-8e1a-6a2db1803542",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "83cfa54f-d365-422c-88d5-397fc67b1add",
+    "dateBegin": 1642198200,
+    "dateEnd": 1642200000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "83d5a077-1315-4126-8726-4a10bd2e5909",
+    "dateBegin": 1635467400,
+    "dateEnd": 1635468000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "83dde776-c68d-4cc4-874f-090991f0fdb4",
+    "dateBegin": 1641282600,
+    "dateEnd": 1641284400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8425385a-60dd-46b5-b5f9-c1bc9a779b7c",
+    "dateBegin": 1639112400,
+    "dateEnd": 1639114200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "84d7293b-571d-443f-87d3-d169f3066e2f",
+    "dateBegin": 1644534600,
+    "dateEnd": 1644536400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "84e10fb6-51b7-4d49-bb4c-b70f2b80b19b",
+    "dateBegin": 1627636200,
+    "dateEnd": 1627636800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "85270349-ea0a-4fb3-a03c-a0837ed47629",
+    "dateBegin": 1630299000,
+    "dateEnd": 1630299600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "85757d57-b66c-448d-acfe-bd8aa31482fe",
+    "dateBegin": 1635295800,
+    "dateEnd": 1635297600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "861b22f3-36dc-4b6d-a78e-30a21e81df3a",
+    "dateBegin": 1635297600,
+    "dateEnd": 1635298200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "86813de2-e8b3-4ef3-9c2c-0317ed522ace",
+    "dateBegin": 1645228800,
+    "dateEnd": 1645230600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8687f17a-72f0-4faf-95c7-f2e00b01c6f0",
+    "dateBegin": 1630646400,
+    "dateEnd": 1630648200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "86d3d002-0e36-41a7-b91f-9b48b8710b9f",
+    "dateBegin": 1630905600,
+    "dateEnd": 1630906200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "871e7073-ea7c-4413-8e68-8bf5d52d9403",
+    "dateBegin": 1612846800,
+    "dateEnd": 1612847400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8724d3d8-dd19-4a37-a33e-5af6d0ccf905",
+    "dateBegin": 1627522800,
+    "dateEnd": 1627523400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "873b2587-76e2-4795-b95f-58ffb7ee72f8",
+    "dateBegin": 1635991800,
+    "dateEnd": 1635993600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "87a4f899-5f44-4a81-85e4-ee5086312596",
+    "dateBegin": 1638930000,
+    "dateEnd": 1638931800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "87fcac89-129c-4f69-a1a0-6793d84a525b",
+    "dateBegin": 1627615200,
+    "dateEnd": 1627615800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "882b4a9a-0acb-451a-93bb-435383f3cbbf",
+    "dateBegin": 1627522200,
+    "dateEnd": 1627524000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "886377cb-a965-4a14-8474-84c18228de9f",
+    "dateBegin": 1630983600,
+    "dateEnd": 1630984200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "88c31a47-19c4-4218-a320-c8de9e348a21",
+    "dateBegin": 1642456800,
+    "dateEnd": 1642458600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "88dd46ca-4226-4369-bd31-78e6b94fc8c0",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8938e01d-ccce-496f-98f5-78dc60079e08",
+    "dateBegin": 1635328200,
+    "dateEnd": 1635328800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8958d247-3d5e-4e20-8a5d-c9ec1582cb7c",
+    "dateBegin": 1645061400,
+    "dateEnd": 1645063200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "89d857d2-df2e-40bb-8db3-4131a6bab537",
+    "dateBegin": 1639540800,
+    "dateEnd": 1639542600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "89e20c59-5e35-4847-b0d9-7481e1a4f2e5",
+    "dateBegin": 1639546800,
+    "dateEnd": 1639548600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8a63bc5d-14fa-413a-8ff6-20d9872c89b1",
+    "dateBegin": 1631751600,
+    "dateEnd": 1631752800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8a7f4304-5963-43f5-ae01-aac8fef4261f",
+    "dateBegin": 1639987800,
+    "dateEnd": 1639989600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8a9a95a9-2e7b-4b2f-8880-1daf0f2a9e8f",
+    "dateBegin": 1635732000,
+    "dateEnd": 1635732600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8aaf90bc-b066-4d23-a2d1-ebfedd5f4ffb",
+    "dateBegin": 1627518000,
+    "dateEnd": 1627519200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8af8ab45-dfc4-4ef2-a620-3fb2b33d8191",
+    "dateBegin": 1643239800,
+    "dateEnd": 1643241600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8b2a0201-7ca7-4822-b246-922c0388e6e1",
+    "dateBegin": 1630978800,
+    "dateEnd": 1630979400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8b31989b-1e84-49bc-b1ec-60939864ccc7",
+    "dateBegin": 1627954200,
+    "dateEnd": 1627956000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8b56f805-6735-4fba-8934-89a3f2449b6d",
+    "dateBegin": 1642543200,
+    "dateEnd": 1642545000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8b90ca0f-7416-4c86-be57-ca273600754f",
+    "dateBegin": 1639753200,
+    "dateEnd": 1639753800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8bdbf144-8709-418f-9212-d56ee4e2e9d9",
+    "dateBegin": 1635244800,
+    "dateEnd": 1635245400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8bff8225-0a7f-40a2-b2ac-b4bcdf2f099e",
+    "dateBegin": 1631237400,
+    "dateEnd": 1631238600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8c3bd0e3-79ee-48c1-9edb-f7887eed796a",
+    "dateBegin": 1635399600,
+    "dateEnd": 1635402600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8c8e3185-f752-4f69-ab7d-473796954e51",
+    "dateBegin": 1627535400,
+    "dateEnd": 1627537200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8cb00579-2cb8-473d-bd88-05f272706681",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8d0b0937-ba00-4f1d-99a2-fb883a29499f",
+    "dateBegin": 1632448800,
+    "dateEnd": 1632450600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8d12acdc-3b62-4758-b784-d10b19618a28",
+    "dateBegin": 1630456800,
+    "dateEnd": 1630458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8d3b5c23-aba5-41a5-9452-51a105a89da3",
+    "dateBegin": 1627435200,
+    "dateEnd": 1627437000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8d6b20cb-7308-4f1f-9657-bbf4966ecbe6",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8d8127ae-7db2-4e20-af38-709a77913131",
+    "dateBegin": 1636420200,
+    "dateEnd": 1636422000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8dc2b4a9-d2ba-4085-8e6e-960b2056f70a",
+    "dateBegin": 1638232200,
+    "dateEnd": 1638234000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8e0f02c5-4fda-417b-b081-0f876fa82034",
+    "dateBegin": 1630912200,
+    "dateEnd": 1630912800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8e144ba8-d424-4dc9-a79f-e18b2d887e0d",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8e163863-2740-4c84-b0fa-5d52fbf53f11",
+    "dateBegin": 1639986600,
+    "dateEnd": 1639988400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8e63bbb7-0cdf-4f48-b8aa-022cbfacd5de",
+    "dateBegin": 1639460400,
+    "dateEnd": 1639462200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8f0ff670-f251-46e4-9853-a60446f640a3",
+    "dateBegin": 1641508800,
+    "dateEnd": 1641510600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8f27c3e5-5110-459c-9467-17159ed7d703",
+    "dateBegin": 1630911600,
+    "dateEnd": 1630913400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8f3db296-6601-45e2-9f36-0e34a69b34f9",
+    "dateBegin": 1635494400,
+    "dateEnd": 1635495000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8fadf1d2-faa5-4486-97b9-356d4e59a4b6",
+    "dateBegin": 1639459800,
+    "dateEnd": 1639461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "8fbe2504-27db-431f-86a3-7e3075bcf4c2",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9027f0e0-8350-4904-a911-0e5b146d51a8",
+    "dateBegin": 1635151200,
+    "dateEnd": 1635151800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9038dc99-9141-4be2-9ad5-43df3c2978a7",
+    "dateBegin": 1635490800,
+    "dateEnd": 1635491400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "90a511a7-48d0-4cdc-8a8e-e34bdfc92288",
+    "dateBegin": 1627704600,
+    "dateEnd": 1627705200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "910ae3a1-db94-406d-b2f3-69f06f6a6db6",
+    "dateBegin": 1626922800,
+    "dateEnd": 1626924600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "914c4177-4f6d-480d-9dfd-bcf567e7a1d2",
+    "dateBegin": 1638847800,
+    "dateEnd": 1638849600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "91dcdb59-8a62-4ea8-9830-c4b3a70b6b7d",
+    "dateBegin": 1635296400,
+    "dateEnd": 1635297000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "92e6ecfd-901c-4ec3-a057-425036707f54",
+    "dateBegin": 1635232800,
+    "dateEnd": 1635233400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "92fea1b6-1178-479e-b583-cd4b8ef4ff02",
+    "dateBegin": 1639471800,
+    "dateEnd": 1639473600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "93619bc6-a54f-49c1-bbec-c202296b7edf",
+    "dateBegin": 1627517400,
+    "dateEnd": 1627520400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "93f5726d-d530-4e49-8dcc-7af017125c53",
+    "dateBegin": 1635241815,
+    "dateEnd": 1635242415
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "941ef27b-37d6-47cd-bdf6-f431b022070b",
+    "dateBegin": 1629678600,
+    "dateEnd": 1629680400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "943646a3-fa33-4995-8a81-f36f3af3fe2b",
+    "dateBegin": 1627461600,
+    "dateEnd": 1627462200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "94986444-69f3-40af-9db4-55c244c1b825",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9507e611-7fff-4665-8a96-80bb58b3a6cb",
+    "dateBegin": 1638318600,
+    "dateEnd": 1638320400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9532a45b-b67c-4f11-8d91-56bbbba30e40",
+    "dateBegin": 1635381600,
+    "dateEnd": 1635382200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "953e30e6-5394-42dd-aa44-1d0e914c96d0",
+    "dateBegin": 1630371600,
+    "dateEnd": 1630372800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "954996fd-2081-4893-bb4f-7e575207d903",
+    "dateBegin": 1628122800,
+    "dateEnd": 1628144400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "95b740e3-62c4-4409-88a2-3cd7b213e438",
+    "dateBegin": 1627551600,
+    "dateEnd": 1627552200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9607455b-b2f7-4f0c-8a99-9ff19e04bb6e",
+    "dateBegin": 1642554000,
+    "dateEnd": 1642555800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "96205f66-f351-4602-b9a1-43e4c2e8f905",
+    "dateBegin": 1627455600,
+    "dateEnd": 1627456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9628e64d-82a8-45ca-957b-56d1e2144f67",
+    "dateBegin": 1627949400,
+    "dateEnd": 1627952400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "962f0c93-9683-43cc-a9e5-bbc92daa6db2",
+    "dateBegin": 1639444200,
+    "dateEnd": 1639446000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "96463191-3c2c-4cda-b5fe-5de1c1e63d65",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9667cd71-781e-43c6-80e8-5c9117ae9f83",
+    "dateBegin": 1638407400,
+    "dateEnd": 1638409200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "96cd864e-e320-4ae0-8c95-4caf5b48b05f",
+    "dateBegin": 1630410600,
+    "dateEnd": 1630411200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "96f54f69-cc72-462c-98e7-d456ff557035",
+    "dateBegin": 1639467000,
+    "dateEnd": 1639468800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9717fb12-7195-4b91-b00d-22e79271b630",
+    "dateBegin": 1639460423,
+    "dateEnd": 1639462223
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "97803088-8f1d-4530-a5bb-f15d9ab601f1",
+    "dateBegin": 1644546600,
+    "dateEnd": 1644548400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "978704d5-5ea5-4ded-8d8d-4c38b0837438",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "97890393-899b-430c-83a3-e1eb3456c853",
+    "dateBegin": 1634776200,
+    "dateEnd": 1634778000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "97d2f088-93da-4909-b785-32241767f425",
+    "dateBegin": 1630390800,
+    "dateEnd": 1630392000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "97f23670-64ed-451a-a10a-06b71f83b03a",
+    "dateBegin": 1630900800,
+    "dateEnd": 1630902600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "980effee-2e15-4b95-83c4-c9fe6bda05ca",
+    "dateBegin": 1627471200,
+    "dateEnd": 1627471800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "98629ef7-4fb9-4176-b977-4b6608ebba13",
+    "dateBegin": 1645061400,
+    "dateEnd": 1645063200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "98735817-82d7-4eb8-a85a-9dbe8af00430",
+    "dateBegin": 1643238000,
+    "dateEnd": 1643239800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "987e3e95-a7fe-46b1-a30f-7067257fcdc9",
+    "dateBegin": 1628727600,
+    "dateEnd": 1628730600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "98d5eeb7-2a43-425a-abcd-04629ee0bfd3",
+    "dateBegin": 1627011000,
+    "dateEnd": 1627012800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "98e8eccb-5044-4cee-ba04-6326f9abcc72",
+    "dateBegin": 1627465800,
+    "dateEnd": 1627466400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "98ebaf5c-9cd8-4abf-b0b3-c6374be23544",
+    "dateBegin": 1632754800,
+    "dateEnd": 1632755400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9914dd58-6329-4929-8f6f-985bf7e5a35c",
+    "dateBegin": 1644535200,
+    "dateEnd": 1644537000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "99453f42-fe69-4957-b40e-29a95f01c2ab",
+    "dateBegin": 1631069400,
+    "dateEnd": 1631070600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9959eeb5-1c30-404c-8bba-cc4a7ff22744",
+    "dateBegin": 1643334600,
+    "dateEnd": 1643336400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9aa096c6-0240-4119-b3d7-a8884a8bdd30",
+    "dateBegin": 1627275600,
+    "dateEnd": 1627278000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9aa21f54-8ab3-4903-96cb-a5a2570874aa",
+    "dateBegin": 1627004400,
+    "dateEnd": 1627006800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9b2a2dba-190c-4dd8-b892-64eaa98fa7da",
+    "dateBegin": 1639723800,
+    "dateEnd": 1639725600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9b8a36f8-9bd3-4891-822c-ce790dae57c4",
+    "dateBegin": 1627002600,
+    "dateEnd": 1627003200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9be1120a-5e8b-4007-8995-ccdafb8c279c",
+    "dateBegin": 1635412200,
+    "dateEnd": 1635414000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9c302d30-bb67-444e-a387-313458c77f39",
+    "dateBegin": 1632215400,
+    "dateEnd": 1632216000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9c75688d-6be5-4ff8-9e29-32ccf77f9e8c",
+    "dateBegin": 1636083000,
+    "dateEnd": 1636084800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9c9d51ae-e649-41f3-a1f6-91bf8ba0af46",
+    "dateBegin": 1637547600,
+    "dateEnd": 1637549400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9cde5e10-faa5-474c-8dcf-76637d261f74",
+    "dateBegin": 1626768600,
+    "dateEnd": 1626769200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9d16c0c6-c5e0-4adc-930e-e944c0fa494c",
+    "dateBegin": 1627617600,
+    "dateEnd": 1627619400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9d878c15-661b-46cf-b398-f9b0834406c4",
+    "dateBegin": 1627262400,
+    "dateEnd": 1627264800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9d95cec3-f147-4582-93f3-c2a329e9aa14",
+    "dateBegin": 1627015200,
+    "dateEnd": 1627016400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9dda9bbb-18fb-40f3-bf02-cbd01e4f1136",
+    "dateBegin": 1639549800,
+    "dateEnd": 1639551600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9df8f580-a353-47d2-8d26-84480ab9e97e",
+    "dateBegin": 1627451400,
+    "dateEnd": 1627452000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9e0fe7a1-e2cc-4cfc-939d-3ddb81e69de3",
+    "dateBegin": 1643925600,
+    "dateEnd": 1643927400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9e3c3578-f67a-497a-83d6-69fda2c0f393",
+    "dateBegin": 1639721400,
+    "dateEnd": 1639723200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9e3fbce6-af29-49c7-9158-cebb9f1f9dd2",
+    "dateBegin": 1632705000,
+    "dateEnd": 1632706200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9e4085fa-8ede-4ec4-9649-f73937243620",
+    "dateBegin": 1636339800,
+    "dateEnd": 1636341600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9e9c7618-4e02-4aef-a198-a847ac790f8d",
+    "dateBegin": 1645405200,
+    "dateEnd": 1645407000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9ecbd465-3327-4387-847f-3883c714b8d0",
+    "dateBegin": 1638924600,
+    "dateEnd": 1638926400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9ed7ee43-40bd-4b6e-83c9-6dd65f7feb85",
+    "dateBegin": 1635328200,
+    "dateEnd": 1635328800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9efc086d-6804-4d56-8713-02f30b2aeae7",
+    "dateBegin": 1635151200,
+    "dateEnd": 1635151800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9f252005-9b1c-4b22-b800-89ca6f22e49a",
+    "dateBegin": 1639994400,
+    "dateEnd": 1639996200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9f2ec29c-fd46-43be-9e60-bad3a86421cc",
+    "dateBegin": 1639726800,
+    "dateEnd": 1639728600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9f923878-ae92-4871-a349-2263c417c473",
+    "dateBegin": 1645488000,
+    "dateEnd": 1645489800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "9fdaddf6-3105-459a-919a-585fd43ec01b",
+    "dateBegin": 1627632000,
+    "dateEnd": 1627633800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a017dc8e-be47-4f1c-a1fe-d9b9dc08e088",
+    "dateBegin": 1638150600,
+    "dateEnd": 1638152400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a061c54e-90a9-445d-b02a-c30723f77e63",
+    "dateBegin": 1630312200,
+    "dateEnd": 1630313400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a120a117-d085-480e-8437-66b85f0c2d28",
+    "dateBegin": 1627557600,
+    "dateEnd": 1627558200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a13b5b27-f459-4291-8107-e3e3040fe2e0",
+    "dateBegin": 1634607600,
+    "dateEnd": 1634608800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a21efdbb-d3bf-4bc6-acb5-19f277d3372d",
+    "dateBegin": 1638927600,
+    "dateEnd": 1638929400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a22c182f-1046-40b1-9ca7-9c58ae13de37",
+    "dateBegin": 1629246600,
+    "dateEnd": 1629247800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a25db740-3920-4fae-a91f-4c236aa6681c",
+    "dateBegin": 1635318000,
+    "dateEnd": 1635318600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a293f6fd-c58f-4244-a0f7-53ca8f6e685f",
+    "dateBegin": 1639020602,
+    "dateEnd": 1639022402
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a2c9a816-88a9-4885-a8ee-f8c0a926a58a",
+    "dateBegin": 1639467600,
+    "dateEnd": 1639469400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a2dedb5e-05dc-4815-b07d-16cce39116d5",
+    "dateBegin": 1627516800,
+    "dateEnd": 1627517400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a318b174-757d-432f-a252-22ed51af2011",
+    "dateBegin": 1630742400,
+    "dateEnd": 1630744200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a35162a4-e17c-426e-8fac-aa5787998d81",
+    "dateBegin": 1627491600,
+    "dateEnd": 1627492200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a3a3be63-350d-43ca-94cf-2597f7c7f8b4",
+    "dateBegin": 1632357600,
+    "dateEnd": 1632358200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a3d65e4c-ea7d-4534-90a7-e9c24d88a0cc",
+    "dateBegin": 1634783400,
+    "dateEnd": 1634785200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a44a5ce3-4807-4788-8e3f-10d55ca62714",
+    "dateBegin": 1641591600,
+    "dateEnd": 1641593400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a4671fcd-ccef-4ba2-9288-605950e7e159",
+    "dateBegin": 1630395000,
+    "dateEnd": 1630396200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a4a2c775-afc9-4213-9b75-97f003bb7207",
+    "dateBegin": 1634689200,
+    "dateEnd": 1634691000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a518e489-2900-4901-a2ad-d15b5c14d91f",
+    "dateBegin": 1642035600,
+    "dateEnd": 1642037400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a55034ac-baa6-4d0e-8543-b28d5e408d0c",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a55e66ce-ed3a-4f07-a7fc-24c6e9043f94",
+    "dateBegin": 1635465600,
+    "dateEnd": 1635466200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a5cb1232-0bcf-4b76-8b5b-86e1b981d260",
+    "dateBegin": 1644451200,
+    "dateEnd": 1644453000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a5d09640-3d22-4a19-ba13-c09ec165b878",
+    "dateBegin": 1631239200,
+    "dateEnd": 1631240400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a5d1572a-9458-475e-a9a5-7b503a1a4a9e",
+    "dateBegin": 1635140400,
+    "dateEnd": 1635142200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a61e7960-6e03-45a2-95af-cbbde0a7f3c7",
+    "dateBegin": 1630455000,
+    "dateEnd": 1630456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a6414bef-2f5c-4c98-b6f7-ef19fb5cff4d",
+    "dateBegin": 1635241800,
+    "dateEnd": 1635242400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a64e66cf-6ff3-4f6d-9348-46e72a74271e",
+    "dateBegin": 1635241829,
+    "dateEnd": 1635242429
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a6a02725-3447-4056-9be7-942045abc63d",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a6b70ca7-5ffc-4300-95cc-666a9d0ec4c0",
+    "dateBegin": 1631245200,
+    "dateEnd": 1631246400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a6c34cf5-41b1-430c-8288-7061093bf12e",
+    "dateBegin": 1632357600,
+    "dateEnd": 1632358200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a702f7f6-a4ad-445a-ad64-4abfd36620db",
+    "dateBegin": 1639712409,
+    "dateEnd": 1639714209
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7577193-a83c-4367-8939-ef438bebb79d",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7625029-e65f-4baf-8389-70fb1d4077e5",
+    "dateBegin": 1639100400,
+    "dateEnd": 1639102200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7924d0c-456f-47eb-b501-076a8d096321",
+    "dateBegin": 1635241823,
+    "dateEnd": 1635241823
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7ad4bc1-2deb-45ab-82e4-e19e43309e21",
+    "dateBegin": 1635242413,
+    "dateEnd": 1635243013
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7b6fc1f-bf18-42ff-aa50-6bd0480b7171",
+    "dateBegin": 1641342600,
+    "dateEnd": 1641344400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7bb928b-e26e-41c2-9015-1a0d8c81236f",
+    "dateBegin": 1627462800,
+    "dateEnd": 1627463400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a7bf0ebb-ab64-46e6-9ff4-b04b3a901a94",
+    "dateBegin": 1634179800,
+    "dateEnd": 1634180400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a815d6a1-bed4-46be-96ff-51a5709fafbb",
+    "dateBegin": 1626942000,
+    "dateEnd": 1626942600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a845c15a-4f51-404e-8cdf-ba25959dee81",
+    "dateBegin": 1631587800,
+    "dateEnd": 1631590200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a8516116-4b46-42d8-8adf-59d106390c47",
+    "dateBegin": 1630378800,
+    "dateEnd": 1630379400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a8681e03-9a8f-4440-8077-ad8b053a494f",
+    "dateBegin": 1636425000,
+    "dateEnd": 1636426800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a95cfcd1-92bf-4047-8042-959fdc09f970",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "a9e8fb87-ae2a-4ad0-b514-dafcc46005b2",
+    "dateBegin": 1627276800,
+    "dateEnd": 1627278600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aa359b54-72bf-4465-9e46-8728d3c8afe5",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aa460a35-f599-4cb6-b1a0-3888e6895b84",
+    "dateBegin": 1626942000,
+    "dateEnd": 1626943200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aa9a6573-c4ca-4881-aaab-e4c643df304c",
+    "dateBegin": 1627628400,
+    "dateEnd": 1627630200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ab2c56f9-79ba-4a0b-afd8-b51edfad66ad",
+    "dateBegin": 1635489000,
+    "dateEnd": 1635489600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ab3684e0-070d-494c-aae6-bb38e8187a2b",
+    "dateBegin": 1639534200,
+    "dateEnd": 1639536000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ab950920-caf0-4b39-82b5-145b8fdd67f5",
+    "dateBegin": 1630411200,
+    "dateEnd": 1630411800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "abf7ae06-c03c-4e63-a27d-bde1a055a855",
+    "dateBegin": 1639638600,
+    "dateEnd": 1639640400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ac0e3634-158d-4f15-9540-65db7e89a444",
+    "dateBegin": 1638751800,
+    "dateEnd": 1638753600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ac64cbd9-a767-46f1-8e4a-e0fa93760ccc",
+    "dateBegin": 1641366000,
+    "dateEnd": 1641369600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ac6bce84-0de1-4c4a-9160-739b9d8fe39f",
+    "dateBegin": 1635208200,
+    "dateEnd": 1635208800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aca3f36f-bc5b-418d-8af4-da89690c3a9b",
+    "dateBegin": 1631751600,
+    "dateEnd": 1631752800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aca86726-a10f-40c2-aab1-973b86a45151",
+    "dateBegin": 1635318600,
+    "dateEnd": 1635319200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ad372501-6e55-4a1a-89d8-4e5e1a8f5091",
+    "dateBegin": 1630285800,
+    "dateEnd": 1630286400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ad9d7049-9e24-4ea0-bc1a-c7b425b697fb",
+    "dateBegin": 1639630800,
+    "dateEnd": 1639632600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ae3519d7-4cd4-4639-9857-286efff79f14",
+    "dateBegin": 1638931800,
+    "dateEnd": 1638933600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "aef43e40-088a-4b4b-a8e0-1e247b4a6b1b",
+    "dateBegin": 1631066400,
+    "dateEnd": 1631068200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "af26ec99-d145-4c28-ade5-d648cf4de09f",
+    "dateBegin": 1638407400,
+    "dateEnd": 1638409200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "af2e5c0d-d552-4eb6-9f90-0564290db910",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "afb26645-b50e-4e8e-8d80-7a9a34d20ee8",
+    "dateBegin": 1639106455,
+    "dateEnd": 1639108255
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "affe78fc-db62-4180-b5c9-c25c3e454688",
+    "dateBegin": 1635241802,
+    "dateEnd": 1635242402
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b0210d0f-0942-4553-9a87-e29df740c7fc",
+    "dateBegin": 1627470000,
+    "dateEnd": 1627471800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b038c7fa-d51a-4f8a-9de9-3b20a3d752a1",
+    "dateBegin": 1627030800,
+    "dateEnd": 1627033200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b0530c76-09fe-442c-9341-12b6a03ac694",
+    "dateBegin": 1630398600,
+    "dateEnd": 1630399800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b068fc15-a48b-4ac4-92e6-3dd9bbfcb45f",
+    "dateBegin": 1639112433,
+    "dateEnd": 1639114233
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b079aadf-e331-41fb-ad77-c084c3851e2a",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b08cb347-5aea-42ef-b9b9-7724926d0ca7",
+    "dateBegin": 1639546800,
+    "dateEnd": 1639548600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b1526bad-3748-4559-8502-ddc4839350b5",
+    "dateBegin": 1636525200,
+    "dateEnd": 1636527000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b1532141-e1db-4197-9f03-cd3d0c8a7d5b",
+    "dateBegin": 1637559000,
+    "dateEnd": 1637560800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b1740503-dde5-4348-9c67-997c02ea4313",
+    "dateBegin": 1638318600,
+    "dateEnd": 1638320400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b17878e1-33fc-4095-bb98-2600a92d248d",
+    "dateBegin": 1639456200,
+    "dateEnd": 1639458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b23535b3-c583-4163-b053-f2927bb75245",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b23e0955-57c1-47fd-8ef2-f34c020ca028",
+    "dateBegin": 1638335400,
+    "dateEnd": 1638337200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b2bc0870-fc24-4fe3-86b2-aef9dbdd6cb0",
+    "dateBegin": 1635472800,
+    "dateEnd": 1635473400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b2bcd2c9-be46-490f-ad63-e006edd0675a",
+    "dateBegin": 1639469400,
+    "dateEnd": 1639471200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b2c530a9-0946-412b-89c8-394e263918da",
+    "dateBegin": 1628744400,
+    "dateEnd": 1628746200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b2e4e072-bfaa-4bfe-8dc5-9747e0e33937",
+    "dateBegin": 1641862800,
+    "dateEnd": 1641864600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b2eba514-ee89-40a1-a1ca-efe01fdef05b",
+    "dateBegin": 1630648200,
+    "dateEnd": 1630649400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b35aa4f3-4276-4088-a530-8d5577032001",
+    "dateBegin": 1627455600,
+    "dateEnd": 1627458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b3775271-52d6-4ffb-95bc-b56b3f032375",
+    "dateBegin": 1639548600,
+    "dateEnd": 1639550400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b39f6ee7-e7f4-40dd-b330-ab24785f1576",
+    "dateBegin": 1630921800,
+    "dateEnd": 1630922400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b40d8206-6a6c-4ff9-92e3-70f93ffd1138",
+    "dateBegin": 1627458000,
+    "dateEnd": 1627458600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b44c3a8c-4cb4-4385-87bf-1ce91f64f8dd",
+    "dateBegin": 1639537800,
+    "dateEnd": 1639539600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b46cba19-1146-4bca-b733-202213f9911a",
+    "dateBegin": 1641508200,
+    "dateEnd": 1641510000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b5161341-9473-4fec-8340-4ef9cba4678a",
+    "dateBegin": 1630487400,
+    "dateEnd": 1630488600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b51b0332-e715-47c3-9193-91a707df82ad",
+    "dateBegin": 1644804000,
+    "dateEnd": 1644805800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b527e814-0511-453f-a9d1-8106af726e05",
+    "dateBegin": 1639800000,
+    "dateEnd": 1639801800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b60ade21-349e-4a77-8d22-a58a9f117197",
+    "dateBegin": 1635992400,
+    "dateEnd": 1635994200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b61c246d-a071-4362-84b5-1c1c29266e52",
+    "dateBegin": 1627525800,
+    "dateEnd": 1627526400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b67a3e16-3643-407c-813b-68ee7b32b975",
+    "dateBegin": 1639546200,
+    "dateEnd": 1639548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b6e47eaf-ec65-4e49-a22c-a5a9f84a7ed4",
+    "dateBegin": 1644282000,
+    "dateEnd": 1644283800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b6ef1f65-f18b-4ebf-8b37-77c48143763f",
+    "dateBegin": 1627284600,
+    "dateEnd": 1627286400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b7082ce6-0f99-49be-91ff-4738b4b9c0b2",
+    "dateBegin": 1643181600,
+    "dateEnd": 1643183400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b7317825-65a7-4680-8b4d-78418bea09ad",
+    "dateBegin": 1638496200,
+    "dateEnd": 1638498000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b7e6c1d8-4433-47d3-b393-91908e0b74b9",
+    "dateBegin": 1635469200,
+    "dateEnd": 1635469800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b8362c57-c200-437f-a639-185b9820f559",
+    "dateBegin": 1641344400,
+    "dateEnd": 1641346200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b847d313-99a3-4f5e-b931-17c6d3a02dac",
+    "dateBegin": 1639816200,
+    "dateEnd": 1639818000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b88acf41-fd4f-471a-a46b-4ea2026b9aaf",
+    "dateBegin": 1630304400,
+    "dateEnd": 1630305600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b8e8c276-6673-4443-831e-3f4cec3f5439",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b8ec1c2b-5e5b-4785-8345-37733c2ab6f6",
+    "dateBegin": 1645061400,
+    "dateEnd": 1645063200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b90eab08-f08b-45e6-baa3-07f498925b5e",
+    "dateBegin": 1634259000,
+    "dateEnd": 1634259600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b931c4c6-c784-476b-a111-592de6d634da",
+    "dateBegin": 1638929400,
+    "dateEnd": 1638931200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b935ee2d-f78d-4610-b6bf-d0dce7415942",
+    "dateBegin": 1639986000,
+    "dateEnd": 1639987800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b99a5967-5c78-4c99-bedb-0235643c2b4f",
+    "dateBegin": 1639800000,
+    "dateEnd": 1639801800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b9a04b41-484d-4697-a533-a169a648fb54",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b9cd6b6a-77e5-46b1-a82e-9bb5a645c1aa",
+    "dateBegin": 1643407800,
+    "dateEnd": 1643409600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b9da3bcc-ccdc-4363-87db-6bad819a2768",
+    "dateBegin": 1626767400,
+    "dateEnd": 1626769800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "b9ea11b3-483d-4bb9-a552-7c20f00fd510",
+    "dateBegin": 1634518200,
+    "dateEnd": 1634518800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ba10ff88-2f67-4b5e-85db-1ef8e2cd484b",
+    "dateBegin": 1627438800,
+    "dateEnd": 1627439400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "baa6626e-8f78-476c-82db-a2dc400c2fc0",
+    "dateBegin": 1631493000,
+    "dateEnd": 1631494800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bafbd4c0-acc6-46b1-8848-83575302eb37",
+    "dateBegin": 1635397200,
+    "dateEnd": 1635397800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bb525a6f-7236-4bd5-915e-4acd8f26e626",
+    "dateBegin": 1630643400,
+    "dateEnd": 1630644600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bb6505e8-3e00-4756-9924-3d875476f21e",
+    "dateBegin": 1635241832,
+    "dateEnd": 1635242432
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bb77ed35-8a46-4260-82de-cbc52fead2c6",
+    "dateBegin": 1627548000,
+    "dateEnd": 1627548600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bc4091f6-8823-4ff8-b3a6-28c3a396923e",
+    "dateBegin": 1630411200,
+    "dateEnd": 1630411800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bc4db397-d4bf-4096-a609-f000677e309e",
+    "dateBegin": 1635485400,
+    "dateEnd": 1635486000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bc58f8cf-ac3e-4b28-9e19-5d8e91a761a4",
+    "dateBegin": 1639454400,
+    "dateEnd": 1639456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bc64f1c3-fb23-403e-bcfb-378c5c9d22d4",
+    "dateBegin": 1635324000,
+    "dateEnd": 1635324600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bd63225e-1d86-4f1f-be68-dab95751a4a0",
+    "dateBegin": 1639547400,
+    "dateEnd": 1639533600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bd832bbb-caeb-4fda-9f02-50c5078c2c64",
+    "dateBegin": 1644469200,
+    "dateEnd": 1644471000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bd921279-1288-4d74-b119-8fec70a7284c",
+    "dateBegin": 1639017000,
+    "dateEnd": 1639018800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "be04109d-bcfd-4eab-8ccd-10c61ad24d0d",
+    "dateBegin": 1627529400,
+    "dateEnd": 1627530000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "be20fc12-f725-4f13-beb8-59a26e6af8fa",
+    "dateBegin": 1639532400,
+    "dateEnd": 1639534200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "be6ccf31-f23c-4ae1-9257-b25560ecc3dc",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "be7e5f51-0078-468d-b73d-5b1260d5e2b4",
+    "dateBegin": 1639459831,
+    "dateEnd": 1639461631
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "beb3ffe6-2bed-46e7-934a-b9e02f950e80",
+    "dateBegin": 1627554600,
+    "dateEnd": 1627557000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bebcfb71-5f03-43f4-871d-6650403f271e",
+    "dateBegin": 1644451800,
+    "dateEnd": 1644453600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bec1db04-452d-4447-bd18-54a51abef0e2",
+    "dateBegin": 1644879600,
+    "dateEnd": 1644881400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bf19cabf-4809-431c-9ca1-d52630a82df8",
+    "dateBegin": 1634172600,
+    "dateEnd": 1634173200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bf2472b0-8c81-415b-aadb-ab44c85b325b",
+    "dateBegin": 1635404400,
+    "dateEnd": 1635405000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bf2f16cd-89d9-47c6-b1f0-0d40bc6b521d",
+    "dateBegin": 1630304400,
+    "dateEnd": 1630305600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bf5241c5-0719-4030-ae44-0c501108649a",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bf6a27d5-1341-4ed8-8ef7-8cd49b1cf654",
+    "dateBegin": 1639531800,
+    "dateEnd": 1639532400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bfba8114-f03c-4f31-a353-e1297a9ea887",
+    "dateBegin": 1627476000,
+    "dateEnd": 1627476600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bfdd4f73-eab6-4851-8698-98466c68a957",
+    "dateBegin": 1626829800,
+    "dateEnd": 1626831600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "bff75b67-e266-4f45-8e26-9d91e355ff48",
+    "dateBegin": 1635123600,
+    "dateEnd": 1635124200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c0093c2e-d107-499e-b1f4-7503736d346e",
+    "dateBegin": 1632367800,
+    "dateEnd": 1632368400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c09d98f2-7007-4001-8130-5aa5cef55d03",
+    "dateBegin": 1639035600,
+    "dateEnd": 1639037400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c0c22350-7364-42fb-8601-82313c7dffd9",
+    "dateBegin": 1634891400,
+    "dateEnd": 1634893200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c0f00681-b863-442e-906b-2b0ca525a45a",
+    "dateBegin": 1639036800,
+    "dateEnd": 1639038600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c1054b6b-6b59-4528-9164-206300e33d09",
+    "dateBegin": 1644218400,
+    "dateEnd": 1644220200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c1b1a6a4-8fab-4cbe-aa51-060281b30873",
+    "dateBegin": 1635991200,
+    "dateEnd": 1635993000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c2a9ebe4-1f8d-4e28-8b82-14d70bdc2cac",
+    "dateBegin": 1632215400,
+    "dateEnd": 1632217200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c2be5fe9-603d-436f-8a4e-54651b043d2c",
+    "dateBegin": 1639983000,
+    "dateEnd": 1639984800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c2d737a7-1937-49c3-ba5a-292fd862ec7b",
+    "dateBegin": 1643062200,
+    "dateEnd": 1643064000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c2f484a9-7a12-4f87-8ef2-7c138b73ffdd",
+    "dateBegin": 1639125633,
+    "dateEnd": 1639127433
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c2f7840b-6ede-46e5-83dd-0e6ca67077a6",
+    "dateBegin": 1635241830,
+    "dateEnd": 1635242430
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c38353b2-22a0-465e-b937-9b24c35e3ff8",
+    "dateBegin": 1626924600,
+    "dateEnd": 1626926400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c3bcaae0-8cea-4de1-99bf-85215ecb0e4d",
+    "dateBegin": 1644623400,
+    "dateEnd": 1644625200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c3cccb36-a6ab-4106-80fd-254e2bdc12e7",
+    "dateBegin": 1627864200,
+    "dateEnd": 1627864800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c3f0562d-89d6-4715-ac8c-8821407c15ff",
+    "dateBegin": 1639564800,
+    "dateEnd": 1639558200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c42d4c52-164c-4d01-b6c0-5f4c96c61b7b",
+    "dateBegin": 1635316800,
+    "dateEnd": 1635317400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c4368cb5-3f40-4a9c-afbf-874f69b761bb",
+    "dateBegin": 1639707600,
+    "dateEnd": 1639708200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c526cba4-d3cc-41f3-baff-921c1b7a1e4b",
+    "dateBegin": 1639360200,
+    "dateEnd": 1639362000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c53d493b-ea88-4f1c-9793-532e9fa6fd73",
+    "dateBegin": 1637025000,
+    "dateEnd": 1637026800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5ada83a-14f2-48ff-a25e-dc501c479cdf",
+    "dateBegin": 1627633800,
+    "dateEnd": 1627635600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5b1cd76-bfb5-43a8-9cc0-84f2abe3bddb",
+    "dateBegin": 1639459800,
+    "dateEnd": 1639461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5bd7554-7efc-4f03-b62d-3f6dff1d4cda",
+    "dateBegin": 1651737600,
+    "dateEnd": 1651739400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5c8dd0a-3189-48f7-a6dc-f2f5cddd8994",
+    "dateBegin": 1635208200,
+    "dateEnd": 1635208800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5cb9851-3d70-474d-981c-34e985446bfb",
+    "dateBegin": 1639458048,
+    "dateEnd": 1639459848
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c5eff8a3-dffd-4ba8-a4f4-1f4b34a7da5f",
+    "dateBegin": 1635316200,
+    "dateEnd": 1635316800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c607193a-f4da-4f81-8776-c49e2bd281b5",
+    "dateBegin": 1635382800,
+    "dateEnd": 1635383400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c69710bd-1a97-479d-b885-bf00af10c8ae",
+    "dateBegin": 1635294600,
+    "dateEnd": 1635295200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c6ee50c2-1520-4cc9-a161-93718e4c8ead",
+    "dateBegin": 1635217800,
+    "dateEnd": 1635218400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c70f8714-a0bc-404b-a32b-6368ee8193c4",
+    "dateBegin": 1627009200,
+    "dateEnd": 1627009800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c7aab3cf-6d50-422d-a95f-0307975ba623",
+    "dateBegin": 1639467600,
+    "dateEnd": 1639469400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c7c3009d-e600-484e-9322-df084f725172",
+    "dateBegin": 1627435200,
+    "dateEnd": 1627435800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c7dc6d93-523e-42af-ac7c-e4e7e9346925",
+    "dateBegin": 1639100400,
+    "dateEnd": 1639102200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c7dff48b-8938-4e75-bcdf-0adfb8f24150",
+    "dateBegin": 1639753200,
+    "dateEnd": 1639753800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c7eb37e0-20a7-444b-86a5-6085a21ea951",
+    "dateBegin": 1635493800,
+    "dateEnd": 1635494400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c8bd08d9-f602-4783-a14b-777ff6a82c52",
+    "dateBegin": 1639715402,
+    "dateEnd": 1639717202
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c8d45a4c-c909-4e9b-8dbe-cb2d30860309",
+    "dateBegin": 1639020643,
+    "dateEnd": 1639022443
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c950e3e6-48f8-4819-aa07-2dbbd55e8bce",
+    "dateBegin": 1630543800,
+    "dateEnd": 1630546200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c96df342-5383-447f-94b3-247cb6c91409",
+    "dateBegin": 1644275400,
+    "dateEnd": 1644277200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c97414bb-f887-4945-a14e-1c2c3af97112",
+    "dateBegin": 1639558200,
+    "dateEnd": 1639560000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c99a4da5-e993-4d8d-b685-0556d6e84243",
+    "dateBegin": 1626746400,
+    "dateEnd": 1626748200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "c9d1f565-8c18-4bd7-9256-05d269e0655e",
+    "dateBegin": 1641344400,
+    "dateEnd": 1641346200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ca336c39-edf4-4540-b516-49e37111544e",
+    "dateBegin": 1634695200,
+    "dateEnd": 1634697600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ca49b0bc-786b-4a76-9c93-9831c8879eac",
+    "dateBegin": 1627556400,
+    "dateEnd": 1627558200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ca4d94b2-ee5f-4550-a416-801d88a992ae",
+    "dateBegin": 1639100400,
+    "dateEnd": 1639102200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ca9ab81c-a64b-41c4-b2b1-e73d69268975",
+    "dateBegin": 1635242425,
+    "dateEnd": 1635243025
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cab21025-4741-4b04-a411-834f6c765226",
+    "dateBegin": 1639709400,
+    "dateEnd": 1639735200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cb53bdfa-bbfe-4b39-82f0-19bdacdad5f1",
+    "dateBegin": 1635381000,
+    "dateEnd": 1635383400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cb651f0e-7baa-44dd-847a-e7e0b3b8dd3a",
+    "dateBegin": 1632874800,
+    "dateEnd": 1632876600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cbb16c20-6bc0-4386-9d74-b41fc8aee3ef",
+    "dateBegin": 1635672000,
+    "dateEnd": 1635672600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cbd93f7e-a508-4e43-9ed7-d84ba1c8b930",
+    "dateBegin": 1639459200,
+    "dateEnd": 1639461000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cc8f52ef-0f37-4a2e-aabf-e24065216390",
+    "dateBegin": 1639719608,
+    "dateEnd": 1639721408
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cca4b059-7f32-4ea5-a1c7-f874a15543c5",
+    "dateBegin": 1635294600,
+    "dateEnd": 1635295200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cd39f053-6f8a-4d95-9660-38c273bce797",
+    "dateBegin": 1627546800,
+    "dateEnd": 1627548600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cd619269-5389-451a-a262-fc629002819e",
+    "dateBegin": 1627008600,
+    "dateEnd": 1627009200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cd85ba29-6b37-4274-bef0-6091e1a51b53",
+    "dateBegin": 1639036831,
+    "dateEnd": 1639038631
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cdb31f29-7c7b-49ab-8167-ad8a7cc93194",
+    "dateBegin": 1638519000,
+    "dateEnd": 1638520800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cdc5b928-e193-4d1d-ac76-cb96d11455c5",
+    "dateBegin": 1637632800,
+    "dateEnd": 1637634600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cdf09d1f-9fa2-45d6-89a8-43ea5fbb307f",
+    "dateBegin": 1626838200,
+    "dateEnd": 1626840000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ced9b1df-540f-450e-a84f-c2bd715fea93",
+    "dateBegin": 1639987200,
+    "dateEnd": 1639989000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cf137e14-3039-429b-a439-ecafabdda85a",
+    "dateBegin": 1635749400,
+    "dateEnd": 1635750000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cfa8869e-1b67-46de-969a-7cd580214b6b",
+    "dateBegin": 1639027800,
+    "dateEnd": 1639029600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "cffcf960-1c0f-49a9-bbdc-6830cf67006e",
+    "dateBegin": 1630397400,
+    "dateEnd": 1630398600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d00e7ce6-933b-4e71-8212-e0afb3539a0c",
+    "dateBegin": 1627344600,
+    "dateEnd": 1627345200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d027b6f2-e0d0-4db5-9346-dfd3585bb9e3",
+    "dateBegin": 1635496200,
+    "dateEnd": 1635496800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d0577358-f064-4728-b26f-e583af1e16f5",
+    "dateBegin": 1635301200,
+    "dateEnd": 1635301800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d06b0f97-10f1-49da-9063-ed7a8ff0364a",
+    "dateBegin": 1635124200,
+    "dateEnd": 1635125400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d0ef311c-0919-4416-a16b-a0000b7fdb05",
+    "dateBegin": 1627604400,
+    "dateEnd": 1627605000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d10b7acc-9862-43dc-aa14-d25b209ca47b",
+    "dateBegin": 1635328843,
+    "dateEnd": 1635329443
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d13a1ccc-e56a-40eb-8361-57018bd49513",
+    "dateBegin": 1644968400,
+    "dateEnd": 1644970200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d171f8f7-352a-46ba-9627-ac4fdab9885d",
+    "dateBegin": 1636942200,
+    "dateEnd": 1636944000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d1a14a58-7fde-4fae-a29f-2e57108a037b",
+    "dateBegin": 1639723800,
+    "dateEnd": 1639725600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d1ba53e9-bf70-491e-b474-015d5b116f05",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d1c5fd71-1230-477c-9d7e-f9c42c6d591e",
+    "dateBegin": 1630655400,
+    "dateEnd": 1630656600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d21cc6d1-9635-4423-9364-fa80becb01b5",
+    "dateBegin": 1641517200,
+    "dateEnd": 1641519000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d22e4be0-b534-40fd-b441-e578554f54f2",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d2301040-abe8-4c89-9d26-3f3937c09208",
+    "dateBegin": 1627012800,
+    "dateEnd": 1627014000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d24cd69b-4e00-447e-bf05-8d3bd567a87f",
+    "dateBegin": 1637286000,
+    "dateEnd": 1637287800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d2540813-ecf5-4019-9ac0-57e95e56c511",
+    "dateBegin": 1635334800,
+    "dateEnd": 1635335400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d2a571df-96c2-4ece-8b67-1b6e7341cd5d",
+    "dateBegin": 1630988400,
+    "dateEnd": 1630989600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d2bcbdb5-1018-4d6c-b7be-65b478406187",
+    "dateBegin": 1627450800,
+    "dateEnd": 1627453200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3362cd1-6a65-4519-8219-7ff89d6ab8de",
+    "dateBegin": 1634643600,
+    "dateEnd": 1634646600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d367c843-c62c-4978-b469-58cd30b32848",
+    "dateBegin": 1635390600,
+    "dateEnd": 1635391200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3725ede-6fc0-4512-9ad5-ecd513e9bcaf",
+    "dateBegin": 1630035600,
+    "dateEnd": 1630036200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3c09bcf-5e03-445f-8657-1f9b6e0dc191",
+    "dateBegin": 1627452600,
+    "dateEnd": 1627453200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3d75697-6afe-45a4-a733-25df59be5760",
+    "dateBegin": 1631187000,
+    "dateEnd": 1631187600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3ee618b-0099-4f60-8e9b-dd2000bad0e3",
+    "dateBegin": 1639361400,
+    "dateEnd": 1639363200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d3f10660-8267-406d-ba61-940a710b1be1",
+    "dateBegin": 1630813200,
+    "dateEnd": 1630814400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d4180b02-6dda-4e98-863e-7a83a36fe09e",
+    "dateBegin": 1639877400,
+    "dateEnd": 1639879200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d41b626a-3d35-4eb0-835b-5df53fa5ae4b",
+    "dateBegin": 1632789000,
+    "dateEnd": 1632790200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d4620097-8642-4d68-af2d-c6648b66608b",
+    "dateBegin": 1639459800,
+    "dateEnd": 1639461600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d4dfcca9-c2d5-4d6d-8ebf-c0205add47d0",
+    "dateBegin": 1643936400,
+    "dateEnd": 1643938200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d4e09af7-9213-4c56-812c-f7e83ce07e25",
+    "dateBegin": 1630508400,
+    "dateEnd": 1630509000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d4f1226a-6600-4cb4-a942-8837e527d01b",
+    "dateBegin": 1636940400,
+    "dateEnd": 1636942200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d513a44b-9d5d-42f3-9a37-3a481a6241d5",
+    "dateBegin": 1627519200,
+    "dateEnd": 1627519800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d51a2eb3-14ef-45f3-be40-1a627537efb2",
+    "dateBegin": 1630477200,
+    "dateEnd": 1630497600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d537f58b-0ca0-4d11-b226-eed89525a812",
+    "dateBegin": 1636102800,
+    "dateEnd": 1636104600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d55c8f6a-2250-405a-9b5b-395c2f646fe3",
+    "dateBegin": 1627431000,
+    "dateEnd": 1627431600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d567c58d-2252-427d-9d44-0a947db8bb2f",
+    "dateBegin": 1634797200,
+    "dateEnd": 1634797800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d5d2e727-f321-4278-944b-eba6b0efce67",
+    "dateBegin": 1635294600,
+    "dateEnd": 1635295200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d5e48aab-c946-488a-a9cb-c40799ae1f8d",
+    "dateBegin": 1641852600,
+    "dateEnd": 1641854400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d60f6da7-b5b1-4592-a533-e182166e4291",
+    "dateBegin": 1639704600,
+    "dateEnd": 1639705200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d66cace5-527f-48d7-8946-cda33fcf0e51",
+    "dateBegin": 1637633400,
+    "dateEnd": 1637635200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d67b6978-72b9-45e3-9335-7b9d213b7385",
+    "dateBegin": 1643949600,
+    "dateEnd": 1643951400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d6a2cf8a-f735-4b75-a5b9-72334fead772",
+    "dateBegin": 1641418200,
+    "dateEnd": 1641420000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d700020f-a9dc-471c-ae81-c31c76a9f7fd",
+    "dateBegin": 1634173800,
+    "dateEnd": 1634174400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d7067749-789d-4fd4-9b81-8bc27d08bc58",
+    "dateBegin": 1631664000,
+    "dateEnd": 1631665800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d73ffd0d-5125-412f-a7f7-87fca29c2181",
+    "dateBegin": 1627727400,
+    "dateEnd": 1627729800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d767fde7-9379-4358-9281-25f8e13a1c0e",
+    "dateBegin": 1636090200,
+    "dateEnd": 1636092000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d78070db-f646-4ce5-97ce-45ac54da2241",
+    "dateBegin": 1639555200,
+    "dateEnd": 1639560000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d79f44ef-e437-48e7-93f4-309ef88f8554",
+    "dateBegin": 1639450222,
+    "dateEnd": 1639452022
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d8166b37-2789-4d7e-a4a8-5d869a7c42bb",
+    "dateBegin": 1635418800,
+    "dateEnd": 1635420600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d8436658-5d63-46f9-860f-767fe5007d54",
+    "dateBegin": 1631066400,
+    "dateEnd": 1631068200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d8437b4e-5e2d-4004-9711-88ec3baf0313",
+    "dateBegin": 1627530000,
+    "dateEnd": 1627530600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d850ffe1-e059-4c29-bba9-40c3dd6e1560",
+    "dateBegin": 1639917600,
+    "dateEnd": 1639878600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d858aeb8-734c-4d0d-b077-dd53241fb110",
+    "dateBegin": 1630283400,
+    "dateEnd": 1630284000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d8e5ca52-4425-4080-ad38-1a5a87b1b2b1",
+    "dateBegin": 1641259800,
+    "dateEnd": 1641261600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d91114d2-f813-4dcf-9f99-1ab8db4f5a76",
+    "dateBegin": 1639454400,
+    "dateEnd": 1639456200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d94c256e-e555-4618-94ad-c5c70d542d9f",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d95a0495-721e-4bd3-968c-be420adc77b9",
+    "dateBegin": 1635475200,
+    "dateEnd": 1635475800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d95d40cd-f3ab-406b-8fe4-752e97170cad",
+    "dateBegin": 1639721400,
+    "dateEnd": 1639723200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "d9f695f5-a236-4484-9325-3e27ddd40266",
+    "dateBegin": 1635235800,
+    "dateEnd": 1635236400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "da32d75a-8faa-4f35-909b-821d1376001a",
+    "dateBegin": 1639036834,
+    "dateEnd": 1639038634
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "da7f79fa-f008-4789-9227-cde7afc8725c",
+    "dateBegin": 1638495600,
+    "dateEnd": 1638497400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "daf73be4-1096-4d35-b983-b07947effbbe",
+    "dateBegin": 1637544600,
+    "dateEnd": 1637546400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "db12b2d1-1828-49a7-a163-76a1e42a20bd",
+    "dateBegin": 1635412200,
+    "dateEnd": 1635412800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "db33b4aa-f2d4-48a7-86ab-07e1212856c5",
+    "dateBegin": 1635492000,
+    "dateEnd": 1635492600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "db4774a8-1fe0-458e-88f7-7bb3b4743381",
+    "dateBegin": 1635414600,
+    "dateEnd": 1635415200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "db88b264-4fbb-428a-b312-5b17dcbf3423",
+    "dateBegin": 1627470000,
+    "dateEnd": 1627470600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dc0501e6-543a-4fd0-b7cd-623f3efddf2a",
+    "dateBegin": 1630544400,
+    "dateEnd": 1630547400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dc1a7ef3-40cc-4dca-8a88-cc1949796874",
+    "dateBegin": 1645487400,
+    "dateEnd": 1645489200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dc7916d0-823a-43df-8bd8-94883b0d43c3",
+    "dateBegin": 1639708200,
+    "dateEnd": 1639710000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dc9264c1-cab6-41a6-87ff-d3fa68a95907",
+    "dateBegin": 1627443600,
+    "dateEnd": 1627444200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dce53f74-4fc9-4674-b2b7-b33144fa03ba",
+    "dateBegin": 1644195600,
+    "dateEnd": 1644197400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dcee2289-741d-435e-9a47-ce67521be46a",
+    "dateBegin": 1645059600,
+    "dateEnd": 1645061400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dd305f58-3c36-44f5-ba8a-c6a27b64c028",
+    "dateBegin": 1627367400,
+    "dateEnd": 1627369800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dd70d5e9-9a85-4b09-a282-8d127971a462",
+    "dateBegin": 1635228000,
+    "dateEnd": 1635228600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dd7bbdfe-254e-46ff-9b87-3eb498e5155b",
+    "dateBegin": 1627026000,
+    "dateEnd": 1627026600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dd8f0be6-0091-45bd-80a9-3d2f0a70235c",
+    "dateBegin": 1639707000,
+    "dateEnd": 1639708800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dda2430b-7809-4a2a-90f3-3d2be53bc683",
+    "dateBegin": 1635989400,
+    "dateEnd": 1635991200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dda5684a-a847-4a3e-be4b-438e98b0f574",
+    "dateBegin": 1630577400,
+    "dateEnd": 1630578000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "dda73761-add3-4b47-8475-fb1d9bf07e99",
+    "dateBegin": 1642467600,
+    "dateEnd": 1642469400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ddea4869-afeb-4a93-9bba-234935286d1e",
+    "dateBegin": 1641256200,
+    "dateEnd": 1641258000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ddfccd4d-530b-4cd3-b305-bee9c02d85e8",
+    "dateBegin": 1639358400,
+    "dateEnd": 1639360200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de268c24-ab05-4f27-9a4b-11a15798c558",
+    "dateBegin": 1639445400,
+    "dateEnd": 1639447200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de41dddf-c992-499d-8152-214e6ad65a77",
+    "dateBegin": 1630566600,
+    "dateEnd": 1630574400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de424100-75fb-403e-806c-a6b2ae5fecc5",
+    "dateBegin": 1638318600,
+    "dateEnd": 1638320400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de777d58-bb7e-4c7b-be5e-c4775de13999",
+    "dateBegin": 1626678600,
+    "dateEnd": 1626679200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de7b0f35-b03f-43f0-9c54-dfaf2e22f0ac",
+    "dateBegin": 1627287000,
+    "dateEnd": 1627288800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de8f4f28-58b6-4882-a9fe-6e2e2c9ee71f",
+    "dateBegin": 1643926200,
+    "dateEnd": 1643928000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "de910746-cfd6-4afd-9911-e2922415eb26",
+    "dateBegin": 1639795207,
+    "dateEnd": 1639792200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "df063be2-9603-4380-a532-14bba0a19fd9",
+    "dateBegin": 1639044000,
+    "dateEnd": 1639045800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e042ec91-511a-4ea7-bab6-2940d886d9fd",
+    "dateBegin": 1639713039,
+    "dateEnd": 1639714839
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e059b830-fc40-430e-a0ac-834816b2a5b7",
+    "dateBegin": 1626934200,
+    "dateEnd": 1626934800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e0e9b190-7e97-4ac4-acb0-e99f4375e3d3",
+    "dateBegin": 1630389600,
+    "dateEnd": 1630390800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e12647b5-f0c1-4b56-adfe-2f7cfd0127f2",
+    "dateBegin": 1635419400,
+    "dateEnd": 1635420000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e14eb43e-eb44-456b-b553-466e2b5cad3c",
+    "dateBegin": 1638756600,
+    "dateEnd": 1638758400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e1ba3afa-205f-4ee2-a22d-1b27767ab67f",
+    "dateBegin": 1627696800,
+    "dateEnd": 1627697400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e1f26aca-47ac-456a-abf4-ac561a484fb0",
+    "dateBegin": 1635242415,
+    "dateEnd": 1635243015
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e1f29047-d2d9-45ba-9b46-94e9df0af14c",
+    "dateBegin": 1642024800,
+    "dateEnd": 1642026600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e2449980-93e4-4285-af43-ffb832df49bd",
+    "dateBegin": 1635316200,
+    "dateEnd": 1635316800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e2525a0f-d78a-466c-89f5-2d873e03d975",
+    "dateBegin": 1630753800,
+    "dateEnd": 1630754400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e25dfe2c-d72a-4e9f-a3cb-b101444c7e0f",
+    "dateBegin": 1642630200,
+    "dateEnd": 1642632000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e2653c70-fcfd-4f01-a5d3-11b6fa0cd790",
+    "dateBegin": 1639359000,
+    "dateEnd": 1639360800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e31e1d43-1fb7-46a2-9a7e-aafec5a20688",
+    "dateBegin": 1626829200,
+    "dateEnd": 1626829800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e343b44c-474b-447c-a698-4487b43d80e4",
+    "dateBegin": 1635304200,
+    "dateEnd": 1635304800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e34b50b2-0c10-412c-908c-a709c883d125",
+    "dateBegin": 1638249600,
+    "dateEnd": 1638251400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e363efb1-4c45-4739-9902-fda27ba6eabc",
+    "dateBegin": 1627545000,
+    "dateEnd": 1627548000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e39acfa3-f774-44a9-8880-0d2605c30a01",
+    "dateBegin": 1635328200,
+    "dateEnd": 1635328800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e3d3b212-a76f-4d02-a072-a5e7a0dd66aa",
+    "dateBegin": 1627258800,
+    "dateEnd": 1627259400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e3f80ea4-e967-4bd2-82a8-6623556af029",
+    "dateBegin": 1632790200,
+    "dateEnd": 1632792000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e408fbfc-323e-4703-a857-8d38b91bb755",
+    "dateBegin": 1630303200,
+    "dateEnd": 1630304400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e47843a2-0a8c-4c53-8a47-1ae6eb5681b1",
+    "dateBegin": 1635385800,
+    "dateEnd": 1635386400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e47d590c-2237-4471-8b9a-2e4d59332943",
+    "dateBegin": 1639456200,
+    "dateEnd": 1639458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e4caf349-78de-4cda-9511-1b74d1c6bfb4",
+    "dateBegin": 1635210600,
+    "dateEnd": 1635214800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e4e123f7-d987-4856-82d8-c765b7339c7f",
+    "dateBegin": 1635730200,
+    "dateEnd": 1635730800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e52eed29-7996-43e5-8cc8-31dcfb534f8e",
+    "dateBegin": 1635327600,
+    "dateEnd": 1635328200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e560440b-a962-45a0-91a5-37c5cbcb82ae",
+    "dateBegin": 1638778200,
+    "dateEnd": 1638780000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e5759f48-93f1-4955-b13f-52114a06bccb",
+    "dateBegin": 1639117200,
+    "dateEnd": 1639119000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e5bf4af9-7d05-4282-8bcf-08bbb0792096",
+    "dateBegin": 1630377600,
+    "dateEnd": 1630378200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e5e724af-4533-423a-9224-18b367b3e844",
+    "dateBegin": 1635313200,
+    "dateEnd": 1635313800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e5ee32ff-de32-4ad4-b5ee-72c085333332",
+    "dateBegin": 1627549200,
+    "dateEnd": 1627549800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e63df251-73c3-47a5-be13-53fcdae7a1e9",
+    "dateBegin": 1639629600,
+    "dateEnd": 1639631400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e6a182e4-07c5-4699-a84c-9340ce4acfe1",
+    "dateBegin": 1636421400,
+    "dateEnd": 1636423200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e7038162-900e-41d3-b377-d22b14b66d9c",
+    "dateBegin": 1642716600,
+    "dateEnd": 1642718400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e7cefeb1-d4fc-471c-9015-a77d05b7a6dc",
+    "dateBegin": 1627530000,
+    "dateEnd": 1627530600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e7e7587f-a6e5-4ea2-8246-cb1c05dba096",
+    "dateBegin": 1631667000,
+    "dateEnd": 1631668200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e8642131-25e6-4aca-bda0-462e9cc438cd",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e87687d4-cf81-40b5-b200-c1313fd5f398",
+    "dateBegin": 1627605000,
+    "dateEnd": 1627605600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e8b88b59-6a0e-47ab-bf74-5094cfb8e261",
+    "dateBegin": 1643181600,
+    "dateEnd": 1643183400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e909309c-39c0-4cc9-b99d-1f456612f48d",
+    "dateBegin": 1630293000,
+    "dateEnd": 1630294800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e90a311f-6d94-43b5-bc0f-d679dc7b77fd",
+    "dateBegin": 1637110800,
+    "dateEnd": 1637112600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e91ebf33-780b-4c74-9675-ca2d5c23a706",
+    "dateBegin": 1644053400,
+    "dateEnd": 1644055200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e9503d8c-a84a-489a-acf4-7a8edbbeb85e",
+    "dateBegin": 1630916400,
+    "dateEnd": 1630917000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e976d068-5602-46b7-8366-342608263b0f",
+    "dateBegin": 1630978200,
+    "dateEnd": 1630978800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e97c1162-d909-44c9-b1a3-fc9da541f052",
+    "dateBegin": 1635329400,
+    "dateEnd": 1635330000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "e9c7d3fd-50ff-48d0-83ac-82351a656024",
+    "dateBegin": 1635987600,
+    "dateEnd": 1635989400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ea67e409-7697-40e5-8246-142e9e1cb22a",
+    "dateBegin": 1627556400,
+    "dateEnd": 1627558200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "eab1f5c8-88f7-435e-b025-c6d1819010da",
+    "dateBegin": 1638930600,
+    "dateEnd": 1638932400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ead001e2-b53a-4b29-b021-1c5daffffec2",
+    "dateBegin": 1639371600,
+    "dateEnd": 1639373400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "eb8d9299-42fb-41d2-b694-df0f38b02685",
+    "dateBegin": 1635906600,
+    "dateEnd": 1635908400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "eba3d9fc-f84d-4812-98ba-2f888bd692fb",
+    "dateBegin": 1639450800,
+    "dateEnd": 1639452000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ebe06c69-68d6-4fcd-ac4a-a5a0ecfef754",
+    "dateBegin": 1635903000,
+    "dateEnd": 1635904800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ec3a27d2-ad6a-437f-b37e-ffa0ac4f34e3",
+    "dateBegin": 1635822000,
+    "dateEnd": 1635823800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ec60a641-a5fc-4e77-85e8-a298f41c6433",
+    "dateBegin": 1635406200,
+    "dateEnd": 1635406800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ec67266a-9fa2-49c1-a41e-53c26d9658a3",
+    "dateBegin": 1627516800,
+    "dateEnd": 1627517400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ec6bb871-e685-4057-b6bb-5468fda48ac2",
+    "dateBegin": 1630288800,
+    "dateEnd": 1630290000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ed21b781-7eff-4f79-86c5-ab44eac09805",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "edb65436-5eeb-4594-9580-69dab5d75d77",
+    "dateBegin": 1635994800,
+    "dateEnd": 1635996600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ee554b83-3096-4b47-b5e5-ae66398b2139",
+    "dateBegin": 1643061600,
+    "dateEnd": 1643063400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ee69bff2-1890-4b74-ac6e-db85a3f04c7d",
+    "dateBegin": 1630629000,
+    "dateEnd": 1630630800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ee8b8057-b6f8-4808-ac97-5950fd654e40",
+    "dateBegin": 1639017000,
+    "dateEnd": 1639018800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "eed2b8ab-e049-40aa-96a8-d404d4de8b6d",
+    "dateBegin": 1634175000,
+    "dateEnd": 1634175600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f0038130-ca9f-4ec7-98c8-37a8b08460f8",
+    "dateBegin": 1626942000,
+    "dateEnd": 1626942600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f03b751c-d69c-4d91-8123-c14f9ab40411",
+    "dateBegin": 1639359600,
+    "dateEnd": 1639361400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f07638cd-f556-4d39-876c-8061d098c326",
+    "dateBegin": 1639357800,
+    "dateEnd": 1639359600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f09921a0-5671-4d70-8ca2-c42e71d18f88",
+    "dateBegin": 1639456200,
+    "dateEnd": 1639458000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f0b78a9c-84ad-4aa0-8645-50f898b58903",
+    "dateBegin": 1382688000,
+    "dateEnd": 1382688600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f0d74e4a-3f35-4c00-8fb8-0989408d6b5e",
+    "dateBegin": 1639446000,
+    "dateEnd": 1639447800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f0f1bc54-390b-43e1-8e9c-110ffeaf76f0",
+    "dateBegin": 1626831000,
+    "dateEnd": 1626833400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f133eec2-fe4c-425f-bd28-6c36273374d0",
+    "dateBegin": 1645751400,
+    "dateEnd": 1645756800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f178c710-80c5-4731-86a6-d09bd0f6f32f",
+    "dateBegin": 1635471000,
+    "dateEnd": 1635471600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f1cb7e37-54ad-44da-a6b1-a2b6bd7ef55f",
+    "dateBegin": 1635411002,
+    "dateEnd": 1635411602
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f1e19345-9dd8-4af5-9f62-32087bf7dd95",
+    "dateBegin": 1633074000,
+    "dateEnd": 1633075200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f3416088-2f55-4b90-81b1-c524e4fed9f7",
+    "dateBegin": 1627002000,
+    "dateEnd": 1627002600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f361bfda-08a4-49c2-a7af-fa518506fb1b",
+    "dateBegin": 1635420600,
+    "dateEnd": 1635421200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f38d182d-dd15-4ad6-982d-0b65aa174dfc",
+    "dateBegin": 1630897800,
+    "dateEnd": 1630899000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f3d09ae0-bd5c-46de-8c74-e7f677a0059e",
+    "dateBegin": 1639368000,
+    "dateEnd": 1639369800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f46410b9-11e6-4613-b0a0-8dd10a140184",
+    "dateBegin": 1635225600,
+    "dateEnd": 1635226200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f4921f5b-c6e1-4a4c-8c31-de2a86abd9ee",
+    "dateBegin": 1641258600,
+    "dateEnd": 1641260400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f4e8847a-3d26-4efd-a383-4de3853e8d9e",
+    "dateBegin": 1627864800,
+    "dateEnd": 1627866000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f53cccf5-cb21-4d9e-8be2-9038b8c7997d",
+    "dateBegin": 1638495000,
+    "dateEnd": 1638496800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f59a92e5-2be8-4526-98fa-7ae0a2270962",
+    "dateBegin": 1630389600,
+    "dateEnd": 1630390800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f5de4bf7-4dec-472b-9c18-a771f96389f5",
+    "dateBegin": 1643321400,
+    "dateEnd": 1643323200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f5e0d64d-88db-450c-a672-2e42d166ecea",
+    "dateBegin": 1630713600,
+    "dateEnd": 1630715400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f64da156-826a-4d56-b24f-f70646223d7b",
+    "dateBegin": 1636074600,
+    "dateEnd": 1636076400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f6505c44-82f2-43c2-ab9b-5abbda25efaa",
+    "dateBegin": 1636522200,
+    "dateEnd": 1636524000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f65731a3-9788-4727-bdf6-2e91966c235c",
+    "dateBegin": 1638931800,
+    "dateEnd": 1638933600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f6dad639-190a-4c0e-bef3-4bf5fadb86bb",
+    "dateBegin": 1639044031,
+    "dateEnd": 1639045831
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f6e1625f-c37d-4af3-b752-2ff2520af621",
+    "dateBegin": 1630996200,
+    "dateEnd": 1630997400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f70c1f88-26aa-4890-8887-0e0997f1e446",
+    "dateBegin": 1635917400,
+    "dateEnd": 1635919200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f75c6992-6262-416d-93ce-7511ae99b56f",
+    "dateBegin": 1644015600,
+    "dateEnd": 1644017400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f772f44d-a7f8-4df4-9de0-242a1f9a149b",
+    "dateBegin": 1627545000,
+    "dateEnd": 1627547400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f7b94d3a-de20-4b24-ba1c-1cbf7637a252",
+    "dateBegin": 1645146000,
+    "dateEnd": 1645147800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f7de777c-2d29-4f1f-af6e-963bd3d01707",
+    "dateBegin": 1627729200,
+    "dateEnd": 1627729800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f7e9af64-ad42-4f89-b5e6-e78f37ea0ed7",
+    "dateBegin": 1639983600,
+    "dateEnd": 1639985400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f805ae4f-0013-4b5a-af49-0365349ab712",
+    "dateBegin": 1638927600,
+    "dateEnd": 1638929400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f82b471b-d223-435d-ae4f-e56dc8f7befc",
+    "dateBegin": 1630854000,
+    "dateEnd": 1630854600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f890ac73-0717-4149-8389-1688a2ae15cb",
+    "dateBegin": 1627718400,
+    "dateEnd": 1627719000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f8959c54-dff3-4aca-8cf0-9bf2b0dcadb7",
+    "dateBegin": 1642111200,
+    "dateEnd": 1642113000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f8d7125c-8583-4f4c-86c2-08a35124344d",
+    "dateBegin": 1627000200,
+    "dateEnd": 1627000800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f925e46c-ddaf-4159-b0cc-622c81710bbc",
+    "dateBegin": 1635242441,
+    "dateEnd": 1635243041
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f92dafa3-5045-457a-80f2-9e4f511713dc",
+    "dateBegin": 1627698553,
+    "dateEnd": 1627700353
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f95a855b-cac5-47ed-8ee8-f94d7eef8c6c",
+    "dateBegin": 1627436400,
+    "dateEnd": 1627438200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "f96c9d94-fbda-4330-873c-ef097aae0a39",
+    "dateBegin": 1635211800,
+    "dateEnd": 1635212400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fa4e7ac0-c707-4cd8-be58-09817ab65825",
+    "dateBegin": 1635816600,
+    "dateEnd": 1635818400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fa89e37d-666e-4d1a-b3dc-3e2e0cbbb08e",
+    "dateBegin": 1635991200,
+    "dateEnd": 1635993000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fa97fc10-5963-48dc-a0d3-eba9b382a8e7",
+    "dateBegin": 1630403400,
+    "dateEnd": 1630404000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fb223d34-b236-4617-a0b0-4a4d6e8765b1",
+    "dateBegin": 1639098000,
+    "dateEnd": 1639099800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fb705b8e-88ed-4acd-8eea-ca1ca46b6d98",
+    "dateBegin": 1635501000,
+    "dateEnd": 1635501600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fb70ff50-f5fd-49a6-a0ad-46d3f558afde",
+    "dateBegin": 1637798400,
+    "dateEnd": 1637800200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fb90e6c5-3994-4917-b212-aee87cc62ae0",
+    "dateBegin": 1631804400,
+    "dateEnd": 1631805000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fba4ec37-4fc6-48fc-acdd-370605213d20",
+    "dateBegin": 1627009200,
+    "dateEnd": 1627011000
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fc665bb7-cfcf-4687-a752-623939ca3be0",
+    "dateBegin": 1641432600,
+    "dateEnd": 1641434400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fc685a1d-3192-4db8-a719-c313bb5c87b9",
+    "dateBegin": 1639557000,
+    "dateEnd": 1639558800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fcc6bb7d-ba29-4a52-8302-1a9c7fb1de25",
+    "dateBegin": 1632534600,
+    "dateEnd": 1632536400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fd92e6e2-abd1-4899-8792-1b10ea6781d7",
+    "dateBegin": 1627525200,
+    "dateEnd": 1627525800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fdfcf036-091a-48c7-8204-d3baece9fc19",
+    "dateBegin": 1639448400,
+    "dateEnd": 1639465800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fe13ac18-5ab7-4d62-9a14-f0ae3a98a016",
+    "dateBegin": 1626934200,
+    "dateEnd": 1626934800
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fe2290f9-fdef-4649-af94-7b59354e45ea",
+    "dateBegin": 1642640400,
+    "dateEnd": 1642642200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fe3aeff1-1a8b-42c0-a534-4d9826e6ad04",
+    "dateBegin": 1626966000,
+    "dateEnd": 1626966600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fe5b2efe-453e-4967-a7b3-5b5fb6e0cee4",
+    "dateBegin": 1644973200,
+    "dateEnd": 1644976200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "fec4c05f-fa4f-4f7c-9d7a-e00e0914e298",
+    "dateBegin": 1638924600,
+    "dateEnd": 1638926400
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ff04ef96-9e13-4ada-a58e-4eddf05a7a47",
+    "dateBegin": 1638405600,
+    "dateEnd": 1638408600
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ff0598c9-f414-481d-a607-a5b477134ce7",
+    "dateBegin": 1635402600,
+    "dateEnd": 1635403200
+  },
+  {
+    "hospitalId": "vatech",
+    "id": "ffaf588e-6837-42f1-a0b5-f14fd56d836b",
+    "dateBegin": 1635241850,
+    "dateEnd": 1635242450
+  }
+]
