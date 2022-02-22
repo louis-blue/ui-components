@@ -129,7 +129,7 @@ class DateObject implements DateObjectInterface {
   }
 
   public toDate(): Date {
-    return this._date;
+    return this._wrapObject.toDate();
   }
 
   public startOf(unitOfTime: OpUnitType): DateObject {
@@ -185,13 +185,13 @@ class DateObject implements DateObjectInterface {
     return new DateObject(this._wrapObject.second(second as number).toDate());
   }
 
-  public add(unit: string, amount: number): DateObject {
+  public add(unit: ManipulateType, amount: number): DateObject {
     return new DateObject(
       this._wrapObject.add(amount, unit as ManipulateType).toDate()
     );
   }
 
-  public subtract(unit: string, amount: number): DateObject {
+  public subtract(unit: ManipulateType, amount: number): DateObject {
     return new DateObject(
       this._wrapObject.subtract(amount, unit as ManipulateType).toDate()
     );

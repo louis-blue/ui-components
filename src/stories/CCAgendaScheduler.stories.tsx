@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import { CCAgendaScheduler } from "../components";
 import { DateObject } from "../Utils";
@@ -14,30 +14,46 @@ export const AgendaScheduler: ComponentStory<typeof CCAgendaScheduler> = ({
   const {} = options;
   console.log(options);
   const [date, setDate] = useState(new Date());
-  // const content = useMemo(() => {
-  //   return [
-  //     {
-  //       date: date,
-  //       event: { title: "Task 1", staff: "Staff 1", content: "Test Content" }
-  //     },
-  //     {
-  //       date: new DateObject(date).add("days", 4).toDate(),
-  //       event: { title: "Task 2", staff: "Staff 2", content: "Test Content" }
-  //     },
-  //     {
-  //       date: new DateObject(date).add("days", 8).toDate(),
-  //       event: { title: "Task 3", staff: "Staff 2", content: "Test Content" }
-  //     },
-  //     {
-  //       date: new DateObject(date).add("days", 16).toDate(),
-  //       event: { title: "Task 4", staff: "Staff 2", content: "Test Content" }
-  //     },
-  //     {
-  //       date: new DateObject(date).add("days", 21).toDate(),
-  //       event: { title: "Task 5", staff: "Staff 2", content: "Test Content" }
-  //     }
-  //   ];
-  // }, [date]);
+  const content = useMemo(() => {
+    return [
+      {
+        date: date,
+        event: { title: "Task 1", staff: "Staff 1", content: "Test Content" }
+      },
+      {
+        date: (() => {
+          let _date = new Date(date);
+          date.setDate(1);
+          return _date;
+        })(),
+        event: { title: "Task 2", staff: "Staff 2", content: "Test Content" }
+      },
+      {
+        date: (() => {
+          let _date = new Date(date);
+          date.setDate(22);
+          return _date;
+        })(),
+        event: { title: "Task 3", staff: "Staff 2", content: "Test Content" }
+      },
+      {
+        date: (() => {
+          let _date = new Date(date);
+          date.setDate(13);
+          return _date;
+        })(),
+        event: { title: "Task 4", staff: "Staff 2", content: "Test Content" }
+      },
+      {
+        date: (() => {
+          let _date = new Date(date);
+          date.setDate(15);
+          return _date;
+        })(),
+        event: { title: "Task 5", staff: "Staff 2", content: "Test Content" }
+      }
+    ];
+  }, [date]);
   // console.log(content);
   return (
     <CCAgendaScheduler
@@ -62,12 +78,10 @@ export const AgendaScheduler: ComponentStory<typeof CCAgendaScheduler> = ({
           }
         }
       }}
-      contents={[]}
+      contents={content}
     />
   );
 };
-// export const NormalMode = MonthScheduler.bind({});
-// NormalMode.args = {};
 
 export default {
   title: "Example/AgendaScheduler",
