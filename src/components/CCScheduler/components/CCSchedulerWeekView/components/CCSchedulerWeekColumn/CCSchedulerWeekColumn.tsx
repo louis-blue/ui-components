@@ -4,6 +4,14 @@ import { DateObject } from "../../../../../../Utils";
 import styled from "@emotion/styled";
 import { DateSchedulerEventSearchResultItem } from "../../../../../../Utils/DateScheduler/types";
 
+function pad(n: number | string, width: number): string {
+  return String(n).length >= width
+    ? String(n)
+    : new Array(width - String(n).length + 1).join(
+        new DateObject().setHour(0).format("H")
+      ) + n;
+}
+
 const LSchedulerWeekColumn = styled(`div`, { label: "LSchedulerWeekColumn" })(
   () => {
     return {
@@ -83,11 +91,23 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
 const LSchedulerWeekOverlayEvent = styled(`div`, {
   label: "LSchedulerWeekOverlayEvent"
 })<{ dateBegin: Date; dateEnd: Date; maxFriendsCount: number; step: number }>(
-  ({ dateBegin, dateEnd, maxFriendsCount, step }) => {
+  props => {
+    const { dateBegin, dateEnd, maxFriendsCount, step } = props;
+    console.log(props);
+    const _dateBegin = `time-${new DateObject(dateBegin).format("HH")}${pad(
+      Math.floor(new DateObject(dateBegin).minute / step) * step,
+      2
+    )}`;
+    const _dateEnd = `time-${new DateObject(dateEnd).format("HH")}${pad(
+      Math.floor(new DateObject(dateBegin).minute / step) * step,
+      2
+    )}`;
     return {
-      gridRow: "time-0800 / time-0840",
-      backgroundColor: "red",
-      gridColumnStart: "span 200"
+      gridRow: `${_dateBegin} / ${_dateEnd}`,
+      backgroundColor: "#fff",
+      border: "1px solid #000",
+      boxSizing: "border-box",
+      gridColumnStart: `span ${Math.floor(1000 / maxFriendsCount)}`
     };
   }
 );
@@ -132,8 +152,21 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
         })}
         <LSchedulerWeekColumnPositionOverlay range={range} step={step}>
           {events.map((event: DateSchedulerEventSearchResultItem) => {
-            console.log("LSchedulerWeekColumnPositionOverlay", event);
-            return <div></div>;
+            console.log(
+              "LSchedulerWeekColumnPositionOverlay",
+              event.event.id,
+              event
+            );
+            return (
+              <LSchedulerWeekOverlayEvent
+                dateBegin={event.event.dateBegin}
+                dateEnd={event.event.dateEnd}
+                maxFriendsCount={event.maxFriendsCount}
+                step={step}
+              >
+                {event.event.id}
+              </LSchedulerWeekOverlayEvent>
+            );
           })}
         </LSchedulerWeekColumnPositionOverlay>
       </LSchedulerWeekColumnItemGroup>
