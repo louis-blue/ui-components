@@ -14,7 +14,7 @@ const LSchedulerWeekGutter = styled(`div`, { label: "LSchedulerWeekGutter" })(
       position: "sticky",
       left: 0,
       backgroundColor: "#fff",
-      zIndex: 2
+      zIndex: 3
     };
   }
 );

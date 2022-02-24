@@ -21,7 +21,7 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
   const tree = new DateScheduler(_reservation);
   // tree.load(_reservation);
   console.log(_reservation);
-  console.log(tree);
+  console.log(tree.keys);
   console.log(
     tree.search({
       dateBegin: new DateObject(new Date()).startOf("month").toDate(),
@@ -30,7 +30,11 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
   );
   return (
     <div style={{ width: 700, height: 500 }}>
-      <CCScheduler date={new Date()} onChangeView={view => {}} />
+      <CCScheduler
+        date={new Date()}
+        onChangeView={view => {}}
+        contents={_reservation}
+      />
     </div>
   );
 };

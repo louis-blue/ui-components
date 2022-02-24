@@ -1,45 +1,19 @@
-// class DateScheduler extends RBush<{ dateBegin: Date; dateEnd: Date }> {
-//   toBBox(item: { dateBegin: Date; dateEnd: Date }): BBox {
-//     // console.log("toBBox", {
-//     //   minX: item.dateBegin.getTime(),
-//     //   minY: item.dateEnd.getTime(),
-//     //   maxX: item.dateBegin.getTime(),
-//     //   maxY: item.dateEnd.getTime()
-//     // });
-//
-//     return {
-//       minX: item.dateBegin.getTime(),
-//       minY: item.dateEnd.getTime(),
-//       maxX: item.dateBegin.getTime(),
-//       maxY: item.dateEnd.getTime()
-//     };
-//   }
-//
-//   compareMinX(
-//     a: { dateBegin: Date; dateEnd: Date },
-//     b: { dateBegin: Date; dateEnd: Date }
-//   ) {
-//     return a.dateBegin.getTime() - b.dateBegin.getTime();
-//   }
-//
-//   compareMinY(
-//     a: { dateBegin: Date; dateEnd: Date },
-//     b: { dateBegin: Date; dateEnd: Date }
-//   ) {
-//     return a.dateEnd.getTime() - b.dateEnd.getTime();
-//   }
-//
-//   searchById(id?: string) {
-//     console.log(this);
-//   }
-// }
-import IntervalTree from "@flatten-js/interval-tree";
+import IntervalTree, {
+  Interval,
+  SearchOutput
+} from "@flatten-js/interval-tree";
+import {
+  DateSchedulerClass,
+  DateSchedulerEvent,
+  DateSchedulerEventSearch,
+  DateSchedulerEventSearchResultItem
+} from "./types";
 
-class DateScheduler {
+class DateScheduler implements DateSchedulerClass {
   private _tree = new IntervalTree();
   private _map = new Map();
 
-  constructor(arr: Array<{ dateBegin: Date; dateEnd: Date; id: string }> = []) {
+  constructor(arr: Array<DateSchedulerEvent> = []) {
     for (let item of arr) {
       this._tree.insert(
         [item.dateBegin.getTime(), item.dateEnd.getTime()],
@@ -57,7 +31,7 @@ class DateScheduler {
     return this._tree.values;
   }
 
-  public add(item: { dateBegin: Date; dateEnd: Date; id: string }) {
+  public add(item: DateSchedulerEvent) {
     if (
       !this._map.has(item.id) &&
       this._tree.exist(
@@ -91,40 +65,59 @@ class DateScheduler {
     }
   }
 
-  public update(item: { dateBegin: Date; dateEnd: Date; id: string }) {
+  public update(item: DateSchedulerEvent) {
     this.remove(item.id);
     this.add(item);
   }
 
-  public search(item: { dateBegin?: Date; dateEnd?: Date; id?: string }) {
+  public search(item: DateSchedulerEventSearch) {
     if (item?.id) {
       if (this._map.has(item.id)) {
         return this._map.get(item.id);
       }
     }
     if (item?.dateBegin && item?.dateEnd) {
-      return this._tree.search(
-        [item.dateBegin.getTime(), item.dateEnd.getTime()],
-        (value, interval) => {
-          if (this._map.has(value)) {
-            let friends = this._tree.search(
-              interval.output(),
-              (value, interval) => {
-                if (this._map.has(value)) {
-                  return this._map.get(value);
+      let _search: Array<DateSchedulerEventSearchResultItem> =
+        this._tree.search(
+          [item.dateBegin.getTime(), item.dateEnd.getTime()],
+          (
+            value: string,
+            interval: Interval
+          ): DateSchedulerEventSearchResultItem | undefined => {
+            if (this._map.has(value)) {
+              let friends: SearchOutput<DateSchedulerEvent> = this._tree.search(
+                interval.output(),
+                (value: string): DateSchedulerEvent | undefined => {
+                  if (this._map.has(value)) {
+                    return this._map.get(value);
+                  }
                 }
-              }
-            );
-            return {
-              event: this._map.get(value),
-              friends: friends,
-              maxFriendsCount: this._getMaxFriends(friends.map(item => item.id))
-            };
-          } else {
-            return null;
+              ) as Array<DateSchedulerEvent>;
+
+              return {
+                event: this._map.get(value),
+                friends: friends,
+                maxFriendsCount: this._getMaxFriends(
+                  friends.map(item => item.id)
+                )
+              };
+            }
           }
-        }
-      );
+        ) as Array<DateSchedulerEventSearchResultItem>;
+      if (_search?.length > 0) {
+        let _maxTimeColumn = Math.max(
+          0,
+          ..._search.map(item => item.maxFriendsCount)
+        );
+        return _search.map(item => {
+          return {
+            ...item,
+            maxTimeColumn: _maxTimeColumn
+          };
+        });
+      } else {
+        return [] as Array<DateSchedulerEventSearchResultItem>;
+      }
     }
   }
 

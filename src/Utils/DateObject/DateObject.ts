@@ -42,6 +42,8 @@ interface DateObjectInterface {
   add(unit: string, amount: number): DateObject;
 
   subtract(unit: string, amount: number): DateObject;
+
+  get date(): number;
 }
 
 class DateObject implements DateObjectInterface {
@@ -57,7 +59,7 @@ class DateObject implements DateObjectInterface {
     vi
   };
 
-  constructor(date?: Date | null) {
+  constructor(date?: Date | null | undefined) {
     if (typeof localStorage.getItem("lang") === "string") {
       dayjs.locale(localStorage.getItem("lang") as string);
     } else {
