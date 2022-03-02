@@ -94,9 +94,31 @@ class DateScheduler implements DateSchedulerClass {
                 }
               ) as Array<DateSchedulerEvent>;
 
+              if (value === "4b8e708b-bd44-4a6a-9565-6f788d2b6e8f") {
+                console.log(
+                  "4b8e708b-bd44-4a6a-9565-6f788d2b6e8f",
+                  friends,
+                  friends.filter(
+                    item =>
+                      item.dateBegin.toString() !==
+                        this._map.get(value).dateEnd.toString() &&
+                      item.dateEnd.toString() !==
+                        this._map.get(value).dateBegin.toString()
+                  )
+                );
+              }
+
+              friends = friends.filter(
+                item =>
+                  item.dateBegin.toString() !==
+                    this._map.get(value).dateEnd.toString() &&
+                  item.dateEnd.toString() !==
+                    this._map.get(value).dateBegin.toString()
+              ); //양끝 교차점이 겹치는 경우는 이웃아이템으로 인정하지 않는다
+
               return {
                 event: this._map.get(value),
-                friends: friends,
+                friends: friends as Array<DateSchedulerEvent>,
                 maxFriendsCount: this._getMaxFriends(
                   friends.map(item => item.id)
                 )
@@ -137,6 +159,13 @@ class DateScheduler implements DateSchedulerClass {
         _targetFriends.dateBegin.getTime(),
         _targetFriends.dateEnd.getTime()
       ]);
+      _friends = _friends.filter(
+        item =>
+          this._map.get(item).dateBegin.toString() !==
+            _targetFriends.dateEnd.toString() &&
+          this._map.get(item).dateEnd.toString() !==
+            _targetFriends.dateBegin.toString()
+      ); //양끝 교차점이 겹치는 경우는 이웃아이템으로 인정하지 않는다
       if (!Boolean(_friends?.length > 0)) {
         continue;
       }

@@ -31,7 +31,7 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
   return (
     <div style={{ width: 700, height: 500 }}>
       <CCScheduler
-        date={new Date()}
+        date={new DateObject().subtract("week", 2).toDate()}
         onChangeView={view => {}}
         contents={_reservation}
       />

@@ -3,6 +3,8 @@ import { CCSchedulerProps, SchedulerView } from "./types";
 import { CCSchedulerHeader, CCSchedulerWeekView } from "./components";
 import styled from "@emotion/styled";
 import DateScheduler from "../../Utils/DateScheduler";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 const LScheduler = styled(`div`, { label: "LScheduler" })(() => {
   return {
@@ -29,15 +31,18 @@ const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
   }, [contentsProps]);
 
   return (
-    <LScheduler>
-      <CCSchedulerHeader
-        date={date}
-        view={view}
-        onChangeDate={e => onChangeDate?.(e)}
-        onChangeView={e => onChangeView?.(e)}
-      />
-      <CCSchedulerWeekView date={date} step={step} contents={contents} />
-    </LScheduler>
+    <DndProvider backend={HTML5Backend}>
+      <LScheduler>
+        <CCSchedulerHeader
+          date={date}
+          view={view}
+          onChangeDate={e => onChangeDate?.(e)}
+          onChangeView={e => onChangeView?.(e)}
+        />
+
+        <CCSchedulerWeekView date={date} step={step} contents={contents} />
+      </LScheduler>
+    </DndProvider>
   );
 };
 export default CCScheduler;

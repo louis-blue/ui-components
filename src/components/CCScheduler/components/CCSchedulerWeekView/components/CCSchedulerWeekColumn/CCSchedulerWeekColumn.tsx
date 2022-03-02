@@ -3,14 +3,10 @@ import { CCSchedulerWeekColumnProps } from "../../../../types";
 import { DateObject } from "../../../../../../Utils";
 import styled from "@emotion/styled";
 import { DateSchedulerEventSearchResultItem } from "../../../../../../Utils/DateScheduler/types";
-
-function pad(n: number | string, width: number): string {
-  return String(n).length >= width
-    ? String(n)
-    : new Array(width - String(n).length + 1).join(
-        new DateObject().setHour(0).format("H")
-      ) + n;
-}
+import CCSchedulerWeekViewEvent from "./components/CCSchedulerWeekViewEvent";
+import { padStart } from "lodash";
+import CCSchedulerWeekViewDragLayer from "./components/CCSchedulerWeekViewDragLayer";
+import withScrolling from "react-dnd-scrolling";
 
 const LSchedulerWeekColumn = styled(`div`, { label: "LSchedulerWeekColumn" })(
   () => {
@@ -18,7 +14,8 @@ const LSchedulerWeekColumn = styled(`div`, { label: "LSchedulerWeekColumn" })(
       display: "grid",
       gridTemplateColumns: "minmax(100px, auto)",
       gridTemplateRows: "minmax(50px, auto) 1fr",
-      width: "100%"
+      width: "100%",
+      position: "relative"
     };
   }
 );
@@ -57,6 +54,7 @@ const LSchedulerWeekColumnItem = styled(`div`, {
   return {
     borderRight: "1px solid #000",
     width: "100%",
+    height: 20,
     textAlign: "right",
     boxSizing: "border-box",
     ..._borderBottom
@@ -68,11 +66,15 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
 })<{ range: Array<number>; step: number }>(({ range, step }) => {
   let gridTemplateRows = range
     .map((item, index) => {
-      let time = new DateObject()
+      let _rawTime = new DateObject()
         .startOf("day")
-        .add("minutes", index * step)
-        .format("HHmm");
-      return `[time-${time}] 1fr`;
+        .add("minutes", index * step);
+      let _time = `${padStart(_rawTime.hour.toString(), 2, "0")}${padStart(
+        _rawTime.minute.toString(),
+        2,
+        "0"
+      )}`;
+      return `[time-${_time}] 1fr`;
     })
     .join("\n");
 
@@ -87,31 +89,7 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
     gridTemplateRows: gridTemplateRows
   };
 });
-
-const LSchedulerWeekOverlayEvent = styled(`div`, {
-  label: "LSchedulerWeekOverlayEvent"
-})<{ dateBegin: Date; dateEnd: Date; maxFriendsCount: number; step: number }>(
-  props => {
-    const { dateBegin, dateEnd, maxFriendsCount, step } = props;
-    console.log(props);
-    const _dateBegin = `time-${new DateObject(dateBegin).format("HH")}${pad(
-      Math.floor(new DateObject(dateBegin).minute / step) * step,
-      2
-    )}`;
-    const _dateEnd = `time-${new DateObject(dateEnd).format("HH")}${pad(
-      Math.floor(new DateObject(dateBegin).minute / step) * step,
-      2
-    )}`;
-    return {
-      gridRow: `${_dateBegin} / ${_dateEnd}`,
-      backgroundColor: "#fff",
-      border: "1px solid #000",
-      boxSizing: "border-box",
-      gridColumnStart: `span ${Math.floor(1000 / maxFriendsCount)}`
-    };
-  }
-);
-
+const ScrollingComponent = withScrolling("div");
 const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
   const { step, date, contents }: CCSchedulerWeekColumnProps = props;
   const range: Array<number> = useMemo(() => {
@@ -124,7 +102,7 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
       dateEnd: new DateObject(date).endOf("day").toDate()
     });
   }, [contents]);
-  console.log(date, events);
+
   return (
     <LSchedulerWeekColumn>
       <LSchedulerWeekColumnHeader>
@@ -151,21 +129,18 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
           );
         })}
         <LSchedulerWeekColumnPositionOverlay range={range} step={step}>
+          <CCSchedulerWeekViewDragLayer />
           {events.map((event: DateSchedulerEventSearchResultItem) => {
-            console.log(
-              "LSchedulerWeekColumnPositionOverlay",
-              event.event.id,
-              event
-            );
             return (
-              <LSchedulerWeekOverlayEvent
+              <CCSchedulerWeekViewEvent
                 dateBegin={event.event.dateBegin}
                 dateEnd={event.event.dateEnd}
                 maxFriendsCount={event.maxFriendsCount}
                 step={step}
-              >
-                {event.event.id}
-              </LSchedulerWeekOverlayEvent>
+                id={event.event.id}
+                event={event.event}
+                key={event.event.id}
+              />
             );
           })}
         </LSchedulerWeekColumnPositionOverlay>

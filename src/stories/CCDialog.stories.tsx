@@ -19,7 +19,15 @@ export const Dialog: ComponentStory<typeof CCDialog> = ({ ...options }) => {
   );
 };
 
+export const DialogNormal = Dialog.bind({});
+DialogNormal.args = {};
 export default {
+  name: "dialog",
   title: "Example/Dialog",
   component: CCDialog,
+  argsTypes: {
+    open: {
+      name: "open"
+    }
+  }
 } as ComponentMeta<typeof CCDialog>;

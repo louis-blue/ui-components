@@ -44,3 +44,17 @@ export interface CCSchedulerHeaderProps {
   onChangeView: (e: SchedulerView) => void;
   view: SchedulerView;
 }
+
+export interface CCSchedulerWeekViewEventProps {
+  dateBegin: Date;
+  dateEnd: Date;
+  maxFriendsCount: number;
+  step: TimeStep;
+  id: string;
+  event: SchedulerEvent;
+}
+
+export interface XYCoord {
+  x: number;
+  y: number;
+}
