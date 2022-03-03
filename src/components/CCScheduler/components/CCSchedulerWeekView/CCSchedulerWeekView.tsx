@@ -18,7 +18,6 @@ const LSchedulerWeekView = styled(`div`, { label: "LSchedulerWeekView" })(
     };
   }
 );
-
 const range: Array<number> = new Array(7).fill(0);
 const CCSchedulerWeekView: React.FC<CCSchedulerWeekViewProps> = (
   props: CCSchedulerWeekViewProps
@@ -35,7 +34,11 @@ const CCSchedulerWeekView: React.FC<CCSchedulerWeekViewProps> = (
   }, [date]);
 
   return (
-    <LSchedulerWeekView>
+    <LSchedulerWeekView
+    // onScroll={e => {
+    //   console.log("onScroll", e);
+    // }}
+    >
       <CCSchedulerWeekGutter step={step} />
       {weeks.map(date => {
         return (

@@ -1,9 +1,13 @@
-import { CCSchedulerWeekViewEventProps } from "../../../../../../types";
+import {
+  CCSchedulerWeekViewEventProps,
+  DragObject,
+  DropTarget
+} from "../../../../../../types";
 import styled from "@emotion/styled";
 import { DateObject } from "../../../../../../../../Utils";
-import React, { useEffect, useRef, useState } from "react";
+import React, { MutableRefObject, useEffect, useRef } from "react";
 import { padStart } from "lodash";
-import { DragSourceMonitor, useDrag } from "react-dnd";
+import { DragSourceMonitor, useDrag, useDragDropManager } from "react-dnd";
 import { getEmptyImage } from "react-dnd-html5-backend";
 
 const LSchedulerWeekOverlayEvent = styled(`div`, {
@@ -13,8 +17,9 @@ const LSchedulerWeekOverlayEvent = styled(`div`, {
   dateEnd: Date;
   maxFriendsCount: number;
   step: number;
+  isDragging: boolean;
 }>(props => {
-  const { dateBegin, dateEnd, maxFriendsCount, step } = props;
+  const { dateBegin, dateEnd, maxFriendsCount, step, isDragging } = props;
   const _dateBegin = `time-${new DateObject(dateBegin).format("HH")}${padStart(
     String(Math.floor(new DateObject(dateBegin).minute / step) * step),
     2,
@@ -30,7 +35,9 @@ const LSchedulerWeekOverlayEvent = styled(`div`, {
     backgroundColor: "#fff",
     border: "1px solid #000",
     boxSizing: "border-box",
-    gridColumnStart: `span ${Math.floor(1000 / maxFriendsCount)}`
+    gridColumnStart: `span ${Math.floor(1000 / maxFriendsCount)}`,
+    pointerEvents: isDragging ? "none" : "auto",
+    opacity: isDragging ? 0.5 : 1
   };
 });
 
@@ -45,59 +52,61 @@ const CCSchedulerWeekViewEvent: React.FC<
     id,
     event
   }: CCSchedulerWeekViewEventProps = props;
-  const interactable = useRef<any>(null);
-  const node: React.MutableRefObject<HTMLDivElement | null> = useRef(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [{ isDragging }, drag, dragPreview] = useDrag(() => {
-    console.log(node);
-    return {
-      type: "CCSchedulerWeekViewEvent",
-      item: {
+  const dragNodeRef: MutableRefObject<HTMLDivElement | null> = useRef(null);
+  const [{ isDragging, handlerId, canDrag }, drag, dragPreview] =
+    useDrag(() => {
+      // console.log(dragNodeRef);
+      return {
         id,
-        node: {
-          offset: {
-            x: node.current?.offsetLeft,
-            y: node.current?.offsetTop
-          }
+        type: DropTarget.Week,
+        event,
+        item: {
+          event: event,
+          ref: dragNodeRef
+        } as DragObject,
+        collect: (monitor: DragSourceMonitor) => {
+          return {
+            isDragging: monitor.isDragging(),
+            handlerId: monitor.getHandlerId(),
+            canDrag: monitor.canDrag()
+          };
         }
-      },
-      collect: (monitor: DragSourceMonitor) => {
-        // console.log(monitor);
-        return {
-          isDragging: monitor.isDragging()
-        };
-      }
-    };
-  }, [id, dateBegin, dateEnd, node.current]);
-  useEffect(() => {
-    dragPreview(getEmptyImage(), { captureDraggingState: true });
-  }, []);
-  // useEffect(() => {
-  //   if (node.current) {
-  //     setPosition({ x: node.current?.offsetLeft, y: node.current?.offsetTop });
-  //   }
-  // }, [node]);
+      };
+    }, [id, dateBegin, dateEnd]);
+  const dragDropManager = useDragDropManager();
 
-  // console.log(node);
+  const _isDragging = (() => {
+    if (handlerId) {
+      if (handlerId === dragDropManager.getMonitor().getSourceId()) {
+        return isDragging;
+      }
+      return !canDrag;
+    } else {
+      return isDragging;
+    }
+  })();
+
+  useEffect(() => {
+    dragPreview(getEmptyImage(), { captureDraggingState: false });
+  }, [dragPreview]);
 
   return (
-    <LSchedulerWeekOverlayEvent
-      dateBegin={dateBegin}
-      dateEnd={dateEnd}
-      maxFriendsCount={maxFriendsCount}
-      step={step}
-      id={id}
-      ref={ref => {
-        node.current = ref;
-        drag(ref);
-      }}
-      // ref={drag}
-      // isDragging={Boolean(isDragging)}
-    >
-      {/*{event.event.id}*/}
-
-      {new DateObject(event.dateBegin).format("HHmm")}
-    </LSchedulerWeekOverlayEvent>
+    <>
+      <LSchedulerWeekOverlayEvent
+        dateBegin={dateBegin}
+        dateEnd={dateEnd}
+        maxFriendsCount={maxFriendsCount}
+        isDragging={_isDragging}
+        step={step}
+        id={id}
+        ref={ref => {
+          dragNodeRef.current = ref;
+          drag(ref);
+        }}
+      >
+        {new DateObject(event.dateBegin).format("HHmm")}
+      </LSchedulerWeekOverlayEvent>
+    </>
   );
 };
 export default CCSchedulerWeekViewEvent;

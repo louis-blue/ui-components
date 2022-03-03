@@ -1,9 +1,15 @@
 import DateScheduler from "../../Utils/DateScheduler";
+import { MutableRefObject } from "react";
 
 export enum SchedulerView {
   Week = "Week",
   Day = "Day",
   Agenda = "Agenda"
+}
+
+export enum DropTarget {
+  Week = "WeekDrop",
+  Day = "DayDrop"
 }
 
 export type TimeStep = 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60;
@@ -54,7 +60,22 @@ export interface CCSchedulerWeekViewEventProps {
   event: SchedulerEvent;
 }
 
-export interface XYCoord {
-  x: number;
-  y: number;
+export interface CCSchedulerWeekColumnItemProps {
+  borderBottom: boolean;
+  index: number;
+  step: TimeStep;
+}
+
+export interface DragObject {
+  event: SchedulerEvent;
+  ref: MutableRefObject<HTMLDivElement | null>;
+}
+
+export interface CCSchedulerWeekDropLayerProps {
+  step: TimeStep;
+}
+
+export interface CCSchedulerWeekDropZoneProps {
+  index: number;
+  step: TimeStep;
 }

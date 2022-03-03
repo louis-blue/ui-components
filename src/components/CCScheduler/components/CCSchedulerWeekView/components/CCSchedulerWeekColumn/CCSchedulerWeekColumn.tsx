@@ -5,8 +5,8 @@ import styled from "@emotion/styled";
 import { DateSchedulerEventSearchResultItem } from "../../../../../../Utils/DateScheduler/types";
 import CCSchedulerWeekViewEvent from "./components/CCSchedulerWeekViewEvent";
 import { padStart } from "lodash";
-import CCSchedulerWeekViewDragLayer from "./components/CCSchedulerWeekViewDragLayer";
-import withScrolling from "react-dnd-scrolling";
+import { CCSchedulerWeekColumnItem } from "./components";
+import CCSchedulerWeekDropLayer from "./components/CCSchedulerWeekDropLayer";
 
 const LSchedulerWeekColumn = styled(`div`, { label: "LSchedulerWeekColumn" })(
   () => {
@@ -47,19 +47,6 @@ const LSchedulerWeekColumnItemGroup = styled(`div`, {
     position: "relative"
   };
 });
-const LSchedulerWeekColumnItem = styled(`div`, {
-  label: "LSchedulerWeekColumnItem"
-})<{ borderBottom: boolean }>(({ borderBottom }) => {
-  let _borderBottom = borderBottom ? { borderBottom: "1px solid #000" } : {};
-  return {
-    borderRight: "1px solid #000",
-    width: "100%",
-    height: 20,
-    textAlign: "right",
-    boxSizing: "border-box",
-    ..._borderBottom
-  };
-});
 
 const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
   label: "LSchedulerWeekColumnPositionOverlay"
@@ -80,6 +67,7 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
 
   return {
     position: "absolute",
+    pointerEvents: "none",
     zIndex: 1,
     width: "100%",
     height: "100%",
@@ -89,7 +77,6 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
     gridTemplateRows: gridTemplateRows
   };
 });
-const ScrollingComponent = withScrolling("div");
 const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
   const { step, date, contents }: CCSchedulerWeekColumnProps = props;
   const range: Array<number> = useMemo(() => {
@@ -101,35 +88,30 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
       dateBegin: new DateObject(date).startOf("day").toDate(),
       dateEnd: new DateObject(date).endOf("day").toDate()
     });
-  }, [contents]);
+  }, [contents, date]);
 
   return (
     <LSchedulerWeekColumn>
       <LSchedulerWeekColumnHeader>
         {new DateObject(date).format("dddd")}
       </LSchedulerWeekColumnHeader>
+
       <LSchedulerWeekColumnItemGroup>
         {range.map((el, index) => {
           return (
-            <LSchedulerWeekColumnItem
+            <CCSchedulerWeekColumnItem
               key={index}
               borderBottom={Boolean(
                 index !== 0 &&
                   index !== range.length - 1 &&
                   ((index + 1) * step) % 60 === 0
               )}
-            >
-              {Boolean((index * step) % 60 === 0)
-                ? new DateObject()
-                    .startOf("day")
-                    .add("minutes", index * step)
-                    .format("LT")
-                : ""}
-            </LSchedulerWeekColumnItem>
+              index={index}
+              step={step}
+            />
           );
         })}
         <LSchedulerWeekColumnPositionOverlay range={range} step={step}>
-          <CCSchedulerWeekViewDragLayer />
           {events.map((event: DateSchedulerEventSearchResultItem) => {
             return (
               <CCSchedulerWeekViewEvent
@@ -144,6 +126,7 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
             );
           })}
         </LSchedulerWeekColumnPositionOverlay>
+        <CCSchedulerWeekDropLayer step={step} />
       </LSchedulerWeekColumnItemGroup>
     </LSchedulerWeekColumn>
   );
