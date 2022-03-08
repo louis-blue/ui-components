@@ -78,7 +78,14 @@ const LSchedulerWeekColumnPositionOverlay = styled(`div`, {
   };
 });
 const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
-  const { step, date, contents }: CCSchedulerWeekColumnProps = props;
+  const {
+    step,
+    date,
+    contents,
+    onChange,
+    onClickCell,
+    onClickEvent
+  }: CCSchedulerWeekColumnProps = props;
   const range: Array<number> = useMemo(() => {
     let _arr: Array<number> = new Array((24 * 60) / step).fill(0);
     return _arr;
@@ -122,11 +129,17 @@ const CCSchedulerWeekColumn: React.FC<CCSchedulerWeekColumnProps> = props => {
                 id={event.event.id}
                 event={event.event}
                 key={event.event.id}
+                onClickEvent={onClickEvent}
               />
             );
           })}
         </LSchedulerWeekColumnPositionOverlay>
-        <CCSchedulerWeekDropLayer step={step} />
+        <CCSchedulerWeekDropLayer
+          date={date}
+          step={step}
+          onChange={onChange}
+          onClickCell={onClickCell}
+        />
       </LSchedulerWeekColumnItemGroup>
     </LSchedulerWeekColumn>
   );

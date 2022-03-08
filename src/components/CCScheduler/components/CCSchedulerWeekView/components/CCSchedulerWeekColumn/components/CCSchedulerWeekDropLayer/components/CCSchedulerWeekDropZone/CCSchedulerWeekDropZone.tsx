@@ -19,7 +19,10 @@ const LSchedulerWeekDropZone = styled(`div`, {
     height: 20,
     textAlign: "left",
     boxSizing: "border-box",
-    background: "transparent"
+    background: "transparent",
+    "&:active": {
+      background: "red"
+    }
   };
 });
 
@@ -54,10 +57,29 @@ const LSchedulerWeekHoverItem = styled(`div`, {
 const CCSchedulerWeekDropZone: React.FC<
   CCSchedulerWeekDropZoneProps
 > = props => {
-  const { index, step }: CCSchedulerWeekDropZoneProps = props;
+  const {
+    date,
+    index,
+    step,
+    onChange,
+    onClickCell
+  }: CCSchedulerWeekDropZoneProps = props;
   const [{ isOver, item }, drop] = useDrop(() => ({
     accept: DropTarget.Week,
-    drop: (item, monitor) => {},
+    drop: (item: DragObject, monitor) => {
+      let duration: number =
+        Number(new DateObject(item.event.dateEnd).format("X")) -
+        Number(new DateObject(item.event.dateBegin).format("X"));
+
+      onChange?.({
+        ...item.event,
+        dateBegin: new DateObject(date).add("minute", index * step).toDate(),
+        dateEnd: new DateObject(date)
+          .add("minute", index * step)
+          .add("second", duration)
+          .toDate()
+      });
+    },
     collect: monitor => {
       return {
         isOver: monitor.isOver(),
@@ -67,8 +89,19 @@ const CCSchedulerWeekDropZone: React.FC<
     }
   }));
   return (
-    <LSchedulerWeekDropZone key={index} ref={drop}>
-      {/*{isOver && (*/}
+    <LSchedulerWeekDropZone
+      key={index}
+      ref={drop}
+      onClick={() => {
+        onClickCell?.({
+          dateBegin: new DateObject(date).add("minute", index * step).toDate(),
+          dateEnd: new DateObject(date)
+            .add("minute", index * step)
+            .add("minute", step)
+            .toDate()
+        });
+      }}
+    >
       {isOver && (
         <LSchedulerWeekHoverItem
           step={step}
@@ -79,8 +112,6 @@ const CCSchedulerWeekDropZone: React.FC<
           {item?.event?.id}
         </LSchedulerWeekHoverItem>
       )}
-      {/*)}*/}
-      {/*{isOver && <div>{item?.event?.id}</div>}*/}
     </LSchedulerWeekDropZone>
   );
 };

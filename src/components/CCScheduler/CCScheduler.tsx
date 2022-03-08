@@ -23,7 +23,10 @@ const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
     onChangeView,
     view = SchedulerView.Week,
     step = 10,
-    contents: contentsProps
+    contents: contentsProps,
+    onChange,
+    onClickCell,
+    onClickEvent
   } = props;
   const [contents, setContents] = useState(new DateScheduler(contentsProps));
   useEffect(() => {
@@ -40,7 +43,14 @@ const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
           onChangeView={e => onChangeView?.(e)}
         />
 
-        <CCSchedulerWeekView date={date} step={step} contents={contents} />
+        <CCSchedulerWeekView
+          date={date}
+          step={step}
+          contents={contents}
+          onChange={onChange}
+          onClickCell={onClickCell}
+          onClickEvent={onClickEvent}
+        />
       </LScheduler>
     </DndProvider>
   );

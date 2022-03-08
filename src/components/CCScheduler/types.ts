@@ -18,6 +18,10 @@ export type SchedulerEvent = {
   dateBegin: Date;
   dateEnd: Date;
 };
+export type SchedulerCellEvent = {
+  dateBegin: Date;
+  dateEnd: Date;
+};
 
 export interface CCSchedulerProps {
   date: Date;
@@ -26,12 +30,18 @@ export interface CCSchedulerProps {
   onChangeView: (e: SchedulerView) => void;
   step?: TimeStep;
   contents: Array<SchedulerEvent>;
+  onChange: (e: SchedulerEvent) => void;
+  onClickCell: (e: SchedulerCellEvent) => void;
+  onClickEvent: (e: SchedulerEvent) => void;
 }
 
 export interface CCSchedulerWeekViewProps {
   date: Date;
   step: TimeStep;
   contents: DateScheduler;
+  onChange: (e: SchedulerEvent) => void;
+  onClickCell: (e: SchedulerCellEvent) => void;
+  onClickEvent: (e: SchedulerEvent) => void;
 }
 
 export interface CCSchedulerWeekGutterProps {
@@ -42,6 +52,9 @@ export interface CCSchedulerWeekColumnProps {
   step: TimeStep;
   date: Date;
   contents: DateScheduler;
+  onChange: (e: SchedulerEvent) => void;
+  onClickCell: (e: SchedulerCellEvent) => void;
+  onClickEvent: (e: SchedulerEvent) => void;
 }
 
 export interface CCSchedulerHeaderProps {
@@ -58,6 +71,7 @@ export interface CCSchedulerWeekViewEventProps {
   step: TimeStep;
   id: string;
   event: SchedulerEvent;
+  onClickEvent: (e: SchedulerEvent) => void;
 }
 
 export interface CCSchedulerWeekColumnItemProps {
@@ -72,10 +86,16 @@ export interface DragObject {
 }
 
 export interface CCSchedulerWeekDropLayerProps {
+  date: Date;
   step: TimeStep;
+  onChange: (e: SchedulerEvent) => void;
+  onClickCell: (e: SchedulerCellEvent) => void;
 }
 
 export interface CCSchedulerWeekDropZoneProps {
+  date: Date;
   index: number;
   step: TimeStep;
+  onChange: (e: SchedulerEvent) => void;
+  onClickCell: (e: SchedulerCellEvent) => void;
 }

@@ -22,7 +22,14 @@ const range: Array<number> = new Array(7).fill(0);
 const CCSchedulerWeekView: React.FC<CCSchedulerWeekViewProps> = (
   props: CCSchedulerWeekViewProps
 ) => {
-  const { date, step, contents }: CCSchedulerWeekViewProps = props;
+  const {
+    date,
+    step,
+    contents,
+    onChange,
+    onClickCell,
+    onClickEvent
+  }: CCSchedulerWeekViewProps = props;
   const weeks: Array<Date> = useMemo(() => {
     let _weeks: Array<Date> = [];
     range.forEach((item, index) => {
@@ -47,6 +54,9 @@ const CCSchedulerWeekView: React.FC<CCSchedulerWeekViewProps> = (
             step={step}
             date={date}
             contents={contents}
+            onChange={onChange}
+            onClickCell={onClickCell}
+            onClickEvent={onClickEvent}
           />
         );
       })}

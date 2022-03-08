@@ -1,8 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { CCScheduler } from "../components";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import reservation from "./assets/reservation.json";
-import DateScheduler from "../Utils/DateScheduler";
 import { DateObject } from "../Utils";
 
 export const Scheduler: ComponentStory<typeof CCScheduler> = ({
@@ -10,7 +9,6 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
 }) => {
   // const { foreground, background, numbers, missings, mode, width, height } =
   //   options;
-
   const _reservation = reservation.map(item => {
     return {
       ...item,
@@ -18,22 +16,29 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
       dateEnd: new Date(item.dateEnd * 1000)
     };
   });
-  const tree = new DateScheduler(_reservation);
-  // tree.load(_reservation);
-  console.log(_reservation);
-  console.log(tree.keys);
-  console.log(
-    tree.search({
-      dateBegin: new DateObject(new Date()).startOf("month").toDate(),
-      dateEnd: new DateObject(new Date()).endOf("month").toDate()
-    })
-  );
+  let reservationMap = new Map();
+  _reservation.forEach(item => {
+    reservationMap.set(item.id, item);
+  });
+
+  const [reservationState, setReservationState] = useState(reservationMap);
+
   return (
     <div style={{ width: 700, height: 500 }}>
       <CCScheduler
         date={new DateObject().subtract("week", 2).toDate()}
         onChangeView={view => {}}
-        contents={_reservation}
+        contents={[...reservationState.values()]}
+        onChange={e => {
+          console.log(e);
+          let _newMap = new Map(reservationMap);
+          _newMap.set(e.id, e);
+          setReservationState(_newMap);
+        }}
+        onClickCell={e => {
+          console.log(e);
+        }}
+        onClickEvent={e => {}}
       />
     </div>
   );

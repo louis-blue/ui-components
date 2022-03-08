@@ -50,7 +50,8 @@ const CCSchedulerWeekViewEvent: React.FC<
     maxFriendsCount,
     step,
     id,
-    event
+    event,
+    onClickEvent
   }: CCSchedulerWeekViewEventProps = props;
   const dragNodeRef: MutableRefObject<HTMLDivElement | null> = useRef(null);
   const [{ isDragging, handlerId, canDrag }, drag, dragPreview] =
