@@ -111,7 +111,7 @@ const CCSchedulerWeekViewDragLayer: React.FC = props => {
   return (
     <LSchedulerWeekViewDragLayer
       onMouseOver={e => {
-        console.log("onMouseMove", e);
+        // console.log("onMouseMove", e);
       }}
       ref={ref => {
         dragLayer.current = ref;

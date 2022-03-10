@@ -1,4 +1,4 @@
-import React, { MutableRefObject } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 import {
   CCSchedulerWeekDropZoneProps,
@@ -23,6 +23,7 @@ const LSchedulerWeekDropZone = styled(`div`, {
     "&:active": {
       background: "red"
     }
+    // borderBottom: "1px solid black"
   };
 });
 
@@ -31,27 +32,71 @@ const LSchedulerWeekHoverItem = styled(`div`, {
 })<{
   dateBegin?: Date;
   dateEnd?: Date;
-  isOver?: boolean;
   step: TimeStep;
-  dragRef?: MutableRefObject<HTMLDivElement | null>;
-}>(({ theme, isOver, step, dateBegin, dateEnd, dragRef }) => {
-  // console.log(dateBegin, dateEnd);
-  let _dateBegin = new DateObject(dateBegin);
-  let _dateEnd = new DateObject(dateEnd);
-  let _diff = _dateEnd.diff(_dateBegin, "minutes");
-  console.log(_diff, dateBegin, dateEnd);
-  return {
-    border: "1px solid #000",
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    // height: isOver ? (_diff / step) * 20 : 0,
-    height: (_diff / step) * 20,
-    pointerEvents: "none",
-    background: "white",
-    zIndex: 3
-  };
+  type: DropTarget;
+  currentDate?: Date;
+  index: number;
+}>(({ theme, step, dateBegin, dateEnd, currentDate, type, index }) => {
+  let _dateBegin;
+  let _dateEnd;
+  let _diff;
+  switch (type) {
+    default:
+    case DropTarget.Week:
+      _dateBegin = new DateObject(dateBegin);
+      _dateEnd = new DateObject(dateEnd);
+      _diff = _dateEnd.diff(_dateBegin, "minutes");
+      console.log("type", type);
+      return {
+        border: "1px solid #000",
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: (_diff / step) * 20,
+        pointerEvents: "none",
+        background: "white",
+        zIndex: 3
+      };
+    case `${DropTarget.DragHandle}-${new DateObject(currentDate).format(
+      "MMDD"
+    )}`:
+      _dateBegin = new DateObject(dateBegin);
+      _dateEnd = new DateObject(currentDate).add("minute", (index + 1) * step);
+      if (Number(_dateBegin.format("X")) === Number(_dateEnd.format("X"))) {
+        _dateEnd = new DateObject(currentDate).add("minute", index * step);
+      }
+
+      if (Number(_dateBegin.format("X")) > Number(_dateEnd.format("X"))) {
+        _dateEnd = new DateObject(currentDate).add("minute", index * step);
+        [_dateBegin, _dateEnd] = [_dateEnd, _dateBegin];
+        _diff = _dateEnd.diff(_dateBegin, "minutes");
+        return {
+          border: "1px solid #000",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: (_diff / step) * 20,
+          pointerEvents: "none",
+          background: "white",
+          zIndex: 3
+        };
+      } else {
+        _diff = _dateEnd.diff(_dateBegin, "minutes");
+        return {
+          border: "1px solid #000",
+          position: "absolute",
+          bottom: 0,
+          left: 0,
+          width: "100%",
+          height: (_diff / step) * 20,
+          pointerEvents: "none",
+          background: "white",
+          zIndex: 3
+        };
+      }
+  }
 });
 
 const CCSchedulerWeekDropZone: React.FC<
@@ -64,29 +109,63 @@ const CCSchedulerWeekDropZone: React.FC<
     onChange,
     onClickCell
   }: CCSchedulerWeekDropZoneProps = props;
-  const [{ isOver, item }, drop] = useDrop(() => ({
-    accept: DropTarget.Week,
+  const [dropProps, drop] = useDrop(() => ({
+    accept: [
+      DropTarget.Week,
+      `${DropTarget.DragHandle}-${new DateObject(date).format("MMDD")}`
+    ],
     drop: (item: DragObject, monitor) => {
-      let duration: number =
-        Number(new DateObject(item.event.dateEnd).format("X")) -
-        Number(new DateObject(item.event.dateBegin).format("X"));
+      switch (monitor.getItemType()) {
+        case DropTarget.Week:
+          let duration: number =
+            Number(new DateObject(item.event.dateEnd).format("X")) -
+            Number(new DateObject(item.event.dateBegin).format("X"));
 
-      onChange?.({
-        ...item.event,
-        dateBegin: new DateObject(date).add("minute", index * step).toDate(),
-        dateEnd: new DateObject(date)
-          .add("minute", index * step)
-          .add("second", duration)
-          .toDate()
-      });
+          onChange?.({
+            ...item.event,
+            dateBegin: new DateObject(date)
+              .add("minute", index * step)
+              .toDate(),
+            dateEnd: new DateObject(date)
+              .add("minute", index * step)
+              .add("second", duration)
+              .toDate()
+          });
+          break;
+        case `${DropTarget.DragHandle}-${new DateObject(date).format("MMDD")}`:
+          let _dateBegin = new DateObject(item.event.dateBegin);
+          let _dateEnd = new DateObject(date).add("minute", (index + 1) * step);
+
+          if (Number(_dateBegin.format("X")) === Number(_dateEnd.format("X"))) {
+            _dateEnd = new DateObject(date).add("minute", index * step);
+          }
+
+          if (Number(_dateBegin.format("X")) > Number(_dateEnd.format("X"))) {
+            _dateEnd = new DateObject(date).add("minute", index * step);
+            [_dateBegin, _dateEnd] = [_dateEnd, _dateBegin];
+          }
+
+          onChange?.({
+            ...item.event,
+            dateBegin: _dateBegin.toDate(),
+            dateEnd: _dateEnd.toDate()
+          });
+          break;
+        default:
+          break;
+      }
     },
     collect: monitor => {
       return {
         isOver: monitor.isOver(),
         canDrop: monitor.canDrop(),
-        item: monitor.getItem() as DragObject
+        item: monitor.getItem() as DragObject,
+        type: monitor.getItemType() as DropTarget
       };
     }
+    // hover: (item, monitor) => {
+    //   console.log("hover", item);
+    // }
   }));
   return (
     <LSchedulerWeekDropZone
@@ -102,14 +181,16 @@ const CCSchedulerWeekDropZone: React.FC<
         });
       }}
     >
-      {isOver && (
+      {dropProps?.isOver && (
         <LSchedulerWeekHoverItem
           step={step}
-          dateBegin={item?.event?.dateBegin}
-          dateEnd={item?.event?.dateEnd}
-          dragRef={item?.ref}
+          dateBegin={dropProps?.item?.event?.dateBegin}
+          dateEnd={dropProps?.item?.event?.dateEnd}
+          currentDate={date}
+          type={dropProps?.type}
+          index={index}
         >
-          {item?.event?.id}
+          {dropProps?.item?.event?.id}
         </LSchedulerWeekHoverItem>
       )}
     </LSchedulerWeekDropZone>

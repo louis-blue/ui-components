@@ -37,7 +37,29 @@ const LSchedulerWeekOverlayEvent = styled(`div`, {
     boxSizing: "border-box",
     gridColumnStart: `span ${Math.floor(1000 / maxFriendsCount)}`,
     pointerEvents: isDragging ? "none" : "auto",
-    opacity: isDragging ? 0.5 : 1
+    position: "relative",
+    opacity: isDragging ? 0.5 : 1,
+    transform: "translate3d(0px,0px,0px)",
+    "&:active": {
+      background: "blue"
+    }
+  };
+});
+
+const LSchedulerWeekOverlayEventDragHandle = styled(`div`, {
+  label: "LSchedulerWeekOverlayEventDragHandle"
+})<{ isDragging: boolean }>(props => {
+  const { isDragging } = props;
+  return {
+    width: 20,
+    height: 10,
+    background: "red",
+    position: "absolute",
+    bottom: 5,
+    left: "50%",
+    cursor: "row-resize",
+    // pointerEvents: isDragging ? "none" : "auto" // TODO : Cant move This
+    pointerEvents: "auto"
   };
 });
 
@@ -54,7 +76,7 @@ const CCSchedulerWeekViewEvent: React.FC<
     onClickEvent
   }: CCSchedulerWeekViewEventProps = props;
   const dragNodeRef: MutableRefObject<HTMLDivElement | null> = useRef(null);
-  const [{ isDragging, handlerId, canDrag }, drag, dragPreview] =
+  const [{ canDrag, handlerId, isDragging }, drag, dragPreview] =
     useDrag(() => {
       // console.log(dragNodeRef);
       return {
@@ -74,9 +96,44 @@ const CCSchedulerWeekViewEvent: React.FC<
         }
       };
     }, [id, dateBegin, dateEnd]);
+
+  const [handleDragProps, handleDrag, handleDragPreview] = useDrag(() => {
+    // console.log(dragNodeRef);
+    return {
+      id,
+      type: `${DropTarget.DragHandle}-${new DateObject(dateBegin).format(
+        "MMDD"
+      )}`,
+      event,
+      item: {
+        event: event,
+        ref: dragNodeRef
+      } as DragObject,
+      collect: (monitor: DragSourceMonitor) => {
+        return {
+          isDragging: monitor.isDragging(),
+          handlerId: monitor.getHandlerId(),
+          canDrag: monitor.canDrag()
+        };
+      }
+    };
+  }, [id, dateBegin, dateEnd]);
   const dragDropManager = useDragDropManager();
 
   const _isDragging = (() => {
+    if (handleDragProps?.handlerId) {
+      if (
+        handleDragProps.handlerId === dragDropManager.getMonitor().getSourceId()
+      ) {
+        return handleDragProps.isDragging;
+      }
+      return !handleDragProps.canDrag;
+    } else {
+      return handleDragProps.isDragging;
+    }
+  })();
+
+  const _isHandleDragging = (() => {
     if (handlerId) {
       if (handlerId === dragDropManager.getMonitor().getSourceId()) {
         return isDragging;
@@ -100,12 +157,29 @@ const CCSchedulerWeekViewEvent: React.FC<
         isDragging={_isDragging}
         step={step}
         id={id}
+        onClick={e => {
+          onClickEvent?.(event);
+        }}
         ref={ref => {
           dragNodeRef.current = ref;
           drag(ref);
         }}
       >
         {new DateObject(event.dateBegin).format("HHmm")}
+        <LSchedulerWeekOverlayEventDragHandle
+          onMouseEnter={() => {
+            if (dragNodeRef?.current) {
+              dragNodeRef.current.style.pointerEvents = "none";
+            }
+          }}
+          onMouseLeave={() => {
+            if (dragNodeRef?.current) {
+              dragNodeRef.current.style.pointerEvents = "";
+            }
+          }}
+          isDragging={_isHandleDragging}
+          ref={handleDrag}
+        />
       </LSchedulerWeekOverlayEvent>
     </>
   );

@@ -36,9 +36,11 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
           setReservationState(_newMap);
         }}
         onClickCell={e => {
-          console.log(e);
+          console.log("onClickCell", e);
         }}
-        onClickEvent={e => {}}
+        onClickEvent={e => {
+          console.log("onClickEvent", e);
+        }}
       />
     </div>
   );
