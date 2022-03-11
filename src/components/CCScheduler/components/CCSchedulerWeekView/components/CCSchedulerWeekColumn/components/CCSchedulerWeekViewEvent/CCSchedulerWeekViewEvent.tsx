@@ -58,8 +58,8 @@ const LSchedulerWeekOverlayEventDragHandle = styled(`div`, {
     bottom: 5,
     left: "50%",
     cursor: "row-resize",
-    // pointerEvents: isDragging ? "none" : "auto" // TODO : Cant move This
-    pointerEvents: "auto"
+    pointerEvents: isDragging ? "none" : "auto" // TODO : Cant move This
+    // pointerEvents: "auto"
   };
 });
 
@@ -120,7 +120,7 @@ const CCSchedulerWeekViewEvent: React.FC<
   }, [id, dateBegin, dateEnd]);
   const dragDropManager = useDragDropManager();
 
-  const _isDragging = (() => {
+  const _isHandleDragging = (() => {
     if (handleDragProps?.handlerId) {
       if (
         handleDragProps.handlerId === dragDropManager.getMonitor().getSourceId()
@@ -132,8 +132,9 @@ const CCSchedulerWeekViewEvent: React.FC<
       return handleDragProps.isDragging;
     }
   })();
+  console.log("_isHandleDragging", _isHandleDragging);
 
-  const _isHandleDragging = (() => {
+  const _isDragging = (() => {
     if (handlerId) {
       if (handlerId === dragDropManager.getMonitor().getSourceId()) {
         return isDragging;
