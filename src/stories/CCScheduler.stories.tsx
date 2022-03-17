@@ -2,13 +2,11 @@ import React, { useState } from "react";
 import { CCScheduler } from "../components";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import reservation from "./assets/reservation.json";
-import { DateObject } from "../Utils";
+import { SchedulerView } from "../components/CCScheduler/types";
 
 export const Scheduler: ComponentStory<typeof CCScheduler> = ({
   ...options
 }) => {
-  // const { foreground, background, numbers, missings, mode, width, height } =
-  //   options;
   const _reservation = reservation.map(item => {
     return {
       ...item,
@@ -22,12 +20,20 @@ export const Scheduler: ComponentStory<typeof CCScheduler> = ({
   });
 
   const [reservationState, setReservationState] = useState(reservationMap);
-
+  const [date, setDate] = useState(new Date());
+  const [view, setView] = useState(SchedulerView.Day);
   return (
     <div style={{ width: 700, height: 500 }}>
       <CCScheduler
-        date={new DateObject().subtract("week", 2).toDate()}
-        onChangeView={view => {}}
+        view={view}
+        date={date}
+        onChangeView={view => {
+          setView(view);
+        }}
+        onChangeDate={date => {
+          console.log(date);
+          setDate(date);
+        }}
         contents={[...reservationState.values()]}
         onChange={e => {
           console.log(e);

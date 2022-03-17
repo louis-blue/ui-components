@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { CCSchedulerProps, SchedulerView } from "./types";
-import { CCSchedulerHeader, CCSchedulerWeekView } from "./components";
+import {
+  CCSchedulerDayView,
+  CCSchedulerHeader,
+  CCSchedulerWeekView
+} from "./components";
 import styled from "@emotion/styled";
 import DateScheduler from "../../Utils/DateScheduler";
 import { DndProvider } from "react-dnd";
@@ -42,15 +46,26 @@ const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
           onChangeDate={e => onChangeDate?.(e)}
           onChangeView={e => onChangeView?.(e)}
         />
-
-        <CCSchedulerWeekView
-          date={date}
-          step={step}
-          contents={contents}
-          onChange={onChange}
-          onClickCell={onClickCell}
-          onClickEvent={onClickEvent}
-        />
+        {view === SchedulerView.Week && (
+          <CCSchedulerWeekView
+            date={date}
+            step={step}
+            contents={contents}
+            onChange={onChange}
+            onClickCell={onClickCell}
+            onClickEvent={onClickEvent}
+          />
+        )}
+        {view == SchedulerView.Day && (
+          <CCSchedulerDayView
+            date={date}
+            step={step}
+            contents={contents}
+            onChange={onChange}
+            onClickCell={onClickCell}
+            onClickEvent={onClickEvent}
+          />
+        )}
       </LScheduler>
     </DndProvider>
   );

@@ -95,15 +95,57 @@ const CCSchedulerHeader: React.FC<CCSchedulerHeaderProps> = (
       <LSchedulerHeaderDate>
         <LPickerChevron
           onClick={() => {
-            onChangeDate?.(new DateObject(date).subtract("month", 1).toDate());
+            switch (view) {
+              case SchedulerView.Week:
+                onChangeDate?.(
+                  new DateObject(date).subtract("week", 1).toDate()
+                );
+                break;
+              case SchedulerView.Day:
+                onChangeDate?.(
+                  new DateObject(date).subtract("day", 1).toDate()
+                );
+                break;
+              case SchedulerView.Agenda:
+                onChangeDate?.(
+                  new DateObject(date).subtract("week", 1).toDate()
+                );
+                break;
+              default:
+                break;
+            }
           }}
         >
           {"<"}
         </LPickerChevron>
-        <LPickerDate>{new DateObject(date).format("LMM")}</LPickerDate>
+        {view === SchedulerView.Week && (
+          <LPickerDate>{`${new DateObject(date)
+            .startOf("week")
+            .format("L")} ~ ${new DateObject(date)
+            .endOf("week")
+            .format("L")}`}</LPickerDate>
+        )}
+        {view === SchedulerView.Day && (
+          <LPickerDate>{new DateObject(date).format("L")}</LPickerDate>
+        )}
+        {view === SchedulerView.Agenda && (
+          <LPickerDate>{new DateObject(date).format("LMM")}</LPickerDate>
+        )}
         <LPickerChevron
-          onClick={e => {
-            onChangeDate?.(new DateObject(date).add("month", 1).toDate());
+          onClick={() => {
+            switch (view) {
+              case SchedulerView.Week:
+                onChangeDate?.(new DateObject(date).add("week", 1).toDate());
+                break;
+              case SchedulerView.Day:
+                onChangeDate?.(new DateObject(date).add("day", 1).toDate());
+                break;
+              case SchedulerView.Agenda:
+                onChangeDate?.(new DateObject(date).add("week", 1).toDate());
+                break;
+              default:
+                break;
+            }
           }}
         >
           {">"}
