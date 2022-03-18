@@ -132,7 +132,7 @@ const CCSchedulerWeekViewEvent: React.FC<
       return handleDragProps.isDragging;
     }
   })();
-  console.log("_isHandleDragging", _isHandleDragging);
+  // console.log("_isHandleDragging", _isHandleDragging);
 
   const _isDragging = (() => {
     if (handlerId) {

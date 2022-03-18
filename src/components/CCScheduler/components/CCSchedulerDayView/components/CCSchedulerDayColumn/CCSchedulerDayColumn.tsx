@@ -4,6 +4,9 @@ import { DateObject } from "../../../../../../Utils";
 import styled from "@emotion/styled";
 import { padStart } from "lodash";
 import CCSchedulerDayColumnItem from "./components/CCSchedulerDayColumnItem/CCSchedulerDayColumnItem";
+import { DateSchedulerEventSearchResultItem } from "../../../../../../Utils/DateScheduler/types";
+import CCSchedulerDayViewEvent from "./components/CCSchedulerDayViewEvent";
+import { CCSchedulerDayDropLayer } from "./components";
 
 const LSchedulerDayColumn = styled(`div`, { label: "LSchedulerDayColumn" })(
   () => {
@@ -116,27 +119,27 @@ const CCSchedulerDayColumn: React.FC<CCSchedulerDayColumnProps> = props => {
           );
         })}
         <LSchedulerDayColumnPositionOverlay range={range} step={step}>
-          {/*        {events.map((event: DateSchedulerEventSearchResultItem) => {*/}
-          {/*            return (*/}
-          {/*                <CCSchedulerDayViewEvent*/}
-          {/*                    dateBegin={event.event.dateBegin}*/}
-          {/*                    dateEnd={event.event.dateEnd}*/}
-          {/*                    maxFriendsCount={event.maxFriendsCount}*/}
-          {/*                    step={step}*/}
-          {/*                    id={event.event.id}*/}
-          {/*                    event={event.event}*/}
-          {/*                    key={event.event.id}*/}
-          {/*                    onClickEvent={onClickEvent}*/}
-          {/*                />*/}
-          {/*            );*/}
-          {/*        })}*/}
+          {events.map((event: DateSchedulerEventSearchResultItem) => {
+            return (
+              <CCSchedulerDayViewEvent
+                dateBegin={event.event.dateBegin}
+                dateEnd={event.event.dateEnd}
+                maxFriendsCount={event.maxFriendsCount}
+                step={step}
+                id={event.event.id}
+                event={event.event}
+                key={event.event.id}
+                onClickEvent={onClickEvent}
+              />
+            );
+          })}
         </LSchedulerDayColumnPositionOverlay>
-        {/*    <CCSchedulerDayDropLayer*/}
-        {/*        date={date}*/}
-        {/*        step={step}*/}
-        {/*        onChange={onChange}*/}
-        {/*        onClickCell={onClickCell}*/}
-        {/*    />*/}
+        <CCSchedulerDayDropLayer
+          date={date}
+          step={step}
+          onChange={onChange}
+          onClickCell={onClickCell}
+        />
       </LSchedulerDayColumnItemGroup>
     </LSchedulerDayColumn>
   );

@@ -89,17 +89,28 @@ export interface DragObject {
   ref: MutableRefObject<HTMLDivElement | null>;
 }
 
-export interface CCSchedulerWeekDropLayerProps {
+export interface CCSchedulerDropLayerProps {
   date: Date;
   step: TimeStep;
   onChange: (e: SchedulerEvent) => void;
   onClickCell: (e: SchedulerCellEvent) => void;
 }
 
-export interface CCSchedulerWeekDropZoneProps {
+export interface CCSchedulerWeekDropLayerProps
+  extends CCSchedulerDropLayerProps {}
+
+export interface CCSchedulerDayDropLayerProps
+  extends CCSchedulerDropLayerProps {}
+
+export interface CCSchedulerDropZoneProps {
   date: Date;
   index: number;
   step: TimeStep;
   onChange: (e: SchedulerEvent) => void;
   onClickCell: (e: SchedulerCellEvent) => void;
 }
+
+export interface CCSchedulerWeekDropZoneProps
+  extends CCSchedulerDropZoneProps {}
+
+export interface CCSchedulerDayDropZoneProps extends CCSchedulerDropZoneProps {}
