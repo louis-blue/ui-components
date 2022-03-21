@@ -60,19 +60,21 @@ class DateObject implements DateObjectInterface {
   };
 
   constructor(date?: Date | null | undefined) {
-    if (typeof localStorage.getItem("lang") === "string") {
-      dayjs.locale(localStorage.getItem("lang") as string);
+    let _lang = localStorage.getItem("lang");
+    if (_lang) {
+      dayjs.locale(_lang);
     } else {
       dayjs.locale("en");
     }
-    if (Boolean(date)) {
-      this._date = date as Date;
+    if (date) {
+      this._date = date;
     }
   }
 
   public static get monthFormat(): string[] {
-    if (typeof localStorage.getItem("lang") === "string") {
-      dayjs.locale(localStorage.getItem("lang") as string);
+    let _lang = localStorage.getItem("lang");
+    if (_lang) {
+      dayjs.locale(_lang);
     } else {
       dayjs.locale("en");
     }
@@ -80,8 +82,9 @@ class DateObject implements DateObjectInterface {
   }
 
   public static get meridiemFormat(): string[] {
-    if (typeof localStorage.getItem("lang") === "string") {
-      dayjs.locale(localStorage.getItem("lang") as string);
+    let _lang = localStorage.getItem("lang");
+    if (_lang) {
+      dayjs.locale(_lang);
     } else {
       dayjs.locale("en");
     }
@@ -125,9 +128,8 @@ class DateObject implements DateObjectInterface {
   }
 
   private static _makeWrapObject(date: Date): dayjs.Dayjs {
-    return localStorage.getItem("lang")
-      ? dayjs(date).locale(localStorage.getItem("lang") as string)
-      : dayjs(date);
+    let _lang = localStorage.getItem("lang");
+    return _lang ? dayjs(date).locale(_lang) : dayjs(date);
   }
 
   public toDate(): Date {
@@ -164,39 +166,35 @@ class DateObject implements DateObjectInterface {
   }
 
   public setYear(year: number): DateObject {
-    return new DateObject(this._wrapObject.year(year as number).toDate());
+    return new DateObject(this._wrapObject.year(year).toDate());
   }
 
   public setMonth(month: number): DateObject {
-    return new DateObject(this._wrapObject.month(month as number).toDate());
+    return new DateObject(this._wrapObject.month(month).toDate());
   }
 
   public setDate(date: number): DateObject {
-    return new DateObject(this._wrapObject.date(date as number).toDate());
+    return new DateObject(this._wrapObject.date(date).toDate());
   }
 
   public setHour(hour: number): DateObject {
-    return new DateObject(this._wrapObject.hour(hour as number).toDate());
+    return new DateObject(this._wrapObject.hour(hour).toDate());
   }
 
   public setMinute(minute: number): DateObject {
-    return new DateObject(this._wrapObject.minute(minute as number).toDate());
+    return new DateObject(this._wrapObject.minute(minute).toDate());
   }
 
   public setSecond(second: number): DateObject {
-    return new DateObject(this._wrapObject.second(second as number).toDate());
+    return new DateObject(this._wrapObject.second(second).toDate());
   }
 
   public add(unit: ManipulateType, amount: number): DateObject {
-    return new DateObject(
-      this._wrapObject.add(amount, unit as ManipulateType).toDate()
-    );
+    return new DateObject(this._wrapObject.add(amount, unit).toDate());
   }
 
   public subtract(unit: ManipulateType, amount: number): DateObject {
-    return new DateObject(
-      this._wrapObject.subtract(amount, unit as ManipulateType).toDate()
-    );
+    return new DateObject(this._wrapObject.subtract(amount, unit).toDate());
   }
 
   public isSameOrBefore(input: DateObject, granularity?: OpUnitType): boolean {
