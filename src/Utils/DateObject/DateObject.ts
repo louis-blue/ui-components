@@ -1,8 +1,8 @@
 import dayjs from "dayjs";
-import * as ru from "./Locales/ru";
-import * as en from "./Locales/en";
-import * as ar from "./Locales/ar";
-import * as vi from "./Locales/vi";
+import ru from "./Locales/ru";
+import en from "./Locales/en";
+import ar from "./Locales/ar";
+import vi from "./Locales/vi";
 
 import { ManipulateType, OpUnitType, QUnitType } from "dayjs/esm";
 import isSameOrBefore from "dayjs/plugin/isSameOrBefore";
@@ -20,6 +20,38 @@ dayjs.extend(localizedFormat);
 dayjs.extend(preParsePostFormat);
 dayjs.extend(advancedFormat);
 dayjs.extend(pluralGetSet);
+
+const FormatString = [
+  "LT",
+  "LTS",
+  "L",
+  "LMD",
+  "LMM",
+  "l",
+  "LL",
+  "ll",
+  "LLL",
+  "lll",
+  "LLLL",
+  "llll",
+  "CALD"
+] as const;
+const LocaleString = ["en", "ru", "vi", "ar"] as const;
+type PatternedFormatInput = typeof FormatString[number];
+type FormatInput = PatternedFormatInput | string;
+type PredefinedLocale = typeof LocaleString[number];
+
+interface LocaleConfig {
+  format?: Partial<Record<FormatInput, string>>;
+  longDateFormat?: Partial<Record<FormatInput, string>>;
+  meridiemParse?: string;
+  meridiem?: (hour: number) => string;
+  weekStart?: number;
+  yearStart?: number;
+  isPM?: (input: string) => boolean;
+}
+
+type Formatter = Record<PredefinedLocale, LocaleConfig>;
 
 interface DateObjectInterface {
   toDate(): Date;
@@ -48,15 +80,11 @@ interface DateObjectInterface {
 
 class DateObject implements DateObjectInterface {
   private readonly _date: Date = new Date();
-  private readonly _formatter: {
-    [key: string]: {
-      config: { format: { [key: string]: any }; [key: string]: any };
-    };
-  } = {
-    en,
-    ru,
-    ar,
-    vi
+  private readonly _formatter: Formatter = {
+    en: en,
+    ru: ru,
+    ar: ar,
+    vi: vi
   };
 
   constructor(date?: Date | null | undefined) {
@@ -144,18 +172,33 @@ class DateObject implements DateObjectInterface {
     return new DateObject(this._wrapObject.endOf(unitOfTime).toDate());
   }
 
-  public format(format: string): string {
-    let _format = format;
+  public getLocale(): PredefinedLocale {
+    let _locale: PredefinedLocale | string = dayjs.locale();
+    let _predefineLocale = _locale as PredefinedLocale;
+    if (LocaleString.includes(_predefineLocale)) {
+      return _predefineLocale;
+    } else {
+      return LocaleString[0];
+    }
+  }
+
+  public format(format: FormatInput): string {
+    let _formatString: FormatInput = format;
+    let _locale: PredefinedLocale = this.getLocale();
+    let _formatter = this._formatter[_locale];
     if (
-      Boolean(this._formatter[dayjs.locale()]) &&
-      Boolean(
-        this._formatter[dayjs.locale()]?.config?.format?.hasOwnProperty(format)
-      )
+      !_formatter.hasOwnProperty("format") ||
+      !(typeof _formatter?.format === "object")
     ) {
-      _format = this._formatter[dayjs.locale()].config.format[format];
+      return this._wrapObject.format(_formatString);
+    }
+    let _formatStringPattern = _formatString as PatternedFormatInput;
+    if (FormatString.includes(_formatStringPattern)) {
+      let _result = _formatter.format[_formatStringPattern];
+      return this._wrapObject.format(_result);
     }
 
-    return this._wrapObject.format(_format);
+    return this._wrapObject.format(_formatString);
   }
 
   public diff(

@@ -19,7 +19,7 @@ export const config = {
   isPM: function (input: string) {
     return "م" === input;
   },
-  meridiem: function (hour: number, minute: any, isLower: any) {
+  meridiem: function (hour: number) {
     if (hour < 12) {
       return "ص";
     } else {
