@@ -174,8 +174,8 @@ class DateObject implements DateObjectInterface {
 
   public getLocale(): PredefinedLocale {
     let _locale: PredefinedLocale | string = dayjs.locale();
-    let _predefineLocale = _locale as PredefinedLocale;
-    if (LocaleString.includes(_predefineLocale)) {
+    let _predefineLocale = LocaleString.find(item => item === _locale);
+    if (_predefineLocale) {
       return _predefineLocale;
     } else {
       return LocaleString[0];
@@ -186,14 +186,19 @@ class DateObject implements DateObjectInterface {
     let _formatString: FormatInput = format;
     let _locale: PredefinedLocale = this.getLocale();
     let _formatter = this._formatter[_locale];
+
     if (
       !_formatter.hasOwnProperty("format") ||
       !(typeof _formatter?.format === "object")
     ) {
       return this._wrapObject.format(_formatString);
     }
-    let _formatStringPattern = _formatString as PatternedFormatInput;
-    if (FormatString.includes(_formatStringPattern)) {
+
+    let _formatStringPattern = FormatString.find(
+      item => item === _formatString
+    );
+
+    if (_formatStringPattern) {
       let _result = _formatter.format[_formatStringPattern];
       return this._wrapObject.format(_result);
     }
