@@ -79,12 +79,11 @@ const InputMenuMinuteItems = function (
   });
 };
 
-const CCTimePickerMinutePicker: React.FC<CCTimePickerProps> = (
-  props: CCTimePickerProps
+const CCTimePickerMinutePicker: React.FC<Omit<CCTimePickerProps, "view">> = (
+  props: Omit<CCTimePickerProps, "view">
 ) => {
-  const { value, onChange, step = 1 }: CCTimePickerProps = props;
+  const { value, onChange, step = 1 }: Omit<CCTimePickerProps, "view"> = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
-  const innerSlider: MutableRefObject<any> = useRef();
   useLayoutEffect(() => {
     window.addEventListener(
       "mousewheel",

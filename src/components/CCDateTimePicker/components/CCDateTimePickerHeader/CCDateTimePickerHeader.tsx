@@ -27,27 +27,48 @@ const LDateTimePickerHeaderTypo = styled("div", {
   };
 });
 
-function _getTextFromDate<T>(
-  value: T | null,
+function isCCDateTimePickerWeekValue(
+  arg: any
+): arg is CCDateTimePickerWeekValue {
+  return "begin" in arg && "end" in arg;
+}
+
+function _getTextFromDate<T extends Date | CCDateTimePickerWeekValue>(
+  value: T,
   features: Array<PICKER_FEATURES>,
   view: CALENDAR_VIEW,
   format: string
 ): string {
-  if (view === CALENDAR_VIEW.DAY) {
-    return new DateObject(value as Date | null).format(format);
+  if (value instanceof Date) {
+    return new DateObject(value).format(format);
   }
-  if (view === CALENDAR_VIEW.WEEK) {
-    return `${new DateObject(
-      (value as CCDateTimePickerWeekValue | null)?.begin as Date | null
-    ).format(format)} ~ ${new DateObject(
-      (value as CCDateTimePickerWeekValue | null)?.end as Date | null
+  if (isCCDateTimePickerWeekValue(value)) {
+    return `${new DateObject(value.begin).format(format)} ~ ${new DateObject(
+      value.end
     ).format(format)}`;
   }
+
+  // if (typeof value === "object") {
+  //   return `${new DateObject(
+  //     (value as CCDateTimePickerWeekValue)?.begin as Date | null
+  //   ).format(format)} ~ ${new DateObject(
+  //     (value as CCDateTimePickerWeekValue)?.end as Date | null
+  //   ).format(format)}`;
+  // }
+  // if (view === CALENDAR_VIEW.DAY) {
+  // }
+  // if (view === CALENDAR_VIEW.WEEK) {
+  //   return `${new DateObject(
+  //     (value as CCDateTimePickerWeekValue | null)?.begin as Date | null
+  //   ).format(format)} ~ ${new DateObject(
+  //     (value as CCDateTimePickerWeekValue | null)?.end as Date | null
+  //   ).format(format)}`;
+  // }
   return "";
 }
 
-function getHeaderText<T>(
-  value: T | null,
+function getHeaderText<T extends Date | CCDateTimePickerWeekValue>(
+  value: T,
   features: Array<PICKER_FEATURES>,
   view: CALENDAR_VIEW
 ): string {
@@ -58,11 +79,11 @@ function getHeaderText<T>(
     features.includes(PICKER_FEATURES.DATE) &&
     features.includes(PICKER_FEATURES.TIME)
   ) {
-    return _getTextFromDate(value, features, view, "LLLL");
+    return _getTextFromDate<T>(value, features, view, "LLLL");
   } else if (features.includes(PICKER_FEATURES.DATE)) {
-    return _getTextFromDate(value, features, view, "LL");
+    return _getTextFromDate<T>(value, features, view, "LL");
   } else if (features.includes(PICKER_FEATURES.TIME)) {
-    return _getTextFromDate(value, features, view, "LT");
+    return _getTextFromDate<T>(value, features, view, "LT");
   }
   return "";
 }
@@ -74,7 +95,12 @@ const CCDateTimePickerHeader: React.FC<CCDateTimePickerHeaderProps> = props => {
     view = CALENDAR_VIEW.DAY
   }: CCDateTimePickerHeaderProps = props;
   const headerText = useMemo(() => {
-    return getHeaderText(value, features, view);
+    getHeaderText<boolean>(value, features, view);
+    return getHeaderText<Date | CCDateTimePickerWeekValue>(
+      value,
+      features,
+      view
+    );
   }, [features, view, value]);
   return (
     <LDateTimePickerHeaderContainer>

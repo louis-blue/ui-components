@@ -107,7 +107,6 @@ const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
 ) => {
   const { value, disabledMeridiem, onChange }: CCTimePickerProps = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
-  const innerSlider: MutableRefObject<any> = useRef();
   useLayoutEffect(() => {
     window.addEventListener(
       "mousewheel",

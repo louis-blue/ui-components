@@ -7,7 +7,7 @@ import CCTimePicker from "./components/CCTimePicker";
 
 const LDateTimePickerHeader = styled("div", {
   label: "LDateTimePickerHeader"
-})<{ features: Array<PICKER_FEATURES> }>`
+})`
   padding: 0;
   overflow: hidden;
   background-color: #0277bd;
@@ -48,8 +48,7 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
     disabledMeridiem,
     features,
     view,
-    step,
-    ...others
+    step
   }: CCDateTimePickerProps = props;
   const [value, setValue] = useState(propsValue);
   useEffect(() => {
@@ -68,7 +67,7 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
         onClose && onClose();
       }}
     >
-      <LDateTimePickerHeader features={features}>
+      <LDateTimePickerHeader>
         <CCDateTimePickerHeader value={value} features={features} view={view} />
       </LDateTimePickerHeader>
       <LDateTimePickerContent features={features}>

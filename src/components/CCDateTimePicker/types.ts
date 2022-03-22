@@ -10,78 +10,86 @@ export enum CALENDAR_VIEW {
   WEEK = "CALENDAR_VIEW_WEEK"
 }
 
-export type CCDateTimePickerWeekValue = {
+export interface CCDateTimePickerWeekValue {
   begin: Date;
   end: Date;
-};
+}
 
 export interface CCDateTimePickerRawProps {
   features: Array<PICKER_FEATURES>;
   view: CALENDAR_VIEW;
 }
 
-export interface CCDateTimePickerProps extends CCDateTimePickerRawProps {
-  open: boolean;
-  onClose?: () => void;
-  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | CCDateTimePickerWeekValue;
+export interface TimePickerOptions {
   disabledMeridiem?: boolean;
   step?: 1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30;
 }
 
-export interface CCDatePickerProps {
-  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | CCDateTimePickerWeekValue;
-  view: CALENDAR_VIEW;
+export interface DialogOpenProps {
+  open: boolean;
+  onClose?: () => void;
 }
 
-export interface CCDateTimePickerHeaderProps extends CCDateTimePickerRawProps {
+export interface CCDatePickerProps
+  extends Pick<CCDateTimePickerRawProps, "view"> {
+  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
   value: Date | CCDateTimePickerWeekValue;
 }
 
-export interface CCDatePickerHeaderProps {
-  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+export interface HeaderPickerProps {
   onClickYear?: () => void;
   onClickMonth?: () => void;
-  value: Date | CCDateTimePickerWeekValue;
-  view: CALENDAR_VIEW;
 }
 
-export interface CCDatePickerCalendarProps {
-  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
-  value: Date | CCDateTimePickerWeekValue;
+export interface ComponentProps {
   component?: React.ReactElement;
-  view: CALENDAR_VIEW;
 }
 
-export interface CCDatePickerCalendarSeriesProps {
-  onChange?: (date: Date | CCDateTimePickerWeekValue) => void;
+export interface CCDateTimePickerProps
+  extends CCDateTimePickerRawProps,
+    CCDatePickerProps,
+    TimePickerOptions,
+    DialogOpenProps {}
+
+export interface CCDateTimePickerHeaderProps
+  extends CCDateTimePickerRawProps,
+    Pick<CCDatePickerProps, "value"> {}
+
+export interface CCDatePickerHeaderProps
+  extends HeaderPickerProps,
+    CCDatePickerProps,
+    Pick<CCDateTimePickerRawProps, "view"> {}
+
+export interface CCDatePickerCalendarProps
+  extends CCDatePickerProps,
+    ComponentProps,
+    Pick<CCDateTimePickerRawProps, "view"> {}
+
+export interface CCDatePickerCalendarSeriesProps
+  extends CCDatePickerProps,
+    ComponentProps,
+    Pick<CCDateTimePickerRawProps, "view"> {
   date: Date | CCDateTimePickerWeekValue;
-  value: Date | CCDateTimePickerWeekValue;
-  component?: React.ReactElement;
-  view: CALENDAR_VIEW;
 }
 
-export interface CCDatePickerYearPickerProps extends CCDatePickerHeaderProps {
+export interface CCDatePickerYearPickerProps
+  extends HeaderPickerProps,
+    CCDatePickerProps,
+    Pick<CCDateTimePickerRawProps, "view"> {
   open: boolean;
-  view: CALENDAR_VIEW;
 }
 
 export interface CCCCDatePickerMonthPickerProps
-  extends CCDatePickerHeaderProps {
-  open: boolean;
-  view: CALENDAR_VIEW;
+  extends CCDatePickerYearPickerProps {}
+
+export interface CCTimePickerProps
+  extends Omit<CCDatePickerProps, "view">,
+    TimePickerOptions {
+  value: Date;
 }
 
-export interface CCTimePickerProps {
+export interface CCTMeridiemPickerProps
+  extends Pick<TimePickerOptions, "disabledMeridiem"> {
   onChange?: (date: Date) => void;
   value: Date;
-  disabledMeridiem: boolean;
-  step?: 1 | 2 | 3 | 4 | 5 | 6 | 10 | 12 | 15 | 20 | 30;
-}
-
-export interface CCTMeridiemPickerProps {
-  onChange?: (date: Date) => void;
-  value: Date;
-  disabledMeridiem: boolean;
 }
