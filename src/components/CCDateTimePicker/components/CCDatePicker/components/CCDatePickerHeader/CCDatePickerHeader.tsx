@@ -159,32 +159,35 @@ const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = (
             onClickMonth();
           }}
         >
-          {view === CALENDAR_VIEW.DAY
-            ? new DateObject(value as Date).format("MMMM")
-            : new DateObject(
-                (value as CCDateTimePickerWeekValue).begin as Date
-              ).format("MMMM")}
+          {(() => {
+            if (value instanceof Date) {
+              return new DateObject(value).format("MMMM");
+            }
+            if (isDateTimePickerWeekValue(value)) {
+              return new DateObject(value.begin).format("MMMM");
+            }
+          })()}
         </LPicker>
         <LPickerChevron
           onClick={() => {
             if (view === CALENDAR_VIEW.DAY) {
+              if (!(value instanceof Date)) {
+                return false;
+              }
               onChange &&
-                onChange(
-                  new DateObject(value as Date).add("month", 1).toDate() as Date
-                );
+                onChange(new DateObject(value).add("month", 1).toDate());
             }
             if (view === CALENDAR_VIEW.WEEK) {
+              if (!isDateTimePickerWeekValue(value)) {
+                return false;
+              }
               onChange &&
                 onChange({
-                  begin: new DateObject(
-                    (value as CCDateTimePickerWeekValue).begin as Date
-                  )
+                  begin: new DateObject(value.begin)
                     .add("month", 1)
                     .startOf("week")
                     .toDate() as Date,
-                  end: new DateObject(
-                    (value as CCDateTimePickerWeekValue).begin as Date
-                  )
+                  end: new DateObject(value.begin)
                     .add("month", 1)
                     .endOf("week")
                     .toDate() as Date
