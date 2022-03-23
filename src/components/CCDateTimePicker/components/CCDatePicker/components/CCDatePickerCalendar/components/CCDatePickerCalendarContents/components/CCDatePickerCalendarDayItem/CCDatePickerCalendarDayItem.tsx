@@ -2,7 +2,7 @@ import React, { useCallback, useMemo } from "react";
 import {
   CALENDAR_VIEW,
   CCDatePickerCalendarSeriesProps,
-  CCDateTimePickerWeekValue
+  isDateTimePickerWeekValue
 } from "../../../../../../../../types";
 import { DateObject } from "../../../../../../../../../../Utils";
 import styled from "@emotion/styled";
@@ -12,45 +12,56 @@ const LDayItem = styled("div", {
   shouldForwardProp(propName: string): boolean {
     return propName !== "isCurrentMonth";
   }
-})<{ isCurrentMonth?: boolean }>`
-  width: 36px;
-  height: 36px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border-radius: 50%;
+})<{ isCurrentMonth?: boolean }>(({ isCurrentMonth }) => {
+  return {
+    width: 36,
+    height: 36,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    cursor: "pointer",
+    borderRadius: "50%",
+    "&:hover": {
+      backgroundColor: "#0277bd",
+      color: "#fff"
+    }
+  };
+});
 
-  &:hover {
-    background-color: #0277bd;
-    color: #fff;
-  }
-`;
 const LDayItemContainer = styled("div", { label: "LDayItemContainer" })<{
   isSelected: boolean;
   isCurrentMonth?: boolean;
   isInside?: boolean;
   isLeftSide?: boolean;
   isRightSide?: boolean;
-}>`
-  width: 36px;
-  height: 36px;
-  background-color: ${props => (props?.isSelected ? "#00897b" : "transparent")};
-  color: ${props =>
-    props?.isSelected ? "#fff" : props?.isCurrentMonth ? "#000" : "#e3e3e3"};
-  border-radius: ${props => {
-    if (props?.isInside) {
-      return "0%";
+}>(({ isSelected, isCurrentMonth, isInside, isLeftSide, isRightSide }) => {
+  let _backgroundColor = {
+    backgroundColor: isSelected ? "#00897b" : "transparent"
+  };
+  let _color = {
+    color: isSelected ? "#fff" : isCurrentMonth ? "#000" : "#e3e3e3"
+  };
+  let _borderRadius = (() => {
+    if (isInside) {
+      return { borderRadius: "0%" };
     }
-    if (props?.isLeftSide) {
-      return "50% 0% 0% 50%";
+    if (isLeftSide) {
+      return { borderRadius: "50% 0% 0% 50%" };
     }
-    if (props?.isRightSide) {
-      return "0% 50% 50% 0%";
+    if (isRightSide) {
+      return { borderRadius: "0% 50% 50% 0%" };
     }
-    return "50%";
-  }};
-`;
+    return { borderRadius: "50%" };
+  })();
+  return {
+    width: 36,
+    height: 36,
+    ..._backgroundColor,
+    ..._color,
+    ..._borderRadius
+  };
+});
+
 const _isBetween = (
   target: Date,
   start: Date,
@@ -76,28 +87,45 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
     view
   }: CCDatePickerCalendarSeriesProps = props;
   const isCurrentMonth: boolean = useMemo(() => {
+    if (!(date instanceof Date)) {
+      return false;
+    }
     if (view === CALENDAR_VIEW.WEEK) {
-      return new DateObject(
-        (value as CCDateTimePickerWeekValue).begin as Date
-      ).isSame(new DateObject(date as Date), ["month"]);
+      if (!isDateTimePickerWeekValue(value)) {
+        return false;
+      }
+      return new DateObject(value.begin).isSame(new DateObject(date), [
+        "month"
+      ]);
     } else {
-      return new DateObject(value as Date).isSame(
-        new DateObject(date as Date),
-        ["month"]
-      );
+      if (!(value instanceof Date)) {
+        return false;
+      }
+      return new DateObject(value).isSame(new DateObject(date), ["month"]);
     }
   }, [date, value, view]);
   const isCurrent: boolean = useMemo(() => {
+    if (!(date instanceof Date)) {
+      return false;
+    }
     if (view === CALENDAR_VIEW.WEEK) {
-      return new DateObject(value as Date).isSame(
-        new DateObject(date as Date),
-        ["month", "year", "week"]
-      );
+      if (!isDateTimePickerWeekValue(value)) {
+        return false;
+      }
+      return new DateObject(value.begin).isSame(new DateObject(date), [
+        "month",
+        "year",
+        "week"
+      ]);
     } else {
-      return new DateObject(value as Date).isSame(
-        new DateObject(date as Date),
-        ["month", "year", "day"]
-      );
+      if (!(value instanceof Date)) {
+        return false;
+      }
+      return new DateObject(value).isSame(new DateObject(date), [
+        "month",
+        "year",
+        "day"
+      ]);
     }
   }, [date, value, view]);
   const isIn = useCallback(
@@ -105,19 +133,17 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
       inclusivity: "()" | "[)" | "(]" | "[]",
       fallback: boolean = false
     ): boolean => {
+      if (!(date instanceof Date)) {
+        return false;
+      }
       if (view === CALENDAR_VIEW.WEEK) {
-        if (
-          (value as CCDateTimePickerWeekValue)?.begin === null ||
-          (value as CCDateTimePickerWeekValue)?.end == null
-        ) {
+        if (!isDateTimePickerWeekValue(value)) {
           return false;
         }
-        return _isBetween(
-          date as Date,
-          (value as CCDateTimePickerWeekValue).begin as Date,
-          (value as CCDateTimePickerWeekValue).end as Date,
-          inclusivity
-        );
+        if (value.begin === null || value.end == null) {
+          return false;
+        }
+        return _isBetween(date, value.begin, value.end, inclusivity);
       } else {
         return fallback;
       }
@@ -137,6 +163,10 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
     return isIn("(]");
   }, [isIn]);
 
+  if (!(date instanceof Date)) {
+    return <></>;
+  }
+
   return (
     <LDayItemContainer
       isSelected={isSelected}
@@ -148,22 +178,26 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
         try {
           switch (view) {
             case CALENDAR_VIEW.DAY:
+              if (!(value instanceof Date)) {
+                return false;
+              }
               onChange &&
                 onChange(
-                  new DateObject(value as Date)
-                    .setYear(new DateObject(date as Date).year)
-                    .setMonth(new DateObject(date as Date).month)
-                    .setDate(new DateObject(date as Date).date)
+                  new DateObject(value)
+                    .setYear(new DateObject(date).year)
+                    .setMonth(new DateObject(date).month)
+                    .setDate(new DateObject(date).date)
                     .toDate()
                 );
               break;
             case CALENDAR_VIEW.WEEK:
-              let _day = new DateObject(
-                (value as CCDateTimePickerWeekValue).begin
-              )
-                .setYear(new DateObject(date as Date).year)
-                .setMonth(new DateObject(date as Date).month)
-                .setDate(new DateObject(date as Date).date);
+              if (!isDateTimePickerWeekValue(value)) {
+                return false;
+              }
+              let _day = new DateObject(value.begin)
+                .setYear(new DateObject(date).year)
+                .setMonth(new DateObject(date).month)
+                .setDate(new DateObject(date).date);
               onChange &&
                 onChange({
                   begin: _day.startOf("week").toDate(),
@@ -183,7 +217,7 @@ const CCDatePickerCalendarDayItem: React.FC<CCDatePickerCalendarSeriesProps> = (
         key={date.toLocaleString()}
         isCurrentMonth={isCurrentMonth}
       >
-        {new DateObject(date as Date).format("D")}
+        {new DateObject(date).format("D")}
       </LDayItem>
     </LDayItemContainer>
   );

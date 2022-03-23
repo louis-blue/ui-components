@@ -8,11 +8,9 @@ const LDatePickerContainer = styled("div", {
   label: "LDatePickerContainer",
   shouldForwardProp: propName => {
     switch (propName) {
-      case "direction":
+      case "flexDirection":
       case "justifyContent":
-      case "alignItems":
       case "fullWidth":
-      case "height":
         return false;
       default:
         return true;
@@ -20,30 +18,31 @@ const LDatePickerContainer = styled("div", {
   }
 })<{
   justifyContent?: string;
-  alignItems?: string;
   fullWidth?: boolean;
-  height?: number | string;
-  direction?: string;
-}>`
-  user-select: none;
-  height: ${props => props?.height || "auto"};
-  width: ${props => (props?.fullWidth ? "100%" : "auto")};
-  display: flex;
-  justify-content: ${props => props?.justifyContent || "flex-start"};
-  align-items: ${props => props?.alignItems || "flex-start"};
-  flex-direction: ${props => props?.direction || "row"};
-`;
+  flexDirection?: React.CSSProperties["flexDirection"];
+}>(props => {
+  const { justifyContent, fullWidth, flexDirection } = props;
+
+  return {
+    userSelect: "none",
+    display: "flex",
+    alignItems: "flex-start",
+    width: fullWidth ? "100%" : "auto",
+    flexDirection,
+    justifyContent
+  };
+});
 
 const CCDatePickerCalendar: React.FC<CCDatePickerCalendarProps> = (
   props: CCDatePickerCalendarProps
 ) => {
   const { value, onChange, view, component }: CCDatePickerCalendarProps = props;
   return (
-    <LDatePickerContainer direction={"column"}>
+    <LDatePickerContainer flexDirection={"column"}>
       <LDatePickerContainer fullWidth={true} justifyContent={"space-between"}>
         <CCDatePickerCalendarHeader />
       </LDatePickerContainer>
-      <LDatePickerContainer direction={"column"}>
+      <LDatePickerContainer flexDirection={"column"}>
         <CCDatePickerCalendarContents
           value={value}
           onChange={onChange}

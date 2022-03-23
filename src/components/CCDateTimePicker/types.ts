@@ -93,3 +93,9 @@ export interface CCTMeridiemPickerProps
   onChange?: (date: Date) => void;
   value: Date;
 }
+
+export function isDateTimePickerWeekValue(
+  arg: any
+): arg is CCDateTimePickerWeekValue {
+  return "begin" in arg && "end" in arg;
+}
