@@ -95,7 +95,6 @@ const CCDateTimePickerHeader: React.FC<CCDateTimePickerHeaderProps> = props => {
     view = CALENDAR_VIEW.DAY
   }: CCDateTimePickerHeaderProps = props;
   const headerText = useMemo(() => {
-    getHeaderText<boolean>(value, features, view);
     return getHeaderText<Date | CCDateTimePickerWeekValue>(
       value,
       features,
