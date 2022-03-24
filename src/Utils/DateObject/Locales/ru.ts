@@ -1,10 +1,11 @@
 import dayjs from "dayjs";
 import "dayjs/locale/ru";
 import updateLocale from "dayjs/plugin/updateLocale";
+import { LocaleConfig } from "../types";
 
 dayjs.extend(updateLocale);
 
-export const config = {
+export const config: Partial<LocaleConfig> = {
   format: {
     LT: "H:mm",
     LTS: "H:mm:ss",

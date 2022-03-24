@@ -12,6 +12,13 @@ import localizedFormat from "dayjs/plugin/localizedFormat";
 import preParsePostFormat from "dayjs/plugin/preParsePostFormat";
 import advancedFormat from "dayjs/plugin/advancedFormat";
 import pluralGetSet from "dayjs/plugin/pluralGetSet";
+import {
+  FormatInput,
+  Formatter,
+  isFormatString,
+  LocaleString,
+  PredefinedLocale
+} from "./types";
 
 dayjs.extend(isSameOrBefore);
 dayjs.extend(isBetween);
@@ -21,64 +28,7 @@ dayjs.extend(preParsePostFormat);
 dayjs.extend(advancedFormat);
 dayjs.extend(pluralGetSet);
 
-const FormatString = [
-  "LT",
-  "LTS",
-  "L",
-  "LMD",
-  "LMM",
-  "l",
-  "LL",
-  "ll",
-  "LLL",
-  "lll",
-  "LLLL",
-  "llll",
-  "CALD"
-] as const;
-const LocaleString = ["en", "ru", "vi", "ar"] as const;
-type PatternedFormatInput = typeof FormatString[number];
-type FormatInput = PatternedFormatInput | string;
-type PredefinedLocale = typeof LocaleString[number];
-
-interface LocaleConfig {
-  format?: Partial<Record<FormatInput, string>>;
-  longDateFormat?: Partial<Record<FormatInput, string>>;
-  meridiemParse?: string;
-  meridiem?: (hour: number) => string;
-  weekStart?: number;
-  yearStart?: number;
-  isPM?: (input: string) => boolean;
-}
-
-type Formatter = Record<PredefinedLocale, LocaleConfig>;
-
-interface DateObjectInterface {
-  toDate(): Date;
-
-  startOf(unitOfTime: OpUnitType): DateObject;
-
-  endOf(unitOfTime: OpUnitType): DateObject;
-
-  format(format: string): string;
-
-  diff(
-    target: DateObject,
-    unitOfTime: QUnitType | OpUnitType | undefined
-  ): number;
-
-  setYear(year: number): DateObject;
-
-  setMonth(month: number): DateObject;
-
-  add(unit: string, amount: number): DateObject;
-
-  subtract(unit: string, amount: number): DateObject;
-
-  get date(): number;
-}
-
-class DateObject implements DateObjectInterface {
+class DateObject {
   private readonly _date: Date = new Date();
   private readonly _formatter: Formatter = {
     en: en,
@@ -164,7 +114,7 @@ class DateObject implements DateObjectInterface {
     return this._wrapObject.toDate();
   }
 
-  public startOf(unitOfTime: OpUnitType): DateObject {
+  public startOf(unitOfTime: OpUnitType) {
     return new DateObject(this._wrapObject.startOf(unitOfTime).toDate());
   }
 
@@ -194,12 +144,8 @@ class DateObject implements DateObjectInterface {
       return this._wrapObject.format(_formatString);
     }
 
-    let _formatStringPattern = FormatString.find(
-      item => item === _formatString
-    );
-
-    if (_formatStringPattern) {
-      let _result = _formatter.format[_formatStringPattern];
+    if (isFormatString(_formatString, _formatter.format)) {
+      let _result = _formatter.format[_formatString];
       return this._wrapObject.format(_result);
     }
 

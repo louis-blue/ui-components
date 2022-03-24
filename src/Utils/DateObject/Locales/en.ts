@@ -1,5 +1,6 @@
 import dayjs from "dayjs";
 import updateLocale from "dayjs/plugin/updateLocale";
+import { LocaleConfig } from "../types";
 
 dayjs.extend(updateLocale);
 
@@ -54,7 +55,7 @@ export const longDateFormat = {
   llll: "ddd, MMM D YYYY LT",
   CALD: "MM/DD [(]ddd[)]"
 };
-export const config = {
+export const config: Partial<LocaleConfig> = {
   format,
   longDateFormat,
   ...makeOptionByRegion()

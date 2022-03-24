@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { drawFDICanvas } from "../../Utils";
 import { CCTeethGraphProps } from "../../types";
 
-const CCFDITeethGraph: React.FC<CCTeethGraphProps> = (
-  props: CCTeethGraphProps
-) => {
+const CCFDITeethGraph: React.FC<CCTeethGraphProps> = props => {
   const {
     width = 160,
     height = 80,
@@ -12,7 +10,7 @@ const CCFDITeethGraph: React.FC<CCTeethGraphProps> = (
     background,
     numbers,
     missings
-  }: CCTeethGraphProps = props;
+  } = props;
   const canvasRef: React.MutableRefObject<HTMLCanvasElement | null> =
     useRef(null);
   useEffect(() => {
