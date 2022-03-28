@@ -27,8 +27,8 @@ export default {
   argTypes: {
     mode: {
       control: "select",
-      options: [TEETH_GRAPH_SYSTEM.FDI, TEETH_GRAPH_SYSTEM.UNIVERSAL],
-      defaultValue: TEETH_GRAPH_SYSTEM.FDI
+      options: [TEETH_GRAPH_SYSTEM],
+      defaultValue: TEETH_GRAPH_SYSTEM[0]
     },
     foreground: { control: "color", defaultValue: "rgba(0, 0, 0, 1)" },
     background: { control: "color", defaultValue: "rgba(0, 0, 0, 0)" },

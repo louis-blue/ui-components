@@ -1,43 +1,34 @@
-import { CCTeethGraphDrawProps } from "../types";
+import { TeethGraphDrawProps } from "../types";
 
-const drawFDICanvas = (props: {
-  canvas: HTMLCanvasElement;
-  background: string | undefined;
-  numbers: Array<number> | undefined;
-  foreground: string | undefined;
-  missings: Array<number> | undefined;
-}): void => {
+const drawFDICanvas = (props: TeethGraphDrawProps): void => {
   const {
     canvas,
     foreground = "rgba(255, 255, 255, 1)",
     background = "rgba(0, 0, 0, 0)",
     numbers = [],
-    missings = []
-  }: CCTeethGraphDrawProps = props;
-  const ctx: CanvasRenderingContext2D | null = canvas.getContext("2d");
-  const width: number = 480;
-  const height: number = 120;
-  const ts: number = width / 16;
-  let configs: Array<Array<number>> = [];
-  const texts: Array<Array<string>> = [
+    missings = [],
+  } = props;
+  const ctx = canvas.getContext("2d");
+  const width = 480;
+  const height = 120;
+  const ts = width / 16;
+  const texts = [
     ["1", "2", "3", "4", "5", "6", "7", "8"],
-    ["A", "B", "C", "D", "E"]
-  ];
-  const offsets: Array<Array<number>> = [
+    ["A", "B", "C", "D", "E"],
+  ] as const;
+  const offsets = [
     [ts * 8 - ts / 2, ts * 0.25, -1],
     [ts * 8 + ts / 2, ts * 0.25, 1],
     [ts * 8 + ts / 2, ts * 2 + ts * 0.25, 1],
-    [ts * 8 - ts / 2, ts * 2 + ts * 0.25, -1]
-  ];
+    [ts * 8 - ts / 2, ts * 2 + ts * 0.25, -1],
+  ] as const;
+
+  let configs = Array.from({ length: 4 }, () =>
+    Array.from({ length: 8 }, () => 0)
+  );
 
   if (!ctx) {
     return;
-  }
-  for (let i: number = 0; i < 4; i++) {
-    configs[i] = [];
-    for (let j: number = 0; j < 8; j++) {
-      configs[i][j] = 0;
-    }
   }
 
   ctx.beginPath();
@@ -60,10 +51,10 @@ const drawFDICanvas = (props: {
   ctx.lineTo(width / 2, height);
   ctx.stroke();
 
-  numbers.forEach(number => {
-    const babies: boolean = number >= 50;
-    const region: number = Math.floor(((number - 10) % 40) / 10);
-    const position: number = (number % 10) - 1;
+  numbers.forEach((number) => {
+    const babies = number >= 50;
+    const region = Math.floor(((number - 10) % 40) / 10);
+    const position = (number % 10) - 1;
     try {
       if (babies) {
         configs[region][position] = 2;
@@ -75,7 +66,7 @@ const drawFDICanvas = (props: {
     }
   });
 
-  missings.forEach(number => {
+  missings.forEach((number) => {
     const region: number = Math.floor(((number - 10) % 40) / 10);
     const position: number = (number % 10) - 1;
 
@@ -86,8 +77,8 @@ const drawFDICanvas = (props: {
     }
   });
 
-  for (let region: number = 0; region < 4; region++) {
-    for (let position: number = 0; position < 8; position++) {
+  for (let region = 0; region < configs.length; region++) {
+    for (let position = 0; position < configs[region].length; position++) {
       if (configs[region][position] === 1) {
         ctx.font = `${ts * 1.8}px bold monospace`;
         ctx.textAlign = "center";

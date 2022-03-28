@@ -2,13 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import CCFDITeethGraph from "./components/CCFDITeethGraph";
 import { CCUniversalTeethGraph } from "./components";
-import { CCTeethGraphProps, TEETH_GRAPH_SYSTEM } from "./types";
+import { TEETH_GRAPH_SYSTEM, TeethGraphProps } from "./types";
 
-const CCTeethGraph: React.FC<CCTeethGraphProps> = (
-  props: CCTeethGraphProps
-) => {
-  const { mode, ...others }: CCTeethGraphProps = props;
-  if (mode === TEETH_GRAPH_SYSTEM.FDI) {
+const CCTeethGraph: React.FC<TeethGraphProps> = (props: TeethGraphProps) => {
+  const { mode, ...others }: TeethGraphProps = props;
+  if (mode === TEETH_GRAPH_SYSTEM[0]) {
     return <CCFDITeethGraph {...others} />;
   } else {
     return <CCUniversalTeethGraph {...others} />;
@@ -20,7 +18,7 @@ CCTeethGraph.defaultProps = {
   background: "rgba(0, 0, 0, 0)",
   numbers: [],
   missings: [],
-  mode: TEETH_GRAPH_SYSTEM.FDI,
+  mode: TEETH_GRAPH_SYSTEM[0],
   width: 160,
   height: 40
 };

@@ -1,20 +1,25 @@
-import { linear } from "./index";
+import { isLinear, linear, TeethNumber } from "../types";
 
-function getLinearFromTeeth(
-  numbers: Array<number> = [],
-  indices: Array<number> = linear
-): Array<number> {
+function getLinearFromTeeth(numbers: Array<TeethNumber> = []): Array<number> {
   return numbers
-    .map(number => {
-      if (indices.includes(number)) {
-        return indices.indexOf(number);
-      } else if (number < 50) {
-        return indices.indexOf(number + 40);
+    .reduce((acc, cur) => {
+      if (linear.includes(cur)) {
+        acc.push(linear.indexOf(cur));
+      } else if (cur < 50) {
+        let _upper = cur + 40;
+        if (isLinear(_upper)) {
+          acc.push(linear.indexOf(_upper));
+        }
       } else {
-        return indices.indexOf(number - 40);
+        let _lower = cur + 40;
+        if (isLinear(_lower)) {
+          acc.push(linear.indexOf(_lower));
+        }
       }
-    })
-    .sort((a: number, b: number) => {
+
+      return acc;
+    }, [] as number[])
+    .sort((a, b) => {
       return a - b;
     });
 }

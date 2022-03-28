@@ -1,27 +1,26 @@
-import { getLinearFromTeeth, getTeethFromLinear, linear } from "./index";
+import { getLinearFromTeeth, getTeethFromLinear } from "./index";
+import { TeethNumber } from "../types";
 
 function getTeethGroup(
-  numbers: Array<number>,
+  numbers: Array<TeethNumber>,
   equal: number | null,
-  least: number | null,
-  indices: Array<number> = linear
-): Array<Array<number>> {
-  let sequences = getLinearFromTeeth(numbers, indices).concat([99999]);
-  let group: Array<Array<number>> = [];
+  least: number | null
+): Array<Array<TeethNumber>> {
+  let sequences = getLinearFromTeeth(numbers).concat([99999]);
+  let group: Array<Array<TeethNumber>> = [];
   let array: Array<number> = [];
-
-  sequences.forEach(index => {
+  sequences.forEach((index) => {
     if (array.length === 0 || array[array.length - 1] + 1 === index) {
       array.push(index);
     } else if (least && array.length >= least) {
-      group.push(getTeethFromLinear(array, indices));
+      group.push(getTeethFromLinear(array));
       array = [index];
     } else {
       array = [index];
     }
 
     if (equal && array.length === equal) {
-      group.push(getTeethFromLinear(array, indices));
+      group.push(getTeethFromLinear(array));
       array = [index];
     }
   });

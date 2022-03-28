@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
-import { getTeethString } from "../../Utils";
-import { CCTeethGraphProps, TEETH_GRAPH_SYSTEM } from "../../types";
 import styled from "@emotion/styled";
+import { TEETH_GRAPH_SYSTEM, TeethGraphProps } from "../../types";
+import { getTeethString } from "../../Utils";
 
 const LUniversalTeethGraphContainer = styled("div", {
   label: "LUniversalTeethGraphContainer"
@@ -24,19 +24,18 @@ const LUniversalTeethGraphTypo = styled("div", {
   };
 });
 
-const CCUniversalTeethGraph: React.FC<CCTeethGraphProps> = props => {
+const UniversalTeethGraph: React.FC<TeethGraphProps> = props => {
   const {
     numbers = [],
-    mode = TEETH_GRAPH_SYSTEM.UNIVERSAL,
+    mode = TEETH_GRAPH_SYSTEM[1],
     background,
     foreground,
     width
-  }: CCTeethGraphProps = props;
+  } = props;
   const teethString: string = useMemo(
     () => getTeethString(numbers, mode),
     [numbers, mode]
   );
-  // console.log();
   return (
     <LUniversalTeethGraphContainer width={width} background={background}>
       <LUniversalTeethGraphTypo foreground={foreground}>
@@ -46,4 +45,4 @@ const CCUniversalTeethGraph: React.FC<CCTeethGraphProps> = props => {
   );
 };
 
-export default CCUniversalTeethGraph;
+export default UniversalTeethGraph;

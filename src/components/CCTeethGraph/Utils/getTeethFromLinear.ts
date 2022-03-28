@@ -1,10 +1,15 @@
-import { linear } from "./index";
+import { isLinear, isTeethNumber, linear, TeethNumber } from "../types";
 
-function getTeethFromLinear(
-  numbers: Array<number> = [],
-  indices: Array<number> = linear
-): Array<number> {
-  return numbers.map(index => indices[index]);
+function getTeethFromLinear(numbers: Array<number> = []): Array<TeethNumber> {
+  return numbers.reduce((acc, cur) => {
+    if (isLinear(linear[cur])) {
+      let _res = linear[cur];
+      if (isTeethNumber(_res)) {
+        acc.push(_res);
+      }
+    }
+    return acc;
+  }, [] as Array<TeethNumber>);
 }
 
 export default getTeethFromLinear;

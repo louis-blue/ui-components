@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
+import { TeethGraphProps } from "../../types";
 import { drawFDICanvas } from "../../Utils";
-import { CCTeethGraphProps } from "../../types";
 
-const CCFDITeethGraph: React.FC<CCTeethGraphProps> = props => {
+const FDITeethGraph: React.FC<TeethGraphProps> = props => {
   const {
     width = 160,
     height = 80,
@@ -13,6 +13,7 @@ const CCFDITeethGraph: React.FC<CCTeethGraphProps> = props => {
   } = props;
   const canvasRef: React.MutableRefObject<HTMLCanvasElement | null> =
     useRef(null);
+
   useEffect(() => {
     if (canvasRef.current)
       drawFDICanvas({
@@ -26,11 +27,11 @@ const CCFDITeethGraph: React.FC<CCTeethGraphProps> = props => {
   return <canvas ref={canvasRef} width={width} height={height} />;
 };
 
-CCFDITeethGraph.defaultProps = {
+FDITeethGraph.defaultProps = {
   foreground: "rgba(255, 255, 255, 1)",
   background: "rgba(0, 0, 0, 0)",
   numbers: [],
   missings: []
 };
 
-export default CCFDITeethGraph;
+export default FDITeethGraph;

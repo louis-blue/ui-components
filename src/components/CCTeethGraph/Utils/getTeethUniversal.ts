@@ -1,21 +1,22 @@
-import { universal } from "./index";
+import { isTeethNumber, TeethNumber, universal } from "../types";
 
-function getTeethUniversal(number: number): string;
-function getTeethUniversal(numbers: Array<number>): Array<string>;
+function getTeethUniversal(number: TeethNumber): string;
+function getTeethUniversal(numbers: Array<TeethNumber>): Array<string>;
 
 function getTeethUniversal(
-  numbers: number | Array<number>
+  numbers: TeethNumber | Array<TeethNumber>
 ): string | Array<string> {
   if (Array.isArray(numbers)) {
     let array: Array<string> = [];
 
-    numbers.forEach(number => {
-      array.push(universal[number.toString()]);
+    numbers.forEach((number) => {
+      if (isTeethNumber(number)) {
+        array.push(universal[number]);
+      }
     });
-
     return array;
   } else {
-    return universal[numbers.toString()];
+    return isTeethNumber(numbers) ? universal[numbers] : "";
   }
 }
 
