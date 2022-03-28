@@ -1,7 +1,6 @@
 import {
   CALENDAR_VIEW,
   CCDatePickerHeaderProps,
-  CCDateTimePickerWeekValue,
   isDateTimePickerWeekValue
 } from "../../../../types";
 import React from "react";
@@ -41,16 +40,14 @@ const LPicker = styled("div")(() => ({
   }
 }));
 
-const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = (
-  props: CCDatePickerHeaderProps
-) => {
+const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = props => {
   const {
     value,
     view,
     onChange = () => {},
     onClickYear = () => {},
     onClickMonth = () => {}
-  }: CCDatePickerHeaderProps = props;
+  } = props;
   return (
     <>
       <LDatePickerContainer>
@@ -88,11 +85,15 @@ const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = (
             onClickYear();
           }}
         >
-          {view === CALENDAR_VIEW.DAY
-            ? new DateObject(value as Date).format("YYYY")
-            : new DateObject(
-                (value as CCDateTimePickerWeekValue).begin as Date
-              ).format("YYYY")}
+          {(() => {
+            if (value instanceof Date) {
+              return new DateObject(value).format("YYYY");
+            } else if (isDateTimePickerWeekValue(value)) {
+              new DateObject(value.begin).format("YYYY");
+            } else {
+              return "";
+            }
+          })()}
         </LPicker>
         <LPickerChevron
           onClick={() => {
@@ -186,11 +187,11 @@ const CCDatePickerHeader: React.FC<CCDatePickerHeaderProps> = (
                   begin: new DateObject(value.begin)
                     .add("month", 1)
                     .startOf("week")
-                    .toDate() as Date,
+                    .toDate(),
                   end: new DateObject(value.begin)
                     .add("month", 1)
                     .endOf("week")
-                    .toDate() as Date
+                    .toDate()
                 });
             }
           }}

@@ -79,10 +79,10 @@ const InputMenuMinuteItems = function (
   });
 };
 
-const CCTimePickerMinutePicker: React.FC<Omit<CCTimePickerProps, "view">> = (
-  props: Omit<CCTimePickerProps, "view">
-) => {
-  const { value, onChange, step = 1 }: Omit<CCTimePickerProps, "view"> = props;
+const CCTimePickerMinutePicker: React.FC<
+  Omit<CCTimePickerProps, "view">
+> = props => {
+  const { value, onChange, step = 1 } = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
   useLayoutEffect(() => {
     window.addEventListener(
@@ -132,21 +132,18 @@ const CCTimePickerMinutePicker: React.FC<Omit<CCTimePickerProps, "view">> = (
         adaptiveHeight={false}
         afterChange={debounce(e => {
           const _time = e * step;
-          if (new DateObject(value as Date).minute > _time) {
+          if (new DateObject(value).minute > _time) {
             onChange &&
               onChange(
-                new DateObject(value as Date)
-                  .add("minute", _time - new DateObject(value as Date).minute)
+                new DateObject(value)
+                  .add("minute", _time - new DateObject(value).minute)
                   .toDate()
               );
           } else {
             onChange &&
               onChange(
-                new DateObject(value as Date)
-                  .subtract(
-                    "minute",
-                    new DateObject(value as Date).minute - _time
-                  )
+                new DateObject(value)
+                  .subtract("minute", new DateObject(value).minute - _time)
                   .toDate()
               );
           }

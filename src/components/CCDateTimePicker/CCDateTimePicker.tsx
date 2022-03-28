@@ -80,16 +80,18 @@ const CCDateTimePicker: React.FC<CCDateTimePickerProps> = props => {
             view={view}
           />
         )}
-        {view === CALENDAR_VIEW.DAY && features.includes(PICKER_FEATURES.TIME) && (
-          <CCTimePicker
-            disabledMeridiem={Boolean(disabledMeridiem)}
-            step={step}
-            value={value as Date}
-            onChange={e => {
-              setValue(e);
-            }}
-          />
-        )}
+        {view === CALENDAR_VIEW.DAY &&
+          features.includes(PICKER_FEATURES.TIME) &&
+          value instanceof Date && (
+            <CCTimePicker
+              disabledMeridiem={Boolean(disabledMeridiem)}
+              step={step}
+              value={value}
+              onChange={e => {
+                setValue(e);
+              }}
+            />
+          )}
       </LDateTimePickerContent>
       <LDateTimePickerAction features={features}>
         <button

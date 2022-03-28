@@ -68,9 +68,9 @@ const _isBetween = (
   end: Date,
   inclusivity: "()" | "[)" | "(]" | "[]"
 ): boolean => {
-  return new DateObject(target as Date).isBetween(
-    new DateObject(start as Date),
-    new DateObject(end as Date),
+  return new DateObject(target).isBetween(
+    new DateObject(start),
+    new DateObject(end),
     "day",
     inclusivity
   );

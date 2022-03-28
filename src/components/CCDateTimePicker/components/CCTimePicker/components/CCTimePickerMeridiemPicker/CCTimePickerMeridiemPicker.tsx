@@ -79,12 +79,9 @@ const InputMenuMinuteItems = function (
   });
 };
 
-const CCTimePickerMeridiemPicker: React.FC<CCTMeridiemPickerProps> = (
-  props: CCTMeridiemPickerProps
-) => {
-  const { value, onChange }: CCTMeridiemPickerProps = props;
+const CCTimePickerMeridiemPicker: React.FC<CCTMeridiemPickerProps> = props => {
+  const { value, onChange } = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
-  const innerSlider: MutableRefObject<any> = useRef();
   useLayoutEffect(() => {
     window.addEventListener(
       "mousewheel",
@@ -105,7 +102,7 @@ const CCTimePickerMeridiemPicker: React.FC<CCTMeridiemPickerProps> = (
 
   useLayoutEffect(() => {
     if (slider.current) {
-      if (new DateObject(value as Date).hour >= 12) {
+      if (new DateObject(value).hour >= 12) {
         if ((slider?.current as any)?.innerSlider?.state?.currentSlide === 0) {
           slider.current?.slickGoTo(1);
         }
@@ -132,15 +129,13 @@ const CCTimePickerMeridiemPicker: React.FC<CCTMeridiemPickerProps> = (
         arrows={false}
         adaptiveHeight={false}
         afterChange={debounce(e => {
-          if (new DateObject(value as Date).hour >= 12 && e === 0) {
+          if (new DateObject(value).hour >= 12 && e === 0) {
             onChange &&
-              onChange(
-                new DateObject(value as Date).subtract("hour", 12).toDate()
-              );
+              onChange(new DateObject(value).subtract("hour", 12).toDate());
           }
-          if (new DateObject(value as Date).hour < 12 && e === 1) {
+          if (new DateObject(value).hour < 12 && e === 1) {
             onChange &&
-              onChange(new DateObject(value as Date).add("hour", 12).toDate());
+              onChange(new DateObject(value).add("hour", 12).toDate());
           }
         }, 240)}
         className={"meridiem"}

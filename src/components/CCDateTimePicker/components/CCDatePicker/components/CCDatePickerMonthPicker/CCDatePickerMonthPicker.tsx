@@ -1,8 +1,7 @@
 import React, { useCallback } from "react";
 import {
-  CALENDAR_VIEW,
   CCCCDatePickerMonthPickerProps,
-  CCDateTimePickerWeekValue
+  isDateTimePickerWeekValue
 } from "../../../../types";
 import styled from "@emotion/styled";
 import { DateObject } from "../../../../../../Utils";
@@ -40,27 +39,22 @@ const LMothPickerItemContainer = styled("div")<{ isCurrent: boolean }>(
   })
 );
 
-const CCDatePickerMonthPicker: React.FC<CCCCDatePickerMonthPickerProps> = (
-  props: CCCCDatePickerMonthPickerProps
-) => {
-  const {
-    value,
-    open,
-    view,
-    onChange = () => {}
-  }: CCCCDatePickerMonthPickerProps = props;
+const CCDatePickerMonthPicker: React.FC<
+  CCCCDatePickerMonthPickerProps
+> = props => {
+  const { value, open, view, onChange = () => {} } = props;
 
   const isCurrent = useCallback(
     month => {
-      return (
-        new DateObject(
-          view === CALENDAR_VIEW.DAY
-            ? (value as Date)
-            : ((value as CCDateTimePickerWeekValue).begin as Date)
-        ).month === month
-      );
+      if (value instanceof Date) {
+        return new DateObject(value).month === month;
+      }
+      if (isDateTimePickerWeekValue(value)) {
+        return new DateObject(value.begin).month === month;
+      }
+      return false;
     },
-    [view, value]
+    [value]
   );
   return (
     <LMothPickerContainer open={open}>
@@ -70,27 +64,21 @@ const CCDatePickerMonthPicker: React.FC<CCCCDatePickerMonthPickerProps> = (
             key={item}
             isCurrent={isCurrent(index)}
             onClick={e => {
-              if (view === CALENDAR_VIEW.DAY) {
+              if (value instanceof Date) {
                 onChange(
-                  new DateObject(value as Date)
-                    .setMonth(Number(index))
-                    .toDate() as Date
+                  new DateObject(value).setMonth(Number(index)).toDate()
                 );
               }
-              if (view === CALENDAR_VIEW.WEEK) {
+              if (isDateTimePickerWeekValue(value)) {
                 onChange({
-                  begin: new DateObject(
-                    (value as CCDateTimePickerWeekValue).begin as Date
-                  )
+                  begin: new DateObject(value.begin)
                     .setMonth(Number(index))
                     .startOf("week")
-                    .toDate() as Date,
-                  end: new DateObject(
-                    (value as CCDateTimePickerWeekValue).begin as Date
-                  )
+                    .toDate(),
+                  end: new DateObject(value.begin)
                     .setMonth(Number(index))
                     .endOf("week")
-                    .toDate() as Date
+                    .toDate()
                 });
               }
             }}

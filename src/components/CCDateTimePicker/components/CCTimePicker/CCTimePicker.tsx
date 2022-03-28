@@ -24,15 +24,8 @@ const LTimePickerContainer = styled("div", {
   }
 );
 
-const CCTimePicker: React.FC<CCTimePickerProps> = (
-  props: CCTimePickerProps
-) => {
-  const {
-    value,
-    onChange,
-    disabledMeridiem = true,
-    step
-  }: CCTimePickerProps = props;
+const CCTimePicker: React.FC<CCTimePickerProps> = props => {
+  const { value, onChange, disabledMeridiem = true, step } = props;
   return (
     <LTimePickerContainer disabledMeridiem={disabledMeridiem}>
       <CCTimePickerHourPicker

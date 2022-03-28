@@ -1,8 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
 import {
-  CALENDAR_VIEW,
   CCDatePickerYearPickerProps,
-  CCDateTimePickerWeekValue
+  isDateTimePickerWeekValue
 } from "../../../../types";
 import styled from "@emotion/styled";
 import { DateObject } from "../../../../../../Utils";
@@ -55,43 +54,46 @@ const LYearPickerItem = styled("div")`
   align-items: center;
 `;
 
-const CCDatePickerYearPicker: React.FC<CCDatePickerYearPickerProps> = (
-  props: CCDatePickerYearPickerProps
-) => {
-  const { value, open, view, onChange }: CCDatePickerYearPickerProps = props;
+const CCDatePickerYearPicker: React.FC<CCDatePickerYearPickerProps> = props => {
+  const { value, open, view, onChange } = props;
   const [page, setPage] = useState(0);
   const yearList: Array<number> = useMemo(() => {
     let _res: Array<number> = [];
-    let _year = new DateObject(
-      view === CALENDAR_VIEW.WEEK
-        ? ((value as CCDateTimePickerWeekValue).begin as Date)
-        : (value as Date)
-    ).year;
-    let _normalizeYear = new DateObject(
-      view === CALENDAR_VIEW.WEEK
-        ? ((value as CCDateTimePickerWeekValue).begin as Date)
-        : (value as Date)
-    ).setYear(_year - (_year % 10));
-    for (let i = 0; i < 10; i++) {
-      _res.push(_normalizeYear.add("year", i + page).year);
+    let _year: number;
+    let _normalizeYear: DateObject;
+    if (value instanceof Date) {
+      _year = new DateObject(value).year;
+      _normalizeYear = new DateObject(value).setYear(_year - (_year % 10));
+      for (let i = 0, j = 1; i < 10 || j <= 0; i++, j++) {
+        _res.push(_normalizeYear.add("year", i + page).year);
+        _res.push(_normalizeYear.subtract("year", j - page).year);
+      }
     }
-    for (let i = 1; i <= 10; i++) {
-      _res.push(_normalizeYear.subtract("year", i - page).year);
+    if (isDateTimePickerWeekValue(value)) {
+      _year = new DateObject(value.begin).year;
+      _normalizeYear = new DateObject(value.begin).setYear(
+        _year - (_year % 10)
+      );
+      for (let i = 0, j = 1; i < 10 || j <= 0; i++, j++) {
+        _res.push(_normalizeYear.add("year", i + page).year);
+        _res.push(_normalizeYear.subtract("year", j - page).year);
+      }
     }
+
     _res.sort();
     return _res;
   }, [value, page]);
   const isCurrent = useCallback(
     year => {
-      return (
-        new DateObject(
-          view === CALENDAR_VIEW.DAY
-            ? (value as Date)
-            : ((value as CCDateTimePickerWeekValue).begin as Date)
-        ).year === year
-      );
+      if (value instanceof Date) {
+        return new DateObject(value).year === year;
+      }
+      if (isDateTimePickerWeekValue(value)) {
+        return new DateObject(value.begin).year === year;
+      }
+      return false;
     },
-    [view, value]
+    [value]
   );
 
   useEffect(() => {
@@ -118,29 +120,23 @@ const CCDatePickerYearPicker: React.FC<CCDatePickerYearPickerProps> = (
               key={year}
               isCurrent={isCurrent(year)}
               onClick={() => {
-                if (view === CALENDAR_VIEW.DAY) {
+                if (value instanceof Date) {
                   onChange &&
                     onChange(
-                      new DateObject(value as Date)
-                        .setYear(Number(year))
-                        .toDate() as Date
+                      new DateObject(value).setYear(Number(year)).toDate()
                     );
                 }
-                if (view === CALENDAR_VIEW.WEEK) {
+                if (isDateTimePickerWeekValue(value)) {
                   onChange &&
                     onChange({
-                      begin: new DateObject(
-                        (value as CCDateTimePickerWeekValue).begin as Date
-                      )
+                      begin: new DateObject(value.begin)
                         .setYear(Number(year))
                         .startOf("week")
-                        .toDate() as Date,
-                      end: new DateObject(
-                        (value as CCDateTimePickerWeekValue).begin as Date
-                      )
+                        .toDate(),
+                      end: new DateObject(value.begin)
                         .setYear(Number(year))
                         .endOf("week")
-                        .toDate() as Date
+                        .toDate()
                     });
                 }
               }}

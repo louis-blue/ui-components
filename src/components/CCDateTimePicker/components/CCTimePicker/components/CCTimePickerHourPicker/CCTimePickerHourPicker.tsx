@@ -102,10 +102,8 @@ const InputMenuHourItems = function (
   });
 };
 
-const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
-  props: CCTimePickerProps
-) => {
-  const { value, disabledMeridiem, onChange }: CCTimePickerProps = props;
+const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = props => {
+  const { value, disabledMeridiem, onChange } = props;
   const slider: MutableRefObject<Slider | null> = useRef(null);
   useLayoutEffect(() => {
     window.addEventListener(
@@ -152,8 +150,7 @@ const CCTimePickerHourPicker: React.FC<CCTimePickerProps> = (
         arrows={false}
         adaptiveHeight={false}
         afterChange={debounce(e => {
-          onChange &&
-            onChange(new DateObject(value as Date).setHour(e).toDate());
+          onChange && onChange(new DateObject(value).setHour(e).toDate());
         }, 240)}
         className={"slider1"}
       >
