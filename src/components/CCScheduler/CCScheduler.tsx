@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { CCSchedulerProps, SchedulerView } from "./types";
-import {
-  CCSchedulerDayView,
-  CCSchedulerHeader,
-  CCSchedulerWeekView
-} from "./components";
+import { CCSchedulerProps, SchedulerView, Step } from "./types";
+import { CCSchedulerDayView, CCSchedulerHeader, CCSchedulerWeekView } from "./components";
 import styled from "@emotion/styled";
 import DateScheduler from "../../Utils/DateScheduler";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import PropTypes from "prop-types";
 
 const LScheduler = styled(`div`, { label: "LScheduler" })(() => {
   return {
@@ -22,7 +19,7 @@ const LScheduler = styled(`div`, { label: "LScheduler" })(() => {
 
 const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
   const {
-    date,
+    date = new Date(),
     onChangeDate,
     onChangeView,
     view = SchedulerView.Week,
@@ -70,4 +67,29 @@ const CCScheduler: React.FC<CCSchedulerProps> = (props: CCSchedulerProps) => {
     </DndProvider>
   );
 };
+
+CCScheduler.propTypes = {
+  date: PropTypes.instanceOf(Date).isRequired,
+  onChangeDate: PropTypes.func,
+  onChangeView: PropTypes.func.isRequired,
+  view: PropTypes.oneOf([SchedulerView.Day, SchedulerView.Week, SchedulerView.Agenda]),
+  step: PropTypes.oneOf(Step),
+  onChange: PropTypes.func.isRequired,
+  onClickCell: PropTypes.func.isRequired,
+  onClickEvent: PropTypes.func.isRequired,
+  contents: PropTypes.array.isRequired
+};
+CCScheduler.defaultProps = {
+  date: new Date(),
+  onChangeDate: () => {},
+  onChangeView: () => {},
+  view: SchedulerView.Week,
+  step: 10,
+  onChange: () => {},
+  onClickCell: () => {},
+  onClickEvent: () => {},
+  contents: []
+};
+
+
 export default CCScheduler;

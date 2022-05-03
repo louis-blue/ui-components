@@ -1,6 +1,7 @@
 import createCache from "@emotion/cache";
 import { CacheProvider } from "@emotion/react";
 import { withConsole } from "@storybook/addon-console";
+import { useArgs } from "@storybook/client-api";
 import rtlPlugin from "stylis-plugin-rtl";
 
 let cacheRtl;
@@ -21,7 +22,11 @@ export const decorators = [
       <Story />
     </CacheProvider>
   ),
-  (Story, context) => withConsole()(Story)(context)
+  (Story, context) => withConsole()(Story)(context),
+  (story, context) => {
+    const [, updateArgs] = useArgs();
+    return story({ ...context, updateArgs });
+  }
 ];
 
 export const parameters = {

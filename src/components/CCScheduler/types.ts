@@ -13,7 +13,9 @@ export enum DropTarget {
   DragHandle = "DragHandle"
 }
 
-export type TimeStep = 5 | 10 | 15 | 20 | 25 | 30 | 35 | 40 | 45 | 50 | 55 | 60;
+export const Step = [5, 10, 15, 20, 30, 60] as const;
+
+export type TimeStep = typeof Step[number];
 export type SchedulerEvent = {
   id: string;
   dateBegin: Date;
@@ -38,10 +40,8 @@ export type CCSchedulerHeaderProps = Pick<CCSchedulerProps, "date"> & {
   onChangeDate: (e: Date) => void;
   view: SchedulerView;
 };
-export type CCSchedulerViewProps = Pick<
-  CCSchedulerProps,
-  "date" | "onChange" | "onClickCell" | "onClickEvent"
-> & {
+export type CCSchedulerViewProps = Pick<CCSchedulerProps,
+  "date" | "onChange" | "onClickCell" | "onClickEvent"> & {
   step: TimeStep;
   contents: DateScheduler;
 };

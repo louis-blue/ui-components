@@ -1,45 +1,64 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
 import { CCScheduler } from "../components";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import reservation from "./assets/reservation.json";
-import { SchedulerView } from "../components/CCScheduler/types";
+import { SchedulerEvent, SchedulerView } from "../components/CCScheduler/types";
 
-export const Scheduler: ComponentStory<typeof CCScheduler> = ({
-  ...options
-}) => {
-  const _reservation = reservation.map(item => {
-    return {
-      ...item,
-      dateBegin: new Date(item.dateBegin * 1000),
-      dateEnd: new Date(item.dateEnd * 1000)
-    };
-  });
-  let reservationMap = new Map();
-  _reservation.forEach(item => {
-    reservationMap.set(item.id, item);
-  });
+export const Scheduler: ComponentStory<typeof CCScheduler> = (args, { updateArgs }) => {
 
-  const [reservationState, setReservationState] = useState(reservationMap);
-  const [date, setDate] = useState(new Date());
-  const [view, setView] = useState(SchedulerView.Day);
+  const { date, contents } = args;
+  const mapRef = useRef(contents.reduce((acc, cur) => {
+    const { dateBegin, dateEnd } = cur;
+    acc.set(cur.id, {
+      ...cur,
+      dateBegin: new Date(dateBegin),
+      dateEnd: new Date(dateEnd)
+    });
+    return acc;
+  }, new Map()));
+
   return (
     <div style={{ width: 700, height: 500 }}>
       <CCScheduler
-        view={view}
-        date={date}
+        {...args}
+        date={function(this: { date: Date | number }) {
+          if (!(this.date instanceof Date)) {
+            const _newDate = new Date();
+            _newDate.setTime(date as unknown as number);
+            return _newDate;
+          }
+          return new Date();
+        }.call(date as any)}
         onChangeView={view => {
-          setView(view);
+          updateArgs({
+            ...args,
+            view: view
+          });
         }}
         onChangeDate={date => {
           console.log(date);
-          setDate(date);
+          updateArgs({
+            ...args,
+            date: date
+          });
         }}
-        contents={[...reservationState.values()]}
+        contents={contents.reduce<SchedulerEvent[]>((acc, cur) => {
+          const { dateBegin, dateEnd } = cur;
+          acc.push({
+            ...cur,
+            dateBegin: new Date(dateBegin),
+            dateEnd: new Date(dateEnd)
+          });
+          return acc;
+        }, [])}
         onChange={e => {
-          console.log(e);
-          let _newMap = new Map(reservationMap);
+          let _newMap = new Map(mapRef.current);
           _newMap.set(e.id, e);
-          setReservationState(_newMap);
+          mapRef.current = _newMap;
+          updateArgs({
+            ...args,
+            contents: [..._newMap.values()]
+          });
         }}
         onClickCell={e => {
           console.log("onClickCell", e);
@@ -62,19 +81,20 @@ export default {
     controls: { sort: "requiredFirst" }
   },
   argTypes: {
-    // mode: {
-    //   control: "select",
-    //   options: [TEETH_GRAPH_SYSTEM.FDI, TEETH_GRAPH_SYSTEM.UNIVERSAL],
-    //   defaultValue: TEETH_GRAPH_SYSTEM.FDI
-    // },
-    // foreground: { control: "color", defaultValue: "rgba(0, 0, 0, 1)" },
-    // background: { control: "color", defaultValue: "rgba(0, 0, 0, 0)" },
-    // numbers: {
-    //   control: "object",
-    //   defaultValue: [11, 12, 13, 47, 48, 32, 37, 38, 71, 72, 73]
-    // },
-    // missings: { control: "object", defaultValue: [21, 22, 23] },
-    // width: { control: "number", defaultValue: 160 },
-    // height: { control: "number", defaultValue: 40 }
+    date: {
+      name: "date",
+      control: {
+        type: "date"
+      },
+      defaultValue: new Date()
+    },
+    contents: {
+      name: "contents",
+      defaultValue: reservation
+    },
+    view: {
+      name: "view",
+      defaultValue: SchedulerView.Week
+    }
   }
 } as ComponentMeta<typeof CCScheduler>;
