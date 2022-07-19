@@ -1,12 +1,12 @@
-import { TeethGraphDrawProps } from "../types";
+import TeethGraph from "../types";
 
-const drawFDICanvas = (props: TeethGraphDrawProps): void => {
+const drawFDICanvas = (props: TeethGraph.DrawProps): void => {
   const {
     canvas,
     foreground = "rgba(255, 255, 255, 1)",
     background = "rgba(0, 0, 0, 0)",
     numbers = [],
-    missings = [],
+    missings = []
   } = props;
   const ctx = canvas.getContext("2d");
   const width = 480;
@@ -14,13 +14,13 @@ const drawFDICanvas = (props: TeethGraphDrawProps): void => {
   const ts = width / 16;
   const texts = [
     ["1", "2", "3", "4", "5", "6", "7", "8"],
-    ["A", "B", "C", "D", "E"],
+    ["A", "B", "C", "D", "E"]
   ] as const;
   const offsets = [
     [ts * 8 - ts / 2, ts * 0.25, -1],
     [ts * 8 + ts / 2, ts * 0.25, 1],
     [ts * 8 + ts / 2, ts * 2 + ts * 0.25, 1],
-    [ts * 8 - ts / 2, ts * 2 + ts * 0.25, -1],
+    [ts * 8 - ts / 2, ts * 2 + ts * 0.25, -1]
   ] as const;
 
   let configs = Array.from({ length: 4 }, () =>
@@ -51,7 +51,7 @@ const drawFDICanvas = (props: TeethGraphDrawProps): void => {
   ctx.lineTo(width / 2, height);
   ctx.stroke();
 
-  numbers.forEach((number) => {
+  numbers.forEach(number => {
     const babies = number >= 50;
     const region = Math.floor(((number - 10) % 40) / 10);
     const position = (number % 10) - 1;
@@ -66,7 +66,7 @@ const drawFDICanvas = (props: TeethGraphDrawProps): void => {
     }
   });
 
-  missings.forEach((number) => {
+  missings.forEach(number => {
     const region: number = Math.floor(((number - 10) % 40) / 10);
     const position: number = (number % 10) - 1;
 

@@ -1,15 +1,15 @@
 import { getLinearFromTeeth, getTeethFromLinear } from "./index";
-import { TeethNumber } from "../types";
+import TeethGraph from "../types";
 
 function getTeethGroup(
-  numbers: Array<TeethNumber>,
+  numbers: Array<TeethGraph.Number>,
   equal: number | null,
   least: number | null
-): Array<Array<TeethNumber>> {
+): Array<Array<TeethGraph.Number>> {
   let sequences = getLinearFromTeeth(numbers).concat([99999]);
-  let group: Array<Array<TeethNumber>> = [];
+  let group: Array<Array<TeethGraph.Number>> = [];
   let array: Array<number> = [];
-  sequences.forEach((index) => {
+  sequences.forEach(index => {
     if (array.length === 0 || array[array.length - 1] + 1 === index) {
       array.push(index);
     } else if (least && array.length >= least) {

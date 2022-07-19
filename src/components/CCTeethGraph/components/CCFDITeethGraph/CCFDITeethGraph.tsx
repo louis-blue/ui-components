@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
-import { TeethGraphProps } from "../../types";
 import { drawFDICanvas } from "../../Utils";
+import TeethGraph from "../../types";
 
-const FDITeethGraph: React.FC<TeethGraphProps> = props => {
+const FDITeethGraph: React.FC<TeethGraph.Props> = props => {
   const {
     width = 160,
     height = 80,
@@ -11,6 +11,7 @@ const FDITeethGraph: React.FC<TeethGraphProps> = props => {
     numbers,
     missings
   } = props;
+
   const canvasRef: React.MutableRefObject<HTMLCanvasElement | null> =
     useRef(null);
 

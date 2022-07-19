@@ -2,17 +2,17 @@ import {
   getLinearFromTeeth,
   getTeethFromLinear,
   getTeethGroup,
-  getTeethUniversal,
+  getTeethUniversal
 } from "./index";
-import { TEETH_GRAPH_SYSTEM, TeethGraphSystem, TeethNumber } from "../types";
+import TeethGraph from "../types";
 
 function getTeethString(
-  numbers: Array<TeethNumber>,
-  system: TeethGraphSystem
+  numbers: Array<TeethGraph.Number>,
+  system: TeethGraph.System
 ): string {
-  if (system === TEETH_GRAPH_SYSTEM[1]) {
+  if (system === TeethGraph.SYSTEM[1]) {
     return `#${getTeethGroup(numbers, null, 1)
-      .map((group) =>
+      .map(group =>
         getTeethUniversal(group).sort((a, b) => {
           return a.localeCompare(b);
         })
@@ -36,7 +36,7 @@ function getTeethString(
     let t = "";
     let sequences = getLinearFromTeeth(numbers).concat([99999]);
     let array: Array<number> = [];
-    sequences.forEach((index) => {
+    sequences.forEach(index => {
       if (array.length === 0) {
         array.push(index);
         return;

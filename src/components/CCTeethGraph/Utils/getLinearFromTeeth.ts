@@ -1,19 +1,21 @@
-import { isLinear, linear, TeethNumber } from "../types";
+import TeethGraph from "../types";
 
-function getLinearFromTeeth(numbers: Array<TeethNumber> = []): Array<number> {
+function getLinearFromTeeth(
+  numbers: Array<TeethGraph.Number> = []
+): Array<number> {
   return numbers
     .reduce((acc, cur) => {
-      if (linear.includes(cur)) {
-        acc.push(linear.indexOf(cur));
+      if (TeethGraph.linear.includes(cur)) {
+        acc.push(TeethGraph.linear.indexOf(cur));
       } else if (cur < 50) {
         let _upper = cur + 40;
-        if (isLinear(_upper)) {
-          acc.push(linear.indexOf(_upper));
+        if (TeethGraph.isLinear(_upper)) {
+          acc.push(TeethGraph.linear.indexOf(_upper));
         }
       } else {
         let _lower = cur + 40;
-        if (isLinear(_lower)) {
-          acc.push(linear.indexOf(_lower));
+        if (TeethGraph.isLinear(_lower)) {
+          acc.push(TeethGraph.linear.indexOf(_lower));
         }
       }
 

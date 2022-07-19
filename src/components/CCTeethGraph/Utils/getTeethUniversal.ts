@@ -1,22 +1,24 @@
-import { isTeethNumber, TeethNumber, universal } from "../types";
+import TeethGraph from "../types";
 
-function getTeethUniversal(number: TeethNumber): string;
-function getTeethUniversal(numbers: Array<TeethNumber>): Array<string>;
+function getTeethUniversal(number: TeethGraph.Number): string;
+function getTeethUniversal(numbers: Array<TeethGraph.Number>): Array<string>;
 
 function getTeethUniversal(
-  numbers: TeethNumber | Array<TeethNumber>
+  numbers: TeethGraph.Number | Array<TeethGraph.Number>
 ): string | Array<string> {
   if (Array.isArray(numbers)) {
     let array: Array<string> = [];
 
-    numbers.forEach((number) => {
-      if (isTeethNumber(number)) {
-        array.push(universal[number]);
+    numbers.forEach(number => {
+      if (TeethGraph.isTeethNumber(number)) {
+        array.push(TeethGraph.universal[number]);
       }
     });
     return array;
   } else {
-    return isTeethNumber(numbers) ? universal[numbers] : "";
+    return TeethGraph.isTeethNumber(numbers)
+      ? TeethGraph.universal[numbers]
+      : "";
   }
 }
 

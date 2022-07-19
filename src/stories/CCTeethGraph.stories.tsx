@@ -1,9 +1,9 @@
 import React from "react";
 import { CCTeethGraph } from "../components";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import { TEETH_GRAPH_SYSTEM } from "../components/CCTeethGraph/types";
+import TeethGraph from "../components/CCTeethGraph/types";
 
-export const TeethGraph: ComponentStory<typeof CCTeethGraph> = ({
+export const TeethGraphStories: ComponentStory<typeof CCTeethGraph> = ({
   ...options
 }) => {
   const { foreground, background, numbers, missings, mode, width, height } =
@@ -21,14 +21,15 @@ export const TeethGraph: ComponentStory<typeof CCTeethGraph> = ({
   );
 };
 
+const [fdi] = TeethGraph.SYSTEM;
 export default {
   title: "Example/TeethGraph",
   component: CCTeethGraph,
   argTypes: {
     mode: {
       control: "select",
-      options: [TEETH_GRAPH_SYSTEM],
-      defaultValue: TEETH_GRAPH_SYSTEM[0]
+      options: [fdi],
+      defaultValue: fdi
     },
     foreground: { control: "color", defaultValue: "rgba(0, 0, 0, 1)" },
     background: { control: "color", defaultValue: "rgba(0, 0, 0, 0)" },

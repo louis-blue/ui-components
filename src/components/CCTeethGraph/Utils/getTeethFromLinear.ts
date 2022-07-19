@@ -1,15 +1,17 @@
-import { isLinear, isTeethNumber, linear, TeethNumber } from "../types";
+import TeethGraph from "../types";
 
-function getTeethFromLinear(numbers: Array<number> = []): Array<TeethNumber> {
+function getTeethFromLinear(
+  numbers: Array<number> = []
+): Array<TeethGraph.Number> {
   return numbers.reduce((acc, cur) => {
-    if (isLinear(linear[cur])) {
-      let _res = linear[cur];
-      if (isTeethNumber(_res)) {
+    if (TeethGraph.isLinear(TeethGraph.linear[cur])) {
+      let _res = TeethGraph.linear[cur];
+      if (TeethGraph.isTeethNumber(_res)) {
         acc.push(_res);
       }
     }
     return acc;
-  }, [] as Array<TeethNumber>);
+  }, [] as Array<TeethGraph.Number>);
 }
 
 export default getTeethFromLinear;
